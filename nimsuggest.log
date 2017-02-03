@@ -1,0 +1,87 @@
+illformed AST: ()
+illformed AST: bind <<0th child missing for nkBind >>
+illformed AST: discard <<0th child missing for nkDiscardStmt >>
+illformed AST: <<0th child missing for nkHiddenAddr >>
+illformed AST: 
+illformed AST:  elif <<0th child missing for nkElifExpr >>: <<1th child missing for nkElifExpr >>
+illformed AST: do <<4th child missing for nkDo >>:<<6th child missing for nkDo >>
+illformed AST: export <<0th child missing for nkExportExceptStmt >> except
+
+illformed AST: <<0th child missing for nkCheckedFieldExpr >>
+illformed AST: proc <<3th child missing for nkLambda >><<4th child missing for nkLambda >> = <<6th child missing for nkLambda >>
+illformed AST: <<0th child missing for nkDerefExpr >>[]
+illformed AST: iterator
+illformed AST: bind
+illformed AST: <<0th child missing for nkEnumFieldDef >> = <<1th child missing for nkEnumFieldDef >>
+illformed AST: tuple[]
+illformed AST: <<0th child missing for nkBracketExpr >>[]
+illformed AST: ``
+illformed AST: ``
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc intx: int
+illformed AST: proc procint
+illformed AST: proc procint
+illformed AST: proc procint
+illformed AST: proc procint
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: proc ()int
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: 
+illformed AST: proc (x: int): int<<1th child missing for nkProcTy >>
+illformed AST: proc (x: int): int<<1th child missing for nkProcTy >>
+illformed AST: proc (x: int): int {..}
+illformed AST: proc (x: int): int {..}
+illformed AST: proc (x: int): int {..}
+illformed AST: proc (x: int): int {..}
+illformed AST: proc (x: int): int {..}
+illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: proc (x: int): int {.nimcall.}

@@ -1,0 +1,11 @@
+{"compile":[
+],
+"extcompile":[
+],
+"link":[
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_macros.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o"
+],
+"linkcmd": "C:\\MinGW\\bin\\gcc.exe   -o c:\\Projects\\nim\\HelloWorld\\moduleTest.exe  c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_macros.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o  "
+}

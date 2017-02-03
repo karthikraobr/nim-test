@@ -8,10 +8,89 @@
 
 #include "nimbase.h"
 #undef linux
+typedef struct NimStringDesc NimStringDesc;
+typedef struct TGenericSeq TGenericSeq;
+struct  TGenericSeq  {
+NI len;
+NI reserved;
+};
+struct  NimStringDesc  {
+  TGenericSeq Sup;
+NIM_CHAR data[SEQ_DECL_SIZE];
+};
+N_NIMCALL(NI, rawparseint_ZzngwN3GXlI9aVYNxHLGOXQ)(NimStringDesc* s0, NI64* b0, NI start0);
+N_NOINLINE(void, raiseIndexError)(void);
+static N_INLINE(NI, addInt)(NI a0, NI b0);
+N_NOINLINE(void, raiseOverflow)(void);
+N_NIMCALL(NI64, mulInt64)(NI64 a0, NI64 b0);
+static N_INLINE(NI, subInt)(NI a0, NI b0);
+static N_INLINE(NI64, subInt64)(NI64 a0, NI64 b0);
 static N_INLINE(void, nimFrame)(TFrame* s0);
 N_NOINLINE(void, stackoverflow_II46IjNZztN9bmbxUD8dt8g)(void);
 static N_INLINE(void, popFrame)(void);
+N_NIMCALL(NI, nimParseBiggestFloat)(NimStringDesc* s0, NF* number0, NI start0);
+N_NIMCALL(NI, nimParseBiggestFloat)(NimStringDesc* s0, NF* number0, NI start0);
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
+
+static N_INLINE(NI, addInt)(NI a0, NI b0) {
+	NI result0;
+{	result0 = (NI)0;
+	result0 = (NI)((NU64)(a0) + (NU64)(b0));
+	{
+		NIM_BOOL LOC3;
+		LOC3 = (NIM_BOOL)0;
+		LOC3 = (((NI) 0) <= (NI)(result0 ^ a0));
+		if (LOC3) goto LA4;
+		LOC3 = (((NI) 0) <= (NI)(result0 ^ b0));
+		LA4: ;
+		if (!LOC3) goto LA5;
+		goto BeforeRet;
+	}
+	LA5: ;
+	raiseOverflow();
+	}BeforeRet: ;
+	return result0;
+}
+
+static N_INLINE(NI, subInt)(NI a0, NI b0) {
+	NI result0;
+{	result0 = (NI)0;
+	result0 = (NI)((NU64)(a0) - (NU64)(b0));
+	{
+		NIM_BOOL LOC3;
+		LOC3 = (NIM_BOOL)0;
+		LOC3 = (((NI) 0) <= (NI)(result0 ^ a0));
+		if (LOC3) goto LA4;
+		LOC3 = (((NI) 0) <= (NI)(result0 ^ (NI)((NU64) ~(b0))));
+		LA4: ;
+		if (!LOC3) goto LA5;
+		goto BeforeRet;
+	}
+	LA5: ;
+	raiseOverflow();
+	}BeforeRet: ;
+	return result0;
+}
+
+static N_INLINE(NI64, subInt64)(NI64 a0, NI64 b0) {
+	NI64 result0;
+{	result0 = (NI64)0;
+	result0 = (NI64)((NU64)(a0) - (NU64)(b0));
+	{
+		NIM_BOOL LOC3;
+		LOC3 = (NIM_BOOL)0;
+		LOC3 = (IL64(0) <= (NI64)(result0 ^ a0));
+		if (LOC3) goto LA4;
+		LOC3 = (IL64(0) <= (NI64)(result0 ^ (NI64)((NU64) ~(b0))));
+		LA4: ;
+		if (!LOC3) goto LA5;
+		goto BeforeRet;
+	}
+	LA5: ;
+	raiseOverflow();
+	}BeforeRet: ;
+	return result0;
+}
 
 static N_INLINE(void, nimFrame)(TFrame* s0) {
 	NI LOC1;
@@ -38,6 +117,125 @@ static N_INLINE(void, nimFrame)(TFrame* s0) {
 
 static N_INLINE(void, popFrame)(void) {
 	frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw = (*frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw).prev;
+}
+
+N_NIMCALL(NI, rawparseint_ZzngwN3GXlI9aVYNxHLGOXQ)(NimStringDesc* s0, NI64* b0, NI start0) {
+	NI result0;
+	NI64 sign0;
+	NI i0;
+	nimfr("rawParseInt", "parseutils.nim")
+	result0 = (NI)0;
+	nimln(213, "parseutils.nim");
+	sign0 = IL64(-1);
+	nimln(214, "parseutils.nim");
+	i0 = start0;
+	nimln(215, "parseutils.nim");
+	{
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_2;
+		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+		if (!((NU8)(s0->data[i0]) == (NU8)(43))) goto LA3;
+		T_vI9aZNKIcImom6dDyKXW1ZA_2 = addInt(i0, ((NI) 1));
+		i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_2);
+	}
+	goto LA1;
+	LA3: ;
+	{
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_3;
+		nimln(216, "parseutils.nim");
+		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+		if (!((NU8)(s0->data[i0]) == (NU8)(45))) goto LA6;
+		nimln(217, "parseutils.nim");
+		T_vI9aZNKIcImom6dDyKXW1ZA_3 = addInt(i0, ((NI) 1));
+		i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_3);
+		nimln(218, "parseutils.nim");
+		sign0 = IL64(1);
+	}
+	goto LA1;
+	LA6: ;
+	LA1: ;
+	nimln(219, "parseutils.nim");
+	{
+		NI64 T_vI9aZNKIcImom6dDyKXW1ZA_9;
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_10;
+		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+		if (!(((NU8)(s0->data[i0])) >= ((NU8)(48)) && ((NU8)(s0->data[i0])) <= ((NU8)(57)))) goto LA10;
+		nimln(220, "parseutils.nim");
+		(*b0) = IL64(0);
+		{
+			nimln(221, "parseutils.nim");
+			while (1) {
+				NI64 T_vI9aZNKIcImom6dDyKXW1ZA_4;
+				NI T_vI9aZNKIcImom6dDyKXW1ZA_5;
+				NI64 T_vI9aZNKIcImom6dDyKXW1ZA_6;
+				NI T_vI9aZNKIcImom6dDyKXW1ZA_7;
+				if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+				if (!(((NU8)(s0->data[i0])) >= ((NU8)(48)) && ((NU8)(s0->data[i0])) <= ((NU8)(57)))) goto LA13;
+				nimln(222, "parseutils.nim");
+				T_vI9aZNKIcImom6dDyKXW1ZA_4 = mulInt64((*b0), IL64(10));
+				if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+				T_vI9aZNKIcImom6dDyKXW1ZA_5 = subInt(((NI) (((NU8)(s0->data[i0])))), ((NI) 48));
+				T_vI9aZNKIcImom6dDyKXW1ZA_6 = subInt64((NI64)(T_vI9aZNKIcImom6dDyKXW1ZA_4), ((NI64) ((NI)(T_vI9aZNKIcImom6dDyKXW1ZA_5))));
+				(*b0) = (NI64)(T_vI9aZNKIcImom6dDyKXW1ZA_6);
+				nimln(223, "parseutils.nim");
+				T_vI9aZNKIcImom6dDyKXW1ZA_7 = addInt(i0, ((NI) 1));
+				i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_7);
+				{
+					nimln(224, "parseutils.nim");
+					while (1) {
+						NI T_vI9aZNKIcImom6dDyKXW1ZA_8;
+						if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+						if (!((NU8)(s0->data[i0]) == (NU8)(95))) goto LA15;
+						T_vI9aZNKIcImom6dDyKXW1ZA_8 = addInt(i0, ((NI) 1));
+						i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_8);
+					} LA15: ;
+				}
+			} LA13: ;
+		}
+		nimln(225, "parseutils.nim");
+		T_vI9aZNKIcImom6dDyKXW1ZA_9 = mulInt64((*b0), sign0);
+		(*b0) = (NI64)(T_vI9aZNKIcImom6dDyKXW1ZA_9);
+		nimln(226, "parseutils.nim");
+		T_vI9aZNKIcImom6dDyKXW1ZA_10 = subInt(i0, start0);
+		result0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_10);
+	}
+	LA10: ;
+	popFrame();
+	return result0;
+}
+
+N_NIMCALL(NI, npuParseBiggestInt)(NimStringDesc* s0, NI64* number0, NI start0) {
+	NI result0;
+	NI64 res0;
+	nimfr("parseBiggestInt", "parseutils.nim")
+	result0 = (NI)0;
+	res0 = (NI64)0;
+	nimln(237, "parseutils.nim");
+	result0 = rawparseint_ZzngwN3GXlI9aVYNxHLGOXQ(s0, (&res0), start0);
+	nimln(238, "parseutils.nim");
+	(*number0) = res0;
+	popFrame();
+	return result0;
+}
+
+N_NIMCALL(NI, npuParseFloat)(NimStringDesc* s0, NF* number0, NI start0) {
+	NI result0;
+	NF bf0;
+	nimfr("parseFloat", "parseutils.nim")
+	result0 = (NI)0;
+	bf0 = (NF)0;
+	nimln(310, "parseutils.nim");
+	result0 = nimParseBiggestFloat(s0, (&bf0), start0);
+	nimln(311, "parseutils.nim");
+	{
+		nimln(347, "system.nim");
+		nimln(311, "parseutils.nim");
+		if (!!((result0 == ((NI) 0)))) goto LA3;
+		nimln(312, "parseutils.nim");
+		(*number0) = bf0;
+	}
+	LA3: ;
+	popFrame();
+	return result0;
 }
 NIM_EXTERNC N_NOINLINE(void, stdlib_parseutilsInit000)(void) {
 	nimfr("parseutils", "parseutils.nim")
