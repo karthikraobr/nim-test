@@ -10,11 +10,6 @@
 #undef linux
 typedef struct NimStringDesc NimStringDesc;
 typedef struct TGenericSeq TGenericSeq;
-typedef struct Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q;
-typedef struct Orderedtable_AF39bJ7XDr6gpANuGpxkHrw Orderedtable_AF39bJ7XDr6gpANuGpxkHrw;
-typedef struct TY_MlAD6nAPq9bHKla9cWiIZP0g TY_MlAD6nAPq9bHKla9cWiIZP0g;
-typedef struct TY_oLpBKXzW3hF9aCVMo5EymfQ TY_oLpBKXzW3hF9aCVMo5EymfQ;
-typedef struct TY_awOivLjlO76sGdHY7nQUjQ TY_awOivLjlO76sGdHY7nQUjQ;
 struct  TGenericSeq  {
 NI len;
 NI reserved;
@@ -22,44 +17,6 @@ NI reserved;
 struct  NimStringDesc  {
   TGenericSeq Sup;
 NIM_CHAR data[SEQ_DECL_SIZE];
-};
-typedef NU8 Jsonnodekind_RUngo7nCHe6O8aBGIcrhtg;
-struct  Orderedtable_AF39bJ7XDr6gpANuGpxkHrw  {
-TY_MlAD6nAPq9bHKla9cWiIZP0g* data;
-NI counter;
-NI first;
-NI last;
-};
-struct  Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q  {
-Jsonnodekind_RUngo7nCHe6O8aBGIcrhtg kind;
-union{
-struct {NimStringDesc* str;
-} S1;
-struct {NI64 num;
-} S2;
-struct {NF fnum;
-} S3;
-struct {NIM_BOOL bval;
-} S4;
-struct {Orderedtable_AF39bJ7XDr6gpANuGpxkHrw fields;
-} S6;
-struct {TY_oLpBKXzW3hF9aCVMo5EymfQ* elems;
-} S7;
-} kindU;
-};
-struct TY_awOivLjlO76sGdHY7nQUjQ {
-NI Field0;
-NI Field1;
-NimStringDesc* Field2;
-Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q* Field3;
-};
-struct TY_MlAD6nAPq9bHKla9cWiIZP0g {
-  TGenericSeq Sup;
-  TY_awOivLjlO76sGdHY7nQUjQ data[SEQ_DECL_SIZE];
-};
-struct TY_oLpBKXzW3hF9aCVMo5EymfQ {
-  TGenericSeq Sup;
-  Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q* data[SEQ_DECL_SIZE];
 };
 static N_INLINE(NI, HEX21HEX26_6dtCP6C39bxOkT4wrIPJwKghashes)(NI h0, NI val0);
 static N_INLINE(void, nimFrame)(TFrame* s0);
@@ -85,7 +42,6 @@ N_NIMCALL(NI, hashignorestyle_cEF5Tk3m50EURxpIqAvuYg_2)(NimStringDesc* sbuf0, NI
 N_NIMCALL(NI, hashignorecase_uBstFm5SYVQeOL3j9c9bc58A_3)(NimStringDesc* x0);
 N_NIMCALL(NI, hashignorecase_cEF5Tk3m50EURxpIqAvuYg_3)(NimStringDesc* sbuf0, NI spos0, NI epos0);
 static N_INLINE(NI, hash_6GPBATuIA6xplfOnZj9bPQghashes)(NF x0);
-N_NIMCALL(NI, hash_1r8KCEmq7uHhZ2GR9c7tsOA)(Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q* n0);
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 
 static N_INLINE(void, nimFrame)(TFrame* s0) {
@@ -639,43 +595,6 @@ static N_INLINE(NI, hash_6GPBATuIA6xplfOnZj9bPQghashes)(NF x0) {
 	y0 = ((NF)(x0) + (NF)(1.0000000000000000e+000));
 	nimln(207, "hashes.nim");
 	result0 = (*((NI*) ((&y0))));
-	popFrame();
-	return result0;
-}
-
-N_NIMCALL(NI, hash_1GTjRzRJDyKjtHlS5zMpEw)(Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q** x0, NI x0Len0) {
-	NI result0;
-	nimfr("hash", "hashes.nim")
-	result0 = (NI)0;
-	{
-		Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q* it_hXI58ElD9aOoe39bRnsHQcwQ;
-		NI i_XQR5nAnWsL4qv9cH1ORtLkQ;
-		it_hXI58ElD9aOoe39bRnsHQcwQ = (Jsonnodeobj_df9bshXB7C9cTiWPIOtX3j1Q*)0;
-		nimln(1999, "system.nim");
-		i_XQR5nAnWsL4qv9cH1ORtLkQ = ((NI) 0);
-		{
-			nimln(2000, "system.nim");
-			while (1) {
-				NI LOC4;
-				NI T_7tkD9cFJSchVDwHuwaY9bP9bA_22;
-				nimln(1999, "system.nim");
-				nimln(224, "hashes.nim");
-				if (!(i_XQR5nAnWsL4qv9cH1ORtLkQ < x0Len0)) goto LA3;
-				nimln(2001, "system.nim");
-				if ((NU)(i_XQR5nAnWsL4qv9cH1ORtLkQ) >= (NU)(x0Len0)) raiseIndexError();
-				it_hXI58ElD9aOoe39bRnsHQcwQ = x0[i_XQR5nAnWsL4qv9cH1ORtLkQ];
-				nimln(224, "hashes.nim");
-				LOC4 = (NI)0;
-				LOC4 = hash_1r8KCEmq7uHhZ2GR9c7tsOA(it_hXI58ElD9aOoe39bRnsHQcwQ);
-				result0 = HEX21HEX26_6dtCP6C39bxOkT4wrIPJwKghashes(result0, LOC4);
-				nimln(1999, "system.nim");
-				T_7tkD9cFJSchVDwHuwaY9bP9bA_22 = addInt(i_XQR5nAnWsL4qv9cH1ORtLkQ, ((NI) 1));
-				i_XQR5nAnWsL4qv9cH1ORtLkQ = (NI)(T_7tkD9cFJSchVDwHuwaY9bP9bA_22);
-			} LA3: ;
-		}
-	}
-	nimln(225, "hashes.nim");
-	result0 = HEX21HEX24_zs9byUtT9cNi2e9clB27b2cUAhashes(result0);
 	popFrame();
 	return result0;
 }

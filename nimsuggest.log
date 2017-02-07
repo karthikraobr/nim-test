@@ -85,3 +85,5 @@ illformed AST: proc (x: int): int {.nimcall.}
 illformed AST: proc (x: int): int {.nimcall.}
 illformed AST: proc (x: int): int {.nimcall.}
 illformed AST: proc (x: int): int {.nimcall.}
+illformed AST: 
+illformed AST: 

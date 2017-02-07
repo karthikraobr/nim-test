@@ -1,0 +1,15 @@
+[
+    {
+        "library": "foo",
+        "functions": [
+            {
+                "name": "function1",
+                "signature": "(proc ():cstring{.nimcall.})"
+            },
+            {
+                "name": "function2",
+                "signature": "(proc (int,int):cstring{.nimcall.})"
+            }
+        ]
+    }
+]

@@ -1,11 +1,36 @@
 {"compile":[
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.c"]
 ],
 "extcompile":[
 ],
 "link":[
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_hints.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_queues.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_unicode.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_lexbase.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_lex.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_internal.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_stream.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_taglib.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_parser.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_etcpriv.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_hashes.o",
 "c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_macros.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_typetraits.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_tables.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_dynlib.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_winlean.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_times.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_algorithm.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_math.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_streams.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_presenter.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_serialization.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.o",
 "c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o",
 "c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o"
 ],
-"linkcmd": "C:\\MinGW\\bin\\gcc.exe   -o c:\\Projects\\nim\\HelloWorld\\moduleTest.exe  c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_macros.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o  "
+"linkcmd": "C:\\MinGW\\bin\\gcc.exe   -o c:\\Projects\\nim\\HelloWorld\\moduleTest.exe  c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_hints.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_queues.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_unicode.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_lexbase.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_lex.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_internal.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_stream.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_taglib.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_parser.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_etcpriv.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_hashes.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_macros.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_typetraits.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_tables.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_dynlib.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_winlean.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_times.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_algorithm.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_math.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_streams.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_presenter.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_serialization.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o  "
 }

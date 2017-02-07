@@ -1,22 +1,35 @@
-import macros
+import os,strutils,yaml.serialization, yaml.presenter,streams
 
-macro typeDef(): untyped =
-    #var parameters: seq[NimNode]
-    #parameters = @[]
-    #parameters.add(ident("string"))
-    #parameters.add(newIdentDefs(ident("a"), ident("string")))
-    #var procedure = newProc(params=parameters,body=newEmptyNode() )
-    #var temp = newStmtList(procedure)
-    #echo temp.repr
+type Functions = object
+    name:string
+    signature:string
 
-    var procptr = newNimNode(nnkProcTy).add(newNimNode(nnkFormalParams).add(ident("int")).add(newIdentDefs(ident("x"),ident("int")))).add(newNimNode(nnkPragma).add(ident("nimcall")))
-    var finale = newPar(procptr)
-    var temp = newStmtList(finale)
-    echo temp.repr
-    result = temp
+type Config = object
+    library:string
+    functions:seq[Functions]
+
+proc getLibName(libraryName:string):string = 
+    result = ""
+    when defined(Windows):
+        result = libraryName & ".dll"
+    elif defined(Linux):
+        result = libraryName & ".so"
+    return result
 
 when isMainModule:
-    type foo = typeDef()
-    
-    dumptree:
-      (proc(): cstring {.nimcall.})
+    var finalRes :seq[Config]
+#var i = open("input.nim")
+    var s = newFileStream("data.json")
+    load(s, finalRes)
+    s.close()
+    echo(finalRes)
+    var file = open("nimFile.nim",fmwrite)
+    var source = "import dynlib \n"
+    for library in finalRes:
+        for item in library.functions:
+            source &= "var " & item.name & " = " & item.signature & "\n"
+        var libName = getLibName(library.library)
+        source &= "var lib = dynlib.loadLib(getLibName(" & libName & "))\n"
+        source &= "if lib != nil:\n\t echo(libName)"
+    write(file,source)
+#echo (i.getFileHandle())

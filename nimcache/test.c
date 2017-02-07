@@ -62,11 +62,17 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_unicodeInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_unicodeDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_jsonInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, stdlib_jsonDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_winleanInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_winleanDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_timesInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_timesDatInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_osInit000)(void);
+NIM_EXTERNC N_NOINLINE(void, stdlib_osDatInit000)(void);
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void);
 NIM_EXTERNC N_NOINLINE(void, testDatInit000)(void);
 static void* T_ipcYmBC9bj9a1BW35ABoB1Kw_2;
-TY_JuONCgfX09cuI9cXctZEHagQ Dl_184001;
-TY_zq6RdywoadYNVArmBGWD5A Dl_184003;
+TY_JuONCgfX09cuI9cXctZEHagQ Dl_220001;
+TY_zq6RdywoadYNVArmBGWD5A Dl_220003;
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 STRING_LITERAL(T_ipcYmBC9bj9a1BW35ABoB1Kw_4, "libfoo.dll", 10);
 STRING_LITERAL(T_ipcYmBC9bj9a1BW35ABoB1Kw_5, "libfoo.dll", 10);
@@ -109,43 +115,40 @@ N_NIMCALL(void, main_D0eGMmnl0FAOEa9bImCvUJQ)(void) {
 	NimStringDesc* LOC4;
 	void* lib0;
 	void* sayptr0;
-	void* greetptr0;
 	TY_Kjizo4DRb4hVvUbJGvd4SQ say0;
 	NCSTRING LOC5;
 	NimStringDesc* LOC6;
 	nimfr("main", "test.nim")
-	nimln(15, "test.nim");
+	nimln(19, "test.nim");
 	printf("%s\015\012", ((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_10)? (((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_10))->data:"nil");
 	fflush(stdout);
-	nimln(16, "test.nim");
+	nimln(20, "test.nim");
 	LOC1 = (NCSTRING)0;
-	LOC1 = Dl_184001();
+	LOC1 = Dl_220001();
 	LOC2 = (NimStringDesc*)0;
 	LOC2 = cstrToNimstr(LOC1);
 	printf("%s\015\012", LOC2? (LOC2)->data:"nil");
 	fflush(stdout);
-	nimln(17, "test.nim");
+	nimln(21, "test.nim");
 	LOC3 = (NCSTRING)0;
-	LOC3 = Dl_184003("Foo");
+	LOC3 = Dl_220003("Foo");
 	LOC4 = (NimStringDesc*)0;
 	LOC4 = cstrToNimstr(LOC3);
 	printf("%s\015\012", LOC4? (LOC4)->data:"nil");
 	fflush(stdout);
-	nimln(18, "test.nim");
+	nimln(22, "test.nim");
 	printf("%s\015\012", ((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_11)? (((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_11))->data:"nil");
 	fflush(stdout);
-	nimln(19, "test.nim");
+	nimln(23, "test.nim");
 	printf("%s\015\012", ((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_12)? (((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_12))->data:"nil");
 	fflush(stdout);
-	nimln(20, "test.nim");
-	lib0 = loadlib_EFK1MHQsQvQPg5NaJH389bA(((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_13), NIM_FALSE);
-	nimln(21, "test.nim");
-	sayptr0 = symaddr_fM7lTRTvv9a9axreJA2Bx7jA_2(lib0, "sayHelloWorld");
-	nimln(22, "test.nim");
-	greetptr0 = symaddr_fM7lTRTvv9a9axreJA2Bx7jA_2(lib0, "greet");
 	nimln(24, "test.nim");
-	say0 = ((TY_Kjizo4DRb4hVvUbJGvd4SQ) (sayptr0));
+	lib0 = loadlib_EFK1MHQsQvQPg5NaJH389bA(((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_13), NIM_FALSE);
 	nimln(25, "test.nim");
+	sayptr0 = symaddr_fM7lTRTvv9a9axreJA2Bx7jA_2(lib0, "sayHelloWorld");
+	nimln(28, "test.nim");
+	say0 = ((TY_Kjizo4DRb4hVvUbJGvd4SQ) (sayptr0));
+	nimln(29, "test.nim");
 	LOC5 = (NCSTRING)0;
 	LOC5 = say0();
 	LOC6 = (NimStringDesc*)0;
@@ -173,6 +176,9 @@ void PreMainInner() {
 	stdlib_lexbaseDatInit000();
 	stdlib_unicodeDatInit000();
 	stdlib_jsonDatInit000();
+	stdlib_winleanDatInit000();
+	stdlib_timesDatInit000();
+	stdlib_osDatInit000();
 	testDatInit000();
 	stdlib_parseutilsInit000();
 	stdlib_mathInit000();
@@ -187,6 +193,9 @@ void PreMainInner() {
 	stdlib_lexbaseInit000();
 	stdlib_unicodeInit000();
 	stdlib_jsonInit000();
+	stdlib_winleanInit000();
+	stdlib_timesInit000();
+	stdlib_osInit000();
 }
 
 void PreMain() {
@@ -222,7 +231,7 @@ int main(int argc, char** args, char** env) {
 
 NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
 	nimfr("test", "test.nim")
-	nimln(28, "test.nim");
+	nimln(32, "test.nim");
 	main_D0eGMmnl0FAOEa9bImCvUJQ();
 	popFrame();
 }
@@ -230,7 +239,7 @@ NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
 NIM_EXTERNC N_NOINLINE(void, testDatInit000)(void) {
 if (!((T_ipcYmBC9bj9a1BW35ABoB1Kw_2 = nimLoadLibrary((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_4))
 )) nimLoadLibraryError((NimStringDesc*) &T_ipcYmBC9bj9a1BW35ABoB1Kw_5);
-	Dl_184001 = (TY_JuONCgfX09cuI9cXctZEHagQ) nimGetProcAddr(T_ipcYmBC9bj9a1BW35ABoB1Kw_2, "sayHelloWorld");
-	Dl_184003 = (TY_zq6RdywoadYNVArmBGWD5A) nimGetProcAddr(T_ipcYmBC9bj9a1BW35ABoB1Kw_2, "greet");
+	Dl_220001 = (TY_JuONCgfX09cuI9cXctZEHagQ) nimGetProcAddr(T_ipcYmBC9bj9a1BW35ABoB1Kw_2, "sayHelloWorld");
+	Dl_220003 = (TY_zq6RdywoadYNVArmBGWD5A) nimGetProcAddr(T_ipcYmBC9bj9a1BW35ABoB1Kw_2, "greet");
 }
 

@@ -1810,6 +1810,17 @@ static N_NIMCALL(void, Marker_TY_r3Wc5tOoxP8rz1DvGVTUvw)(void* p, NI op) {
 	Streamobj_RShkcoDOPnoCVhtpN1hDPQ* a;
 	a = (Streamobj_RShkcoDOPnoCVhtpN1hDPQ*)p;
 }
+
+N_NIMCALL(void, write_KqedkGiMng0mzaTpGS29aEg)(Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0, NIM_CHAR x0) {
+	NIM_CHAR y0;
+	nimfr("write", "streams.nim")
+	y0 = (NIM_CHAR)0;
+	nimln(145, "streams.nim");
+	y0 = x0;
+	nimln(146, "streams.nim");
+	writedata_lmaRetW0vPyY5hzlu3Ik7A(s0, ((void*) ((&y0))), ((NI) 1));
+	popFrame();
+}
 NIM_EXTERNC N_NOINLINE(void, stdlib_streamsInit000)(void) {
 	nimfr("streams", "streams.nim")
 	popFrame();

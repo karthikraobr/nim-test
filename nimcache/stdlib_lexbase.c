@@ -115,6 +115,8 @@ static N_INLINE(void, copymem_E1xtACub5WcDa3vbrIXbwgsystem)(void* dest0, void* s
 N_NIMCALL(NimStringDesc*, resizeString)(NimStringDesc* dest0, NI addlen0);
 N_NIMCALL(NimStringDesc*, nsuRepeatChar)(NIM_CHAR c0, NI count0);
 N_NIMCALL(NimStringDesc*, rawNewString)(NI space0);
+N_NIMCALL(void, nimGCvisit)(void* d0, NI op0);
+static N_NIMCALL(void, Marker_TY_xEEzGsxaw8jj2rzkA7MmtA)(void* p, NI op);
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern TNimType NTI_13RNkKqUOX1TtorOUlKtqA;
 TNimType NTI_B6cGbTPhMsqMovc9cOcIHRw;
@@ -123,6 +125,7 @@ extern TNimType NTI_S9agCYBinaYZnGWcjTdxclg;
 extern TNimType NTI_r3Wc5tOoxP8rz1DvGVTUvw;
 extern TNimType NTI_nmiMWKVIe46vacnhAFrQvw;
 TNimType NTI_HDqWPvEAxZK51ZcfaeQEdg;
+TNimType NTI_xEEzGsxaw8jj2rzkA7MmtA;
 NIM_CONST TY_nmiMWKVIe46vacnhAFrQvw_Set Newlines_rrnZx358tQngJYaRuVXAWA = {
 0x00, 0x24, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -689,6 +692,11 @@ appendString(result0, LOC7);
 	popFrame();
 	return result0;
 }
+static N_NIMCALL(void, Marker_TY_xEEzGsxaw8jj2rzkA7MmtA)(void* p, NI op) {
+	Baselexer_B6cGbTPhMsqMovc9cOcIHRw* a;
+	a = (Baselexer_B6cGbTPhMsqMovc9cOcIHRw*)p;
+	nimGCvisit((void*)(*a).input, op);
+}
 NIM_EXTERNC N_NOINLINE(void, stdlib_lexbaseInit000)(void) {
 	nimfr("lexbase", "lexbase.nim")
 	popFrame();
@@ -748,5 +756,9 @@ T_k6p5NxDJat9aTyZxfZjCDJQ_0[8].typ = (&NTI_HDqWPvEAxZK51ZcfaeQEdg);
 T_k6p5NxDJat9aTyZxfZjCDJQ_0[8].name = "refillChars";
 T_k6p5NxDJat9aTyZxfZjCDJQ_0[0].len = 8; T_k6p5NxDJat9aTyZxfZjCDJQ_0[0].kind = 2; T_k6p5NxDJat9aTyZxfZjCDJQ_0[0].sons = &T_k6p5NxDJat9aTyZxfZjCDJQ_43[0];
 NTI_B6cGbTPhMsqMovc9cOcIHRw.node = &T_k6p5NxDJat9aTyZxfZjCDJQ_0[0];
+NTI_xEEzGsxaw8jj2rzkA7MmtA.size = sizeof(Baselexer_B6cGbTPhMsqMovc9cOcIHRw*);
+NTI_xEEzGsxaw8jj2rzkA7MmtA.kind = 22;
+NTI_xEEzGsxaw8jj2rzkA7MmtA.base = (&NTI_B6cGbTPhMsqMovc9cOcIHRw);
+NTI_xEEzGsxaw8jj2rzkA7MmtA.marker = Marker_TY_xEEzGsxaw8jj2rzkA7MmtA;
 }
 
