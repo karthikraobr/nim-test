@@ -6,7 +6,7 @@ type Arguments = object
 
 
 type Parameters = object
-    count:int
+    count:string
     args:seq[Arguments]
     returntype:string
 
@@ -29,7 +29,7 @@ proc getLibName(libraryName:string):string =
     return result
 
 proc getIndentation(count:int):string=
-    var res = "    "
+    var res = " "
     var i=1
     while(i<count):
         res &= res
@@ -43,20 +43,29 @@ when isMainModule:
     echo(finalRes)
     var file = open("nimFile.nim",fmwrite)
     var source = "import dynlib \n\n"
-    source &= "when isMainModule:\n\n" 
+    source &= "proc loadLib[T](libraryName:string, functionName:string,args:string):T=\n"
+    source &= getIndentation(1)&"case libraryName:\n"
     for library in finalRes:
-        var funArr=newSeq[string](library.functions.len)
-        source &= "#Function pointers for library" & library.library & "\n"
-        for item in library.functions:
-            source &= getIndentation(1) & "type " & item.name & " = " & item.signature & "\n"
-            funArr.add(item.name)
-        echo(funArr)
-        source &= "\n# Library name =" & library.library&"\n"
-        source &= getIndentation(1) & "var lib" & library.library & " = dynlib.loadLib(" & '"' & getLibName(library.library) & '"' & ")\n"
-        source &= getIndentation(1) & "if lib" & library.library & " != nil:\n\n"
-        for fun in funArr:
-            if(fun!=nil):
-                source &= "# Library name =" & library.library & "\t" & "Function name =" & fun&"\n"
-                source &= getIndentation(2) & "var ptr" & fun & " = symAddr(lib" & library.library & "," & '"' & fun & '"' & ")\n"
-                source &= getIndentation(2) & "var exec" & fun & " = cast[" & fun & "](" & "ptr" & fun & ")\n\n"      
+        
+        source &= getIndentation(2) & "of " & '"' & library.library & '"' & ":\n"
+        source &= getIndentation(3) & "var lib" & library.library & " = loadLib(" & '"' & getLibName(library.library) & '"' & ")\n"
+        source &= getIndentation(3) & "case functionName:\n"
+        for fun in library.functions:
+            source &= getIndentation(4) & "of "&'"'& fun.name & '"' & ":\n"
+            source &= getIndentation(4) & "# Library name =" & library.library & "\t" & "Function name =" & fun.name&"\n"
+            source &= getIndentation(5) & "type " & fun.name & " = " & fun.signature & "\n"
+            source &= getIndentation(5) & "var ptr" & fun.name & " = symAddr(lib" & library.library & "," & '"' & fun.name & '"' & ")\n"
+            source &= getIndentation(5) & "var exec" & fun.name & " = cast[" & fun.name & "](" & "ptr" & fun.name & ")\n"       
+            source &= getIndentation(5) & "let argsCount = " &  fun.params.count & "\n" 
+            if fun.params.count > 0:
+                source &= getIndentation(5) & "result = exec"& fun.name & "()\n"
+            else 
+                source &= getIndentation(5) & "result = exec"& fun.name & "(args)\n"
+        source &= getIndentation(4) & "else:result=nil\n\n"
+    source &= getIndentation(2) & "else:result=nil\n\n"     
+    
+    
+    
+    source &= "when isMainModule:\n" 
+    source &= getIndentation(2)& "echo(" & '"' & "Hello" & '"' & ")"
     write(file,source)

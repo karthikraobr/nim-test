@@ -34,6 +34,7 @@ struct  Filetime_bs4NMleDDVF7xsEK0SGLBw  {
 NI32 dwlowdatetime;
 NI32 dwhighdatetime;
 };
+typedef N_STDCALL_PTR(NI16*, TY_C6bRt4Mqo6LDqlyl9bIOYWQ) (void);
 N_NIMCALL(void*, loadlib_EFK1MHQsQvQPg5NaJH389bA)(NimStringDesc* path0, NIM_BOOL globalsymbols0);
 N_NIMCALL(void*, symaddr_fM7lTRTvv9a9axreJA2Bx7jA_2)(void* lib0, NCSTRING name0);
 N_NIMCALL(void*, nimLoadLibrary)(NimStringDesc* path0);
@@ -48,8 +49,9 @@ Guid_J2WQBMgezjwf6Trblkflgg Wsaidgetacceptexsockaddrs_rSjtFMq7pCHQR2EQvcKbDg;
 TY_5ctyytqoGFQ0BA1imFGbVw inetntopreal_FVXn9aJ5AOo23ScDsZUc9aZw;
 void* ws2_hGspZUrVrEMpO9aP9c3dJQPQ;
 static void* T_k6kyf4Co79a84IkK9blFuQVA_5;
-TY_9bc9cLDdaqTE6n5J78feKRYg Dl_120827;
+TY_9bc9cLDdaqTE6n5J78feKRYg Dl_119627;
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
+TY_C6bRt4Mqo6LDqlyl9bIOYWQ Dl_119432;
 NIM_CONST TY_9cWG514ToTTjfTPLhXXV0IQ T_k6kyf4Co79a84IkK9blFuQVA_2 = {((NI8) -114),
 ((NI8) -23),
 ((NI8) 118),
@@ -156,6 +158,7 @@ NIM_EXTERNC N_NOINLINE(void, stdlib_winleanInit000)(void) {
 NIM_EXTERNC N_NOINLINE(void, stdlib_winleanDatInit000)(void) {
 if (!((T_k6kyf4Co79a84IkK9blFuQVA_5 = nimLoadLibrary((NimStringDesc*) &T_k6kyf4Co79a84IkK9blFuQVA_7))
 )) nimLoadLibraryError((NimStringDesc*) &T_k6kyf4Co79a84IkK9blFuQVA_8);
-	Dl_120827 = (TY_9bc9cLDdaqTE6n5J78feKRYg) nimGetProcAddr(T_k6kyf4Co79a84IkK9blFuQVA_5, "GetSystemTimeAsFileTime");
+	Dl_119627 = (TY_9bc9cLDdaqTE6n5J78feKRYg) nimGetProcAddr(T_k6kyf4Co79a84IkK9blFuQVA_5, "GetSystemTimeAsFileTime");
+	Dl_119432 = (TY_C6bRt4Mqo6LDqlyl9bIOYWQ) nimGetProcAddr(T_k6kyf4Co79a84IkK9blFuQVA_5, "GetCommandLineW");
 }
 

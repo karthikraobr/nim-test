@@ -87,3 +87,12 @@ illformed AST: proc (x: int): int {.nimcall.}
 illformed AST: proc (x: int): int {.nimcall.}
 illformed AST: 
 illformed AST: 
+illformed AST: case functionName of "libfoo1"
+illformed AST: case functionName of "libfoo1"
+illformed AST: case functionName of "libfoo1"
+illformed AST: case functionName of "libfoo1"
+illformed AST: case functionName of "libfoo1"
+illformed AST: case functionName of "libfoo1"
+illformed AST: case functionName
+illformed AST: case functionName
+illformed AST: case functionName

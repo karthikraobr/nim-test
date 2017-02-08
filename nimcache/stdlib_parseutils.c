@@ -213,7 +213,6 @@ static N_INLINE(Cell_1zcF9cV8XIAtbN8h5HRUB8g*, usrtocell_yB9aH5WIlwd0xkYrcdPeXrQ
 static N_INLINE(void, rtladdzct_MV4BBk6J1qu70IbBxwEn4w_2system)(Cell_1zcF9cV8XIAtbN8h5HRUB8g* c0);
 N_NOINLINE(void, addzct_fCDI7oO1NNVXXURtxSzsRw)(Cellseq_Axo1XVm9aaQueTOldv8le5w* s0, Cell_1zcF9cV8XIAtbN8h5HRUB8g* c0);
 N_NIMCALL(void, raiseException)(Exception* e0, NCSTRING ename0);
-N_NIMCALL(NI, rawparseuint_OzYQCLjNwotWpNl0Q1C9cmQ)(NimStringDesc* s0, NU64* b0, NI start0);
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern TNimType NTI_6woiEp3hwhYMr1p5tjkZvA;
 extern TNimType NTI_I3Jtn27626sFBOls6BBQ2Q;
@@ -487,97 +486,6 @@ N_NIMCALL(NI, npuParseInt)(NimStringDesc* s0, NI* number0, NI start0) {
 	goto LA1;
 	LA11: ;
 	LA1: ;
-	popFrame();
-	return result0;
-}
-
-N_NIMCALL(NI, rawparseuint_OzYQCLjNwotWpNl0Q1C9cmQ)(NimStringDesc* s0, NU64* b0, NI start0) {
-	NI result0;
-	NU64 res0;
-	NU64 prev0;
-	NI i0;
-	nimfr("rawParseUInt", "parseutils.nim")
-{	result0 = (NI)0;
-	nimln(256, "parseutils.nim");
-	res0 = 0ULL;
-	nimln(257, "parseutils.nim");
-	prev0 = 0ULL;
-	nimln(258, "parseutils.nim");
-	i0 = start0;
-	nimln(259, "parseutils.nim");
-	{
-		NI T_vI9aZNKIcImom6dDyKXW1ZA_12;
-		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
-		if (!((NU8)(s0->data[i0]) == (NU8)(43))) goto LA3;
-		T_vI9aZNKIcImom6dDyKXW1ZA_12 = addInt(i0, ((NI) 1));
-		i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_12);
-	}
-	LA3: ;
-	nimln(260, "parseutils.nim");
-	{
-		NI T_vI9aZNKIcImom6dDyKXW1ZA_16;
-		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
-		if (!(((NU8)(s0->data[i0])) >= ((NU8)(48)) && ((NU8)(s0->data[i0])) <= ((NU8)(57)))) goto LA7;
-		nimln(261, "parseutils.nim");
-		(*b0) = 0ULL;
-		{
-			nimln(262, "parseutils.nim");
-			while (1) {
-				NI T_vI9aZNKIcImom6dDyKXW1ZA_13;
-				NI T_vI9aZNKIcImom6dDyKXW1ZA_14;
-				if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
-				if (!(((NU8)(s0->data[i0])) >= ((NU8)(48)) && ((NU8)(s0->data[i0])) <= ((NU8)(57)))) goto LA10;
-				nimln(263, "parseutils.nim");
-				prev0 = res0;
-				nimln(264, "parseutils.nim");
-				if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
-				T_vI9aZNKIcImom6dDyKXW1ZA_13 = subInt(((NI) (((NU8)(s0->data[i0])))), ((NI) 48));
-				res0 = (NU64)((NU64)((NU64)((NU64)(res0) * (NU64)(((NI) 10)))) + (NU64)(((NU64) ((NI)(T_vI9aZNKIcImom6dDyKXW1ZA_13)))));
-				nimln(265, "parseutils.nim");
-				{
-					if (!((NU64)(res0) < (NU64)(prev0))) goto LA13;
-					nimln(266, "parseutils.nim");
-					result0 = ((NI) 0);
-					goto BeforeRet;
-				}
-				LA13: ;
-				nimln(267, "parseutils.nim");
-				T_vI9aZNKIcImom6dDyKXW1ZA_14 = addInt(i0, ((NI) 1));
-				i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_14);
-				{
-					nimln(268, "parseutils.nim");
-					while (1) {
-						NI T_vI9aZNKIcImom6dDyKXW1ZA_15;
-						if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
-						if (!((NU8)(s0->data[i0]) == (NU8)(95))) goto LA16;
-						T_vI9aZNKIcImom6dDyKXW1ZA_15 = addInt(i0, ((NI) 1));
-						i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_15);
-					} LA16: ;
-				}
-			} LA10: ;
-		}
-		nimln(269, "parseutils.nim");
-		(*b0) = res0;
-		nimln(270, "parseutils.nim");
-		T_vI9aZNKIcImom6dDyKXW1ZA_16 = subInt(i0, start0);
-		result0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_16);
-	}
-	LA7: ;
-	}BeforeRet: ;
-	popFrame();
-	return result0;
-}
-
-N_NIMCALL(NI, npuParseBiggestUInt)(NimStringDesc* s0, NU64* number0, NI start0) {
-	NI result0;
-	NU64 res0;
-	nimfr("parseBiggestUInt", "parseutils.nim")
-	result0 = (NI)0;
-	res0 = (NU64)0;
-	nimln(281, "parseutils.nim");
-	result0 = rawparseuint_OzYQCLjNwotWpNl0Q1C9cmQ(s0, (&res0), start0);
-	nimln(282, "parseutils.nim");
-	(*number0) = res0;
 	popFrame();
 	return result0;
 }

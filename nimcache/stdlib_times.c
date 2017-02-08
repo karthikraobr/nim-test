@@ -391,7 +391,7 @@ extern TNimType NTI_rR5Bzr1D5krxoo1NcNyeMA;
 TNimType NTI_SVfemTA9aCOyua2TJYa6yBg;
 extern TNimType NTI_g9buja9c9aeh0rkDpqsXOJF9bA;
 extern TNimType NTI_VaVACK0bpYmqIQ0mKcHfQQ;
-extern TY_9bc9cLDdaqTE6n5J78feKRYg Dl_120827;
+extern TY_9bc9cLDdaqTE6n5J78feKRYg Dl_119627;
 extern TNimType NTI_yCEN9anxCD6mzBxGjuaRBdg;
 extern TNimType NTI_Gi06FkNeykJn7mrqRZYrkA;
 extern Gcheap_1TRH1TZMaVZTnLNcIHuNFQ gch_IcYaEuuWivYAS86vFMTS3Q;
@@ -1684,7 +1684,7 @@ N_NIMCALL(NF, ntepochTime)(void) {
 	result0 = (NF)0;
 	memset((void*)(&f0), 0, sizeof(f0));
 	nimln(567, "times.nim");
-	Dl_120827((&f0));
+	Dl_119627((&f0));
 	nimln(568, "times.nim");
 	LOC1 = (NI64)0;
 	LOC1 = rdfiletime_8xfVp1z4bc5fRCRgoEFhIQ(f0);
