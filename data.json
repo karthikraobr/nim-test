@@ -1,14 +1,56 @@
 [
     {
-        "library": "foo",
+        "library": "libfoo",
         "functions": [
             {
-                "name": "function1",
-                "signature": "(proc ():cstring{.nimcall.})"
+                "name": "sayHelloWorld",
+                "signature": "(proc ():cstring{.nimcall.})",
+                "params":{
+                    "count":0,
+                    "args":[],
+                    "returntype":"cstring"
+                }
             },
             {
-                "name": "function2",
-                "signature": "(proc (int,int):cstring{.nimcall.})"
+                "name": "greet",
+                "signature": "(proc (name: cstring):cstring{.nimcall.})",
+                "params":{
+                    "count":1,
+                    "args":[
+                        {
+                            "name":"name",
+                            "functype":"cstring"
+                        }
+                    ],
+                    "returntype":"cstring"
+                }
+            }
+        ]
+    },{
+        "library": "libfoo1",
+        "functions": [
+            {
+                "name": "sayHelloWorld1",
+                "signature": "(proc ():cstring{.nimcall.})",
+                "params":{
+                    "count":0,
+                    "args":[],
+                    "returntype":"cstring"
+                }
+            },
+            {
+                "name": "greet1",
+                "signature": "(proc (name: cstring):cstring{.nimcall.})",
+                "params":{
+                    "count":1,
+                    "args":[
+                        {
+                            "name":"name",
+                            "functype":"cstring"
+                        }
+                    ],
+                    "returntype":"cstring"
+                }
             }
         ]
     }

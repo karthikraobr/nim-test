@@ -1,0 +1,19 @@
+{"compile":[
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.c"]
+],
+"extcompile":[
+],
+"link":[
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_algorithm.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_math.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_dynlib.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o",
+"c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.o"
+],
+"linkcmd": "C:\\MinGW\\bin\\gcc.exe   -o c:\\Projects\\nim\\HelloWorld\\nimFile.exe  c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_algorithm.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_math.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_dynlib.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.o  "
+}
