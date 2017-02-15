@@ -213,6 +213,12 @@ static N_INLINE(Cell_1zcF9cV8XIAtbN8h5HRUB8g*, usrtocell_yB9aH5WIlwd0xkYrcdPeXrQ
 static N_INLINE(void, rtladdzct_MV4BBk6J1qu70IbBxwEn4w_2system)(Cell_1zcF9cV8XIAtbN8h5HRUB8g* c0);
 N_NOINLINE(void, addzct_fCDI7oO1NNVXXURtxSzsRw)(Cellseq_Axo1XVm9aaQueTOldv8le5w* s0, Cell_1zcF9cV8XIAtbN8h5HRUB8g* c0);
 N_NIMCALL(void, raiseException)(Exception* e0, NCSTRING ename0);
+static N_INLINE(NIM_CHAR, tolower_gKPHIHXd4J0BNtguLE8NFAparseutils)(NIM_CHAR c0);
+static N_INLINE(NI, chckRange)(NI i0, NI a0, NI b0);
+N_NOINLINE(void, raiseRangeError)(NI64 val0);
+N_NIMCALL(NI, nimParseBiggestFloat)(NimStringDesc* s0, NF* number0, NI start0);
+N_NIMCALL(NI, nimParseBiggestFloat)(NimStringDesc* s0, NF* number0, NI start0);
+N_NIMCALL(NI, rawparseuint_OzYQCLjNwotWpNl0Q1C9cmQ)(NimStringDesc* s0, NU64* b0, NI start0);
 extern TFrame* frameptr_HRfVMH3jYeBJz6Q6X9b6Ptw;
 extern TNimType NTI_6woiEp3hwhYMr1p5tjkZvA;
 extern TNimType NTI_I3Jtn27626sFBOls6BBQ2Q;
@@ -486,6 +492,207 @@ N_NIMCALL(NI, npuParseInt)(NimStringDesc* s0, NI* number0, NI start0) {
 	goto LA1;
 	LA11: ;
 	LA1: ;
+	popFrame();
+	return result0;
+}
+
+static N_INLINE(NI, chckRange)(NI i0, NI a0, NI b0) {
+	NI result0;
+{	result0 = (NI)0;
+	{
+		NIM_BOOL LOC3;
+		LOC3 = (NIM_BOOL)0;
+		LOC3 = (a0 <= i0);
+		if (!(LOC3)) goto LA4;
+		LOC3 = (i0 <= b0);
+		LA4: ;
+		if (!LOC3) goto LA5;
+		result0 = i0;
+		goto BeforeRet;
+	}
+	goto LA1;
+	LA5: ;
+	{
+		raiseRangeError(((NI64) (i0)));
+	}
+	LA1: ;
+	}BeforeRet: ;
+	return result0;
+}
+
+static N_INLINE(NIM_CHAR, tolower_gKPHIHXd4J0BNtguLE8NFAparseutils)(NIM_CHAR c0) {
+	NIM_CHAR result0;
+	nimfr("toLower", "parseutils.nim")
+	result0 = (NIM_CHAR)0;
+	nimln(26, "parseutils.nim");
+	{
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_12;
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_13;
+		if (!(((NU8)(c0)) >= ((NU8)(65)) && ((NU8)(c0)) <= ((NU8)(90)))) goto LA3;
+		T_vI9aZNKIcImom6dDyKXW1ZA_12 = subInt(((NI) (((NU8)(c0)))), ((NI) 65));
+		T_vI9aZNKIcImom6dDyKXW1ZA_13 = addInt(((NI) ((NI)(T_vI9aZNKIcImom6dDyKXW1ZA_12))), ((NI) 97));
+		result0 = ((NIM_CHAR) (((NI)chckRange((NI)(T_vI9aZNKIcImom6dDyKXW1ZA_13), ((NI) 0), ((NI) 255)))));
+	}
+	goto LA1;
+	LA3: ;
+	{
+		result0 = c0;
+	}
+	LA1: ;
+	popFrame();
+	return result0;
+}
+
+N_NIMCALL(NI, skipignorecase_VAyQjUeyh3FpMmhHGpH3aQ)(NimStringDesc* s0, NimStringDesc* token0, NI start0) {
+	NI result0;
+	nimfr("skipIgnoreCase", "parseutils.nim")
+	result0 = (NI)0;
+	{
+		nimln(135, "parseutils.nim");
+		while (1) {
+			NIM_BOOL LOC3;
+			NI T_vI9aZNKIcImom6dDyKXW1ZA_14;
+			NIM_CHAR LOC5;
+			NIM_CHAR LOC6;
+			NI T_vI9aZNKIcImom6dDyKXW1ZA_15;
+			LOC3 = (NIM_BOOL)0;
+			LOC3 = (result0 < (token0 ? token0->Sup.len : 0));
+			if (!(LOC3)) goto LA4;
+			nimln(136, "parseutils.nim");
+			T_vI9aZNKIcImom6dDyKXW1ZA_14 = addInt(result0, start0);
+			if ((NU)((NI)(T_vI9aZNKIcImom6dDyKXW1ZA_14)) > (NU)(s0->Sup.len)) raiseIndexError();
+			LOC5 = (NIM_CHAR)0;
+			LOC5 = tolower_gKPHIHXd4J0BNtguLE8NFAparseutils(s0->data[(NI)(T_vI9aZNKIcImom6dDyKXW1ZA_14)]);
+			if ((NU)(result0) > (NU)(token0->Sup.len)) raiseIndexError();
+			LOC6 = (NIM_CHAR)0;
+			LOC6 = tolower_gKPHIHXd4J0BNtguLE8NFAparseutils(token0->data[result0]);
+			LOC3 = ((NU8)(LOC5) == (NU8)(LOC6));
+			LA4: ;
+			if (!LOC3) goto LA2;
+			T_vI9aZNKIcImom6dDyKXW1ZA_15 = addInt(result0, ((NI) 1));
+			result0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_15);
+		} LA2: ;
+	}
+	nimln(137, "parseutils.nim");
+	{
+		nimln(347, "system.nim");
+		nimln(137, "parseutils.nim");
+		if (!!((result0 == (token0 ? token0->Sup.len : 0)))) goto LA9;
+		result0 = ((NI) 0);
+	}
+	LA9: ;
+	popFrame();
+	return result0;
+}
+
+N_NIMCALL(NI, npuParseFloat)(NimStringDesc* s0, NF* number0, NI start0) {
+	NI result0;
+	NF bf0;
+	nimfr("parseFloat", "parseutils.nim")
+	result0 = (NI)0;
+	bf0 = (NF)0;
+	nimln(310, "parseutils.nim");
+	result0 = nimParseBiggestFloat(s0, (&bf0), start0);
+	nimln(311, "parseutils.nim");
+	{
+		nimln(347, "system.nim");
+		nimln(311, "parseutils.nim");
+		if (!!((result0 == ((NI) 0)))) goto LA3;
+		nimln(312, "parseutils.nim");
+		(*number0) = bf0;
+	}
+	LA3: ;
+	popFrame();
+	return result0;
+}
+
+N_NIMCALL(NI, rawparseuint_OzYQCLjNwotWpNl0Q1C9cmQ)(NimStringDesc* s0, NU64* b0, NI start0) {
+	NI result0;
+	NU64 res0;
+	NU64 prev0;
+	NI i0;
+	nimfr("rawParseUInt", "parseutils.nim")
+{	result0 = (NI)0;
+	nimln(256, "parseutils.nim");
+	res0 = 0ULL;
+	nimln(257, "parseutils.nim");
+	prev0 = 0ULL;
+	nimln(258, "parseutils.nim");
+	i0 = start0;
+	nimln(259, "parseutils.nim");
+	{
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_16;
+		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+		if (!((NU8)(s0->data[i0]) == (NU8)(43))) goto LA3;
+		T_vI9aZNKIcImom6dDyKXW1ZA_16 = addInt(i0, ((NI) 1));
+		i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_16);
+	}
+	LA3: ;
+	nimln(260, "parseutils.nim");
+	{
+		NI T_vI9aZNKIcImom6dDyKXW1ZA_20;
+		if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+		if (!(((NU8)(s0->data[i0])) >= ((NU8)(48)) && ((NU8)(s0->data[i0])) <= ((NU8)(57)))) goto LA7;
+		nimln(261, "parseutils.nim");
+		(*b0) = 0ULL;
+		{
+			nimln(262, "parseutils.nim");
+			while (1) {
+				NI T_vI9aZNKIcImom6dDyKXW1ZA_17;
+				NI T_vI9aZNKIcImom6dDyKXW1ZA_18;
+				if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+				if (!(((NU8)(s0->data[i0])) >= ((NU8)(48)) && ((NU8)(s0->data[i0])) <= ((NU8)(57)))) goto LA10;
+				nimln(263, "parseutils.nim");
+				prev0 = res0;
+				nimln(264, "parseutils.nim");
+				if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+				T_vI9aZNKIcImom6dDyKXW1ZA_17 = subInt(((NI) (((NU8)(s0->data[i0])))), ((NI) 48));
+				res0 = (NU64)((NU64)((NU64)((NU64)(res0) * (NU64)(((NI) 10)))) + (NU64)(((NU64) ((NI)(T_vI9aZNKIcImom6dDyKXW1ZA_17)))));
+				nimln(265, "parseutils.nim");
+				{
+					if (!((NU64)(res0) < (NU64)(prev0))) goto LA13;
+					nimln(266, "parseutils.nim");
+					result0 = ((NI) 0);
+					goto BeforeRet;
+				}
+				LA13: ;
+				nimln(267, "parseutils.nim");
+				T_vI9aZNKIcImom6dDyKXW1ZA_18 = addInt(i0, ((NI) 1));
+				i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_18);
+				{
+					nimln(268, "parseutils.nim");
+					while (1) {
+						NI T_vI9aZNKIcImom6dDyKXW1ZA_19;
+						if ((NU)(i0) > (NU)(s0->Sup.len)) raiseIndexError();
+						if (!((NU8)(s0->data[i0]) == (NU8)(95))) goto LA16;
+						T_vI9aZNKIcImom6dDyKXW1ZA_19 = addInt(i0, ((NI) 1));
+						i0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_19);
+					} LA16: ;
+				}
+			} LA10: ;
+		}
+		nimln(269, "parseutils.nim");
+		(*b0) = res0;
+		nimln(270, "parseutils.nim");
+		T_vI9aZNKIcImom6dDyKXW1ZA_20 = subInt(i0, start0);
+		result0 = (NI)(T_vI9aZNKIcImom6dDyKXW1ZA_20);
+	}
+	LA7: ;
+	}BeforeRet: ;
+	popFrame();
+	return result0;
+}
+
+N_NIMCALL(NI, npuParseBiggestUInt)(NimStringDesc* s0, NU64* number0, NI start0) {
+	NI result0;
+	NU64 res0;
+	nimfr("parseBiggestUInt", "parseutils.nim")
+	result0 = (NI)0;
+	res0 = (NU64)0;
+	nimln(281, "parseutils.nim");
+	result0 = rawparseuint_OzYQCLjNwotWpNl0Q1C9cmQ(s0, (&res0), start0);
+	nimln(282, "parseutils.nim");
+	(*number0) = res0;
 	popFrame();
 	return result0;
 }

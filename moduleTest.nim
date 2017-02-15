@@ -6,7 +6,7 @@ type Arguments = object
 
 
 type Parameters = object
-    count:string
+    count:int
     args:seq[Arguments]
     returntype:string
 
@@ -35,6 +35,7 @@ proc getIndentation(count:int):string=
         res &= res
         i=i+1
     result=res
+
 when isMainModule:
     var finalRes :seq[Config]
     var s = newFileStream("data.json")
@@ -42,11 +43,17 @@ when isMainModule:
     s.close()
     echo(finalRes)
     var file = open("nimFile.nim",fmwrite)
-    var source = "import dynlib \n\n"
-    source &= "proc loadLib[T](libraryName:string, functionName:string,args:string):T=\n"
+    var source = "import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization\n\n"
+    source &= "type LibRequest=object\n"
+    source &= getIndentation(1) & "libraryName:string\n"
+    source &= getIndentation(1) & "functionName:string\n"
+    source &= getIndentation(1) & "returnType:string\n"
+    source &= getIndentation(1) & "args:seq[string]\n\n"
+
+    source &= "proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=\n"
     source &= getIndentation(1)&"case libraryName:\n"
+
     for library in finalRes:
-        
         source &= getIndentation(2) & "of " & '"' & library.library & '"' & ":\n"
         source &= getIndentation(3) & "var lib" & library.library & " = loadLib(" & '"' & getLibName(library.library) & '"' & ")\n"
         source &= getIndentation(3) & "case functionName:\n"
@@ -56,11 +63,19 @@ when isMainModule:
             source &= getIndentation(5) & "type " & fun.name & " = " & fun.signature & "\n"
             source &= getIndentation(5) & "var ptr" & fun.name & " = symAddr(lib" & library.library & "," & '"' & fun.name & '"' & ")\n"
             source &= getIndentation(5) & "var exec" & fun.name & " = cast[" & fun.name & "](" & "ptr" & fun.name & ")\n"       
-            source &= getIndentation(5) & "let argsCount = " &  fun.params.count & "\n" 
+            #source &= getIndentation(5) & "let argsCount = " &  intToStr(fun.params.count) & "\n" 
             if fun.params.count > 0:
+                var argumentString:string
+                for i in countup(1,fun.params.count):
+                    source &= getIndentation(5) & "var args_" & intToStr(i) & " = cast[" & fun.params.args[i-1].functype & "](args[" & intToStr(i-1) & "])\n"
+                    if i == 1:
+                      argumentString = "args_" & intToStr(i)
+                    elif i > 1:
+                      argumentString &= ",args_" & intToStr(i)
+                #source &= "for argument in args:\n"
+                source &= getIndentation(5) & "result = exec"& fun.name & "(" & argumentString & ")\n"
+            else :
                 source &= getIndentation(5) & "result = exec"& fun.name & "()\n"
-            else 
-                source &= getIndentation(5) & "result = exec"& fun.name & "(args)\n"
         source &= getIndentation(4) & "else:result=nil\n\n"
     source &= getIndentation(2) & "else:result=nil\n\n"     
     

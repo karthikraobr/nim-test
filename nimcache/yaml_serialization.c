@@ -60,16 +60,8 @@ typedef struct TY_xNyqbm0dqIsfHTbzd9avCQw TY_xNyqbm0dqIsfHTbzd9avCQw;
 typedef struct TY_phjbYJtsbOIAYa9be34hhZg TY_phjbYJtsbOIAYa9be34hhZg;
 typedef struct TY_sM4lkSb7zS6F7OVMvW9cffQ TY_sM4lkSb7zS6F7OVMvW9cffQ;
 typedef struct TY_aGv2fk9ceddvdC01ZJC2Q2g TY_aGv2fk9ceddvdC01ZJC2Q2g;
-typedef struct Filestreamobj_qoDM8xYRV40zbhS9acPNT9bw Filestreamobj_qoDM8xYRV40zbhS9acPNT9bw;
-typedef struct TY_3Z9cQIO745FN6hyPg6rEvTQ TY_3Z9cQIO745FN6hyPg6rEvTQ;
+typedef struct Librequest_ngq9bCXY9apXaklREHzSKIGg Librequest_ngq9bCXY9apXaklREHzSKIGg;
 typedef struct YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ;
-typedef struct Streamobj_RShkcoDOPnoCVhtpN1hDPQ Streamobj_RShkcoDOPnoCVhtpN1hDPQ;
-typedef struct Config_sgX0j0QdwD36v9ax9bDpF3yg Config_sgX0j0QdwD36v9ax9bDpF3yg;
-typedef struct TY_3dusVJa1vh9c3Cln4V7kTqQ TY_3dusVJa1vh9c3Cln4V7kTqQ;
-typedef struct Functions_KX0IMrQMf9c7tfBWVv2DRAA Functions_KX0IMrQMf9c7tfBWVv2DRAA;
-typedef struct Parameters_Atj9be6gJ43J2ObYyxnIMFA Parameters_Atj9be6gJ43J2ObYyxnIMFA;
-typedef struct TY_VWiRdvyApTLgh9a9adQfUKzQ TY_VWiRdvyApTLgh9a9adQfUKzQ;
-typedef struct Arguments_fv3MZSs9a2TAl9b3zRUgX22w Arguments_fv3MZSs9a2TAl9b3zRUgX22w;
 typedef struct Ioerror_9czoZw3pzPyrBmb5zTHY1OQ Ioerror_9czoZw3pzPyrBmb5zTHY1OQ;
 typedef struct Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg;
 typedef struct TY_8ZnwNxcI5DizB05kysexng TY_8ZnwNxcI5DizB05kysexng;
@@ -307,26 +299,12 @@ typedef struct {
 N_NIMCALL_PTR(void, ClPrc) (NI line0, NI column0, NimStringDesc* linecontent0, NimStringDesc* message0, void* ClEnv);
 void* ClEnv;
 } TY_bwdJrqPTwfdf5VMl1ZUb9ag;
-struct  Config_sgX0j0QdwD36v9ax9bDpF3yg  {
-NimStringDesc* library;
-TY_3dusVJa1vh9c3Cln4V7kTqQ* functions;
-};
 typedef NI TY_HU7qaqKu9czJLT84iCBJnsA[2];
-typedef NIM_BOOL TY_Gl9aAKPegYDOYkxLtedgz8w[2];
-struct  Parameters_Atj9be6gJ43J2ObYyxnIMFA  {
-NimStringDesc* count;
-TY_VWiRdvyApTLgh9a9adQfUKzQ* args;
-NimStringDesc* returntype;
-};
-struct  Functions_KX0IMrQMf9c7tfBWVv2DRAA  {
-NimStringDesc* name;
-NimStringDesc* signature;
-Parameters_Atj9be6gJ43J2ObYyxnIMFA params;
-};
 typedef NIM_BOOL TY_xSxqoPo7Fj4uIDcWiYyWDg[3];
-struct  Arguments_fv3MZSs9a2TAl9b3zRUgX22w  {
-NimStringDesc* name;
-NimStringDesc* functype;
+struct  Librequest_ngq9bCXY9apXaklREHzSKIGg  {
+NimStringDesc* libraryname;
+NimStringDesc* functionname;
+TY_sM4lkSb7zS6F7OVMvW9cffQ* args;
 };
 struct TY_8ZnwNxcI5DizB05kysexng {
 NI Field0;
@@ -413,27 +391,6 @@ NIM_BOOL isfinished;
 NIM_BOOL peeked;
 Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ cached;
 };
-typedef N_NIMCALL_PTR(void, TY_cnkJEp9bna8U6yi9aVW9cAJ0Q) (Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0);
-typedef N_NIMCALL_PTR(NIM_BOOL, TY_KjFcmLOhf4VQvVcyLJWXZw) (Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0);
-typedef N_NIMCALL_PTR(void, TY_jlOYFw9cHausuCbPoWx2iiA) (Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0, NI pos0);
-typedef N_NIMCALL_PTR(NI, TY_Xzm85qBLb9cf9cu8VOfAr8PQ) (Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0);
-typedef N_NIMCALL_PTR(NI, TY_tjaJtoUzLe1BMUbItlcGhQ) (Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0, void* buffer0, NI buflen0);
-typedef N_NIMCALL_PTR(void, TY_b9bsIuILxTLVZHPvJBW187A) (Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0, void* buffer0, NI buflen0);
-struct  Streamobj_RShkcoDOPnoCVhtpN1hDPQ  {
-  TNimObject Sup;
-TY_cnkJEp9bna8U6yi9aVW9cAJ0Q closeimpl;
-TY_KjFcmLOhf4VQvVcyLJWXZw atendimpl;
-TY_jlOYFw9cHausuCbPoWx2iiA setpositionimpl;
-TY_Xzm85qBLb9cf9cu8VOfAr8PQ getpositionimpl;
-TY_tjaJtoUzLe1BMUbItlcGhQ readdataimpl;
-TY_tjaJtoUzLe1BMUbItlcGhQ peekdataimpl;
-TY_b9bsIuILxTLVZHPvJBW187A writedataimpl;
-TY_cnkJEp9bna8U6yi9aVW9cAJ0Q flushimpl;
-};
-struct  Filestreamobj_qoDM8xYRV40zbhS9acPNT9bw  {
-  Streamobj_RShkcoDOPnoCVhtpN1hDPQ Sup;
-FILE* f;
-};
 struct  YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ  {
 TaglibraryHEX3Aobjecttype_GyEjEEo3uM8Ih0r8nOZv5Q* taglib;
 TY_bwdJrqPTwfdf5VMl1ZUb9ag callback;
@@ -463,18 +420,6 @@ struct TY_sM4lkSb7zS6F7OVMvW9cffQ {
 struct TY_phjbYJtsbOIAYa9be34hhZg {
   TGenericSeq Sup;
   TY_sM4lkSb7zS6F7OVMvW9cffQ* data[SEQ_DECL_SIZE];
-};
-struct TY_3Z9cQIO745FN6hyPg6rEvTQ {
-  TGenericSeq Sup;
-  Config_sgX0j0QdwD36v9ax9bDpF3yg data[SEQ_DECL_SIZE];
-};
-struct TY_3dusVJa1vh9c3Cln4V7kTqQ {
-  TGenericSeq Sup;
-  Functions_KX0IMrQMf9c7tfBWVv2DRAA data[SEQ_DECL_SIZE];
-};
-struct TY_VWiRdvyApTLgh9a9adQfUKzQ {
-  TGenericSeq Sup;
-  Arguments_fv3MZSs9a2TAl9b3zRUgX22w data[SEQ_DECL_SIZE];
 };
 struct TY_BlK4t8YmiqtlEg5SFZYSTg {
   TGenericSeq Sup;
@@ -600,41 +545,23 @@ static N_INLINE(NIM_BOOL, isfilled_IxXD1UAPoEehVDW9cv9cRaew_2tables)(NI hcode0);
 static N_INLINE(NI, nexttry_OLPhxSyW9bte5CwHzzQVhfAtables)(NI h0, NI maxhash0);
 static N_INLINE(void, setanchor_wk2RSS4Tp4Uv9bbFiTswWawserialization)(NI* a0, Table_M67aAEM8OCa4bTYwzTxrbg* q0);
 N_NIMCALL(YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ*, newyamlparser_x8649b48FqVBo7eKDfxKKZg)(TaglibraryHEX3Aobjecttype_GyEjEEo3uM8Ih0r8nOZv5Q* taglib0, TY_bwdJrqPTwfdf5VMl1ZUb9ag callback0);
-N_NIMCALL(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g*, parse_NHymGMKe2Os11EeucTQ79aw)(YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ* p0, Streamobj_RShkcoDOPnoCVhtpN1hDPQ* s0);
-N_NIMCALL(void, construct_xyZDNzhtiWMmmcLlQtWB0A)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, TY_3Z9cQIO745FN6hyPg6rEvTQ** target0);
-N_NIMCALL(void, constructchild_MOjeABAyPOvhMAaAjFGXXA)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3Z9cQIO745FN6hyPg6rEvTQ** result0);
-static N_NIMCALL(void, Marker_TY_3Z9cQIO745FN6hyPg6rEvTQ)(void* p, NI op);
-N_NIMCALL(void, genericSeqAssign)(void* dest0, void* src_qi9cfsBnd42r9a9cpCLO10jow, TNimType* mt0);
-static N_INLINE(NI, yamltag_bHhGJercQjl0rzjHeoY9ccAserialization)(void);
+N_NIMCALL(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g*, parse_FPJ9cSa0jzkueL9abf0E9apFQ)(YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ* p0, NimStringDesc* str0);
+N_NIMCALL(void, construct_4A79bo6V8o1JzCFz0OiGm9cQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, Librequest_ngq9bCXY9apXaklREHzSKIGg* target0);
+N_NIMCALL(void, constructchild_Rv8E8J2OeB7IZbsCTHZWXw)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Librequest_ngq9bCXY9apXaklREHzSKIGg* result0);
+static N_INLINE(NI, yamltag_l3H7FAqaXsOKWOuKJBQ8yAserialization)(void);
 N_NIMCALL(NimStringDesc*, nimtag_lzrGBSDpoabPR2AGWaQpzw)(NimStringDesc* suffix0);
-static N_INLINE(NI, yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization)(void);
-N_NIMCALL(void, constructobject_MOjeABAyPOvhMAaAjFGXXA_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3Z9cQIO745FN6hyPg6rEvTQ** result0);
-N_NIMCALL(TY_3Z9cQIO745FN6hyPg6rEvTQ*, newseq_FpiO41FdUxDz5HPiy89aJeA)(NI len0);
-N_NIMCALL(void, constructchild_48OF8eSMs7hKVSzko2dBLw)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Config_sgX0j0QdwD36v9ax9bDpF3yg* result0);
 N_NIMCALL(NimStringDesc*, reprEnum)(NI e0, TNimType* typ0);
-N_NIMCALL(void, constructobject_48OF8eSMs7hKVSzko2dBLw_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Config_sgX0j0QdwD36v9ax9bDpF3yg* result0);
-static N_INLINE(NIM_BOOL, contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0);
-static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQtaglib)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0);
+N_NIMCALL(void, constructobject_Rv8E8J2OeB7IZbsCTHZWXw_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Librequest_ngq9bCXY9apXaklREHzSKIGg* result0);
+static N_INLINE(NIM_BOOL, contains_jPdUhZfr9a8sH2V3ZBDljzwasyncdispatch)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0);
+static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQasyncdispatch)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0);
 static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a0, NimStringDesc* b0);
 static N_INLINE(NIM_BOOL, equalmem_fmeFeLBvgmAHG9bC8ETS9bYQsystem)(void* a0, void* b0, NI size0);
 N_NIMCALL(void*, newSeq)(TNimType* typ0, NI len0);
-N_NIMCALL(void, constructchild_8fGgLhi2nO9apPYZT62KkHQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3dusVJa1vh9c3Cln4V7kTqQ** result0);
-static N_INLINE(NI, yamltag_NCFZ5AYN9cfEByOcJEB7QLgserialization)(void);
-static N_INLINE(NI, yamltag_G9bZNr7vf9bxsOYljYA1cTbwserialization)(void);
-N_NIMCALL(void, constructobject_8fGgLhi2nO9apPYZT62KkHQ_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3dusVJa1vh9c3Cln4V7kTqQ** result0);
-N_NIMCALL(TY_3dusVJa1vh9c3Cln4V7kTqQ*, newseq_QIqsMqUX09a7D9chD79arb4HA)(NI len0);
-N_NIMCALL(void, constructchild_qKYB3kUnLNDnZE6kuUEdOw)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Functions_KX0IMrQMf9c7tfBWVv2DRAA* result0);
-N_NIMCALL(void, constructobject_qKYB3kUnLNDnZE6kuUEdOw_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Functions_KX0IMrQMf9c7tfBWVv2DRAA* result0);
-N_NIMCALL(void, constructchild_IaRsN4lEkNcWWANVhAcfBQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Parameters_Atj9be6gJ43J2ObYyxnIMFA* result0);
-static N_INLINE(NI, yamltag_30Pv9azGkA9czKbto8l9bB36gserialization)(void);
-N_NIMCALL(void, constructobject_IaRsN4lEkNcWWANVhAcfBQ_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Parameters_Atj9be6gJ43J2ObYyxnIMFA* result0);
-N_NIMCALL(void, constructchild_ywhpX9asWp9bEUnSAWyXRqZg)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_VWiRdvyApTLgh9a9adQfUKzQ** result0);
-static N_INLINE(NI, yamltag_nvuX33cPOZI50JP7tgQ9bLAserialization)(void);
-static N_INLINE(NI, yamltag_Cy1Hp2gosMphJv62KZHTFgserialization)(void);
-N_NIMCALL(void, constructobject_ywhpX9asWp9bEUnSAWyXRqZg_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_VWiRdvyApTLgh9a9adQfUKzQ** result0);
-N_NIMCALL(TY_VWiRdvyApTLgh9a9adQfUKzQ*, newseq_ej9acvyLf9b9bZTQw9bLSKt6NA)(NI len0);
-N_NIMCALL(void, constructchild_s1qzXf8gpciF40AxHB3qvQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Arguments_fv3MZSs9a2TAl9b3zRUgX22w* result0);
-N_NIMCALL(void, constructobject_s1qzXf8gpciF40AxHB3qvQ_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Arguments_fv3MZSs9a2TAl9b3zRUgX22w* result0);
+N_NIMCALL(void, constructchild_fpNlizEPc581c6GnoE7Rsg)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_sM4lkSb7zS6F7OVMvW9cffQ** result0);
+N_NIMCALL(void, genericSeqAssign)(void* dest0, void* src_qi9cfsBnd42r9a9cpCLO10jow, TNimType* mt0);
+static N_INLINE(NI, yamltag_ddjJKTS4kHkAPUXz1ZELhwserialization)(void);
+N_NIMCALL(void, constructobject_fpNlizEPc581c6GnoE7Rsg_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_sM4lkSb7zS6F7OVMvW9cffQ** result0);
+N_NIMCALL(TY_sM4lkSb7zS6F7OVMvW9cffQ*, newseq_9cL6dIz2UWtIh3FeS5x4hxA)(NI len0);
 N_NIMCALL(TGenericSeq*, incrSeqV2)(TGenericSeq* seq0, NI elemsize0);
 N_NIMCALL(void, chckObj)(TNimType* obj0, TNimType* subclass0);
 static N_INLINE(NIM_BOOL, isObjWithCache)(TNimType* obj0, TNimType* subclass0, TNimType** cache0);
@@ -668,16 +595,12 @@ extern TNimType NTI_9cyHooKjP79ciqCcDHfQLreQ;
 extern TNimType NTI_sGezGiKtnmyCJvsDB0xApg;
 extern TNimType NTI_kDPg4wXyR8DDyA0MeEjIsw;
 TNimType NTI_AZ9cC1Qv2K2WO4h2rE5xydg;
-extern TNimType NTI_sgX0j0QdwD36v9ax9bDpF3yg;
-TNimType NTI_3Z9cQIO745FN6hyPg6rEvTQ;
 extern TNimType NTI_l09bhIwCUjZ700CJ6D31eZw;
 extern TNimType NTI_sM4lkSb7zS6F7OVMvW9cffQ;
-extern TNimType NTI_3dusVJa1vh9c3Cln4V7kTqQ;
-extern TNimType NTI_VWiRdvyApTLgh9a9adQfUKzQ;
 extern TNimType NTI_9czoZw3pzPyrBmb5zTHY1OQ;
-static TNimType* Nim_OfCheck_CACHE191[2];
+static TNimType* Nim_OfCheck_CACHE141[2];
 extern TNimType NTI_cXptUz9cSccpU3JXGhiZ3Rg;
-static TNimType* Nim_OfCheck_CACHE192[2];
+static TNimType* Nim_OfCheck_CACHE142[2];
 extern TNimType NTI_oUKtBcKRdK6usj8RWrlp6A;
 STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_9, "len(a) == L string modified while iterating over it", 51);
 STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_11, "C:\\Users\\k.bekalradhakrishna\\.nimble\\pkgs\\yaml-0.9.0\\yaml\\seria"
@@ -726,83 +649,46 @@ NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_102 = {((NimStrin
 ((NI) 1232)}
 ;
 STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_103, "assertion failed!", 17);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_105, "system:seq(", 11);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_106, "custom:Config", 13);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_108, "seqTag", 6);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_109, "Wrong tag for seq[Config]", 25);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_110, "seqAnchor", 9);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_111, "Expected sequence start", 23);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_112, "Wrong tag for Config", 20);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_113, "mapTag", 6);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_114, "mapAnchor", 9);
-NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_115 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_105, "custom:LibRequest", 17);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_107, "Wrong tag for LibRequest", 24);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_108, "mapTag", 6);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_109, "mapAnchor", 9);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_110, "seqTag", 6);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_111, "seqAnchor", 9);
+NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_112 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
 ((NI) 1101)}
 ;
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_116, "Unexpected item kind: ", 22);
-NIM_CONST TY_Gl9aAKPegYDOYkxLtedgz8w T_sK7FGu9ad5Rgd39a23ZLNfog_118 = {NIM_FALSE,
-NIM_FALSE}
-;
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_119, "While constructing Config: Expected yamlStartMap, got ", 54);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_120, "Expected field name, got ", 25);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_123, "library", 7);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_124, "functions", 9);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_125, "While constructing Config: Duplicate field: \"library\"", 53);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_126, "While constructing Config: Duplicate field: \"functions\"", 55);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_127, "custom:Functions", 16);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_129, "Wrong tag for seq[Functions]", 28);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_130, "Wrong tag for Functions", 23);
-NIM_CONST TY_xSxqoPo7Fj4uIDcWiYyWDg T_sK7FGu9ad5Rgd39a23ZLNfog_132 = {NIM_FALSE,
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_113, "Unexpected item kind: ", 22);
+NIM_CONST TY_xSxqoPo7Fj4uIDcWiYyWDg T_sK7FGu9ad5Rgd39a23ZLNfog_115 = {NIM_FALSE,
 NIM_FALSE,
 NIM_FALSE}
 ;
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_133, "While constructing Functions: Expected yamlStartMap, got ", 57);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_134, "name", 4);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_135, "signature", 9);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_136, "params", 6);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_137, "While constructing Functions: Duplicate field: \"name\"", 53);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_138, "While constructing Functions: Duplicate field: \"signature\"", 58);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_139, "While constructing Functions: Duplicate field: \"params\"", 55);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_140, "custom:Parameters", 17);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_142, "Wrong tag for Parameters", 24);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_144, "While constructing Parameters: Expected yamlStartMap, got ", 58);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_145, "count", 5);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_146, "args", 4);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_147, "returntype", 10);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_148, "While constructing Parameters: Duplicate field: \"count\"", 55);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_149, "While constructing Parameters: Duplicate field: \"args\"", 54);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_150, "custom:Arguments", 16);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_152, "Wrong tag for seq[Arguments]", 28);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_153, "Wrong tag for Arguments", 23);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_155, "While constructing Arguments: Expected yamlStartMap, got ", 57);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_156, "functype", 8);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_157, "While constructing Arguments: Duplicate field: \"name\"", 53);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_158, "While constructing Arguments: Duplicate field: \"functype\"", 57);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_159, "While constructing Arguments: Unknown field: ", 45);
-NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_162 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_116, "While constructing LibRequest: Expected yamlStartMap, got ", 58);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_117, "Expected field name, got ", 25);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_120, "libraryName", 11);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_121, "functionName", 12);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_122, "args", 4);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_123, "While constructing LibRequest: Duplicate field: \"libraryName\"", 61);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_124, "While constructing LibRequest: Duplicate field: \"functionName\"", 62);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_125, "While constructing LibRequest: Duplicate field: \"args\"", 54);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_126, "system:seq(", 11);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_127, "Wrong tag for seq[string]", 25);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_128, "Expected sequence start", 23);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_129, "While constructing LibRequest: Unknown field: ", 46);
+NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_132 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
 ((NI) 863)}
 ;
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_163, "Unexpected event kind.", 22);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_165, "While constructing Arguments: Missing field: \"name\"", 51);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_166, "While constructing Arguments: Missing field: \"functype\"", 55);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_167, "While constructing Parameters: Duplicate field: \"returntype\"", 60);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_168, "While constructing Parameters: Unknown field: ", 46);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_172, "While constructing Parameters: Missing field: \"count\"", 53);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_173, "While constructing Parameters: Missing field: \"args\"", 52);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_174, "While constructing Parameters: Missing field: \"returntype\"", 58);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_175, "While constructing Functions: Unknown field: ", 45);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_179, "While constructing Functions: Missing field: \"name\"", 51);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_180, "While constructing Functions: Missing field: \"signature\"", 56);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_181, "While constructing Functions: Missing field: \"params\"", 53);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_182, "While constructing Config: Unknown field: ", 42);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_186, "While constructing Config: Missing field: \"library\"", 51);
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_187, "While constructing Config: Missing field: \"functions\"", 53);
-NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_188 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_133, "Unexpected event kind.", 22);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_135, "While constructing LibRequest: Missing field: \"libraryName\"", 59);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_136, "While constructing LibRequest: Missing field: \"functionName\"", 60);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_137, "While constructing LibRequest: Missing field: \"args\"", 52);
+NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_138 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
 ((NI) 1236)}
 ;
-NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_192 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
+NIM_CONST TY_XOVT24GHXwqiEj5GCsEGCA T_sK7FGu9ad5Rgd39a23ZLNfog_142 = {((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_11),
 ((NI) 1261)}
 ;
-STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_193, "Unexpected exception: ", 22);
+STRING_LITERAL(T_sK7FGu9ad5Rgd39a23ZLNfog_143, "Unexpected exception: ", 22);
 static N_NIMCALL(void, Marker_TY_Za59aVVgr7Ulwc5TEoX59a6Q)(void* p, NI op) {
 	ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* a;
 	a = (ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A*)p;
@@ -1257,15 +1143,15 @@ N_NIMCALL(Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*, constructionerror_VsoW
 	nimln(122, "serialization.nim");
 	{
 		NIM_BOOL LOC4;
-		TY_1v9bKyksXWMsm0vNwmZ4EuQ HEX3Atmp2758330;
+		TY_1v9bKyksXWMsm0vNwmZ4EuQ HEX3Atmp3368330;
 		NimStringDesc* LOC7;
 		LOC4 = (NIM_BOOL)0;
 		LOC4 = getlasttokencontext_puanwS4NsPOW8iTU9bakYAA(s0, (&(*result0).Sup.line), (&(*result0).Sup.column), (&(*result0).Sup.linecontent));
 		if (!!(LOC4)) goto LA5;
 		nimln(123, "serialization.nim");
-		HEX3Atmp2758330 = T_sK7FGu9ad5Rgd39a23ZLNfog_19;
-		(*result0).Sup.line = HEX3Atmp2758330.Field0;
-		(*result0).Sup.column = HEX3Atmp2758330.Field1;
+		HEX3Atmp3368330 = T_sK7FGu9ad5Rgd39a23ZLNfog_19;
+		(*result0).Sup.line = HEX3Atmp3368330.Field0;
+		(*result0).Sup.column = HEX3Atmp3368330.Field1;
 		nimln(124, "serialization.nim");
 		LOC7 = (NimStringDesc*)0;
 		LOC7 = (*result0).Sup.linecontent; (*result0).Sup.linecontent = copyStringRC1(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_20));
@@ -3043,29 +2929,19 @@ static N_INLINE(void, setanchor_wk2RSS4Tp4Uv9bbFiTswWawserialization)(NI* a0, Ta
 	LA3: ;
 	popFrame();
 }
-static N_NIMCALL(void, Marker_TY_3Z9cQIO745FN6hyPg6rEvTQ)(void* p, NI op) {
-	TY_3Z9cQIO745FN6hyPg6rEvTQ* a;
-	NI LOC1;
-	a = (TY_3Z9cQIO745FN6hyPg6rEvTQ*)p;
-	LOC1 = (NI)0;
-	for (LOC1 = 0; LOC1 < a->Sup.len; LOC1++) {
-	nimGCvisit((void*)a->data[LOC1].library, op);
-	nimGCvisit((void*)a->data[LOC1].functions, op);
-	}
-}
 
-static N_INLINE(NI, yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization)(void) {
+static N_INLINE(NI, yamltag_l3H7FAqaXsOKWOuKJBQ8yAserialization)(void) {
 	NI result0;
 	NimStringDesc* uri0;
-	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_107;
+	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_106;
 	nimfr("yamlTag", "serialization.nim")
 	result0 = (NI)0;
 	nimln(553, "serialization.nim");
-	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_106));
+	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_105));
 	nimln(554, "serialization.nim");
-	pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_107);
-	T_sK7FGu9ad5Rgd39a23ZLNfog_107.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_107.context);
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_107.status == 0) {
+	pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_106);
+	T_sK7FGu9ad5Rgd39a23ZLNfog_106.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_106.context);
+	if (T_sK7FGu9ad5Rgd39a23ZLNfog_106.status == 0) {
 		NI* LOC2;
 		LOC2 = (NI*)0;
 		LOC2 = HEX5BHEX5D_0afmPiAwNFJ5RVujKBj30A((&(*serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA).tags), uri0);
@@ -3076,38 +2952,13 @@ static N_INLINE(NI, yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization)(void) {
 		popSafePoint();
 		setFrame((TFrame*)&FR);
 		if (isObj(getCurrentException()->Sup.m_type, (&NTI_ifYAhUumNzWR9c9cN9amyJLtg))) {
-			T_sK7FGu9ad5Rgd39a23ZLNfog_107.status = 0;
+			T_sK7FGu9ad5Rgd39a23ZLNfog_106.status = 0;
 			nimln(555, "serialization.nim");
 			result0 = registeruri_ORLPq9c4LHeLSp3QxwOJYsA(serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA, uri0);
 			popCurrentException();
 		}
 	}
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_107.status != 0) reraiseException();
-	popFrame();
-	return result0;
-}
-
-static N_INLINE(NI, yamltag_bHhGJercQjl0rzjHeoY9ccAserialization)(void) {
-	NI result0;
-	NimStringDesc* uri0;
-	NimStringDesc* LOC1;
-	NI LOC2;
-	NimStringDesc* LOC3;
-	nimfr("yamlTag", "serialization.nim")
-	result0 = (NI)0;
-	nimln(392, "serialization.nim");
-	LOC1 = (NimStringDesc*)0;
-	LOC2 = (NI)0;
-	LOC2 = yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization();
-	LOC3 = (NimStringDesc*)0;
-	LOC3 = safetaguri_ta9coGhqwetbxrhYU7Fx9clA(LOC2);
-	LOC1 = rawNewString(LOC3->Sup.len + 12);
-appendString(LOC1, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_105));
-appendString(LOC1, LOC3);
-appendChar(LOC1, 41);
-	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(LOC1);
-	nimln(393, "serialization.nim");
-	result0 = lazyloadtag_EtInc9b49cS9bYNgk7B9c3YSngserialization(uri0);
+	if (T_sK7FGu9ad5Rgd39a23ZLNfog_106.status != 0) reraiseException();
 	popFrame();
 	return result0;
 }
@@ -3155,7 +3006,7 @@ static N_INLINE(NIM_BOOL, eqStrings)(NimStringDesc* a0, NimStringDesc* b0) {
 	return result0;
 }
 
-static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQtaglib)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0) {
+static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQasyncdispatch)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0) {
 	NI result0;
 	nimfr("find", "system.nim")
 {	result0 = (NI)0;
@@ -3168,8 +3019,8 @@ static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQtaglib)(NimStringDesc** a0, NI
 		{
 			nimln(2000, "system.nim");
 			while (1) {
-				NI T_sK7FGu9ad5Rgd39a23ZLNfog_121;
-				NI T_sK7FGu9ad5Rgd39a23ZLNfog_122;
+				NI T_sK7FGu9ad5Rgd39a23ZLNfog_118;
+				NI T_sK7FGu9ad5Rgd39a23ZLNfog_119;
 				nimln(1999, "system.nim");
 				nimln(2232, "system.nim");
 				if (!(i_PK51OczLhe60IMTnpDtj2Q_2 < a0Len0)) goto LA3;
@@ -3183,11 +3034,11 @@ static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQtaglib)(NimStringDesc** a0, NI
 				}
 				LA6: ;
 				nimln(2234, "system.nim");
-				T_sK7FGu9ad5Rgd39a23ZLNfog_121 = addInt(result0, ((NI) 1));
-				result0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_121);
+				T_sK7FGu9ad5Rgd39a23ZLNfog_118 = addInt(result0, ((NI) 1));
+				result0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_118);
 				nimln(1999, "system.nim");
-				T_sK7FGu9ad5Rgd39a23ZLNfog_122 = addInt(i_PK51OczLhe60IMTnpDtj2Q_2, ((NI) 1));
-				i_PK51OczLhe60IMTnpDtj2Q_2 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_122);
+				T_sK7FGu9ad5Rgd39a23ZLNfog_119 = addInt(i_PK51OczLhe60IMTnpDtj2Q_2, ((NI) 1));
+				i_PK51OczLhe60IMTnpDtj2Q_2 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_119);
 			} LA3: ;
 		}
 	}
@@ -3198,14 +3049,14 @@ static N_INLINE(NI, find_9basNl9bVqn7SOf9bgUeI8TEQtaglib)(NimStringDesc** a0, NI
 	return result0;
 }
 
-static N_INLINE(NIM_BOOL, contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0) {
+static N_INLINE(NIM_BOOL, contains_jPdUhZfr9a8sH2V3ZBDljzwasyncdispatch)(NimStringDesc** a0, NI a0Len0, NimStringDesc* item0) {
 	NIM_BOOL result0;
 	NI LOC1;
 	nimfr("contains", "system.nim")
 {	result0 = (NIM_BOOL)0;
 	nimln(2240, "system.nim");
 	LOC1 = (NI)0;
-	LOC1 = find_9basNl9bVqn7SOf9bgUeI8TEQtaglib(a0, a0Len0, item0);
+	LOC1 = find_9basNl9bVqn7SOf9bgUeI8TEQasyncdispatch(a0, a0Len0, item0);
 	result0 = (((NI) 0) <= LOC1);
 	goto BeforeRet;
 	}BeforeRet: ;
@@ -3213,40 +3064,7 @@ static N_INLINE(NIM_BOOL, contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib)(NimStringDesc*
 	return result0;
 }
 
-static N_INLINE(NI, yamltag_G9bZNr7vf9bxsOYljYA1cTbwserialization)(void) {
-	NI result0;
-	NimStringDesc* uri0;
-	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_128;
-	nimfr("yamlTag", "serialization.nim")
-	result0 = (NI)0;
-	nimln(553, "serialization.nim");
-	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_127));
-	nimln(554, "serialization.nim");
-	pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_128);
-	T_sK7FGu9ad5Rgd39a23ZLNfog_128.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_128.context);
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_128.status == 0) {
-		NI* LOC2;
-		LOC2 = (NI*)0;
-		LOC2 = HEX5BHEX5D_0afmPiAwNFJ5RVujKBj30A((&(*serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA).tags), uri0);
-		result0 = (*LOC2);
-		popSafePoint();
-	}
-	else {
-		popSafePoint();
-		setFrame((TFrame*)&FR);
-		if (isObj(getCurrentException()->Sup.m_type, (&NTI_ifYAhUumNzWR9c9cN9amyJLtg))) {
-			T_sK7FGu9ad5Rgd39a23ZLNfog_128.status = 0;
-			nimln(555, "serialization.nim");
-			result0 = registeruri_ORLPq9c4LHeLSp3QxwOJYsA(serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA, uri0);
-			popCurrentException();
-		}
-	}
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_128.status != 0) reraiseException();
-	popFrame();
-	return result0;
-}
-
-static N_INLINE(NI, yamltag_NCFZ5AYN9cfEByOcJEB7QLgserialization)(void) {
+static N_INLINE(NI, yamltag_ddjJKTS4kHkAPUXz1ZELhwserialization)(void) {
 	NI result0;
 	NimStringDesc* uri0;
 	NimStringDesc* LOC1;
@@ -3257,11 +3075,11 @@ static N_INLINE(NI, yamltag_NCFZ5AYN9cfEByOcJEB7QLgserialization)(void) {
 	nimln(392, "serialization.nim");
 	LOC1 = (NimStringDesc*)0;
 	LOC2 = (NI)0;
-	LOC2 = yamltag_G9bZNr7vf9bxsOYljYA1cTbwserialization();
+	LOC2 = yamltag_1TnqdDayU3MDkMvINZj5qAserialization();
 	LOC3 = (NimStringDesc*)0;
 	LOC3 = safetaguri_ta9coGhqwetbxrhYU7Fx9clA(LOC2);
 	LOC1 = rawNewString(LOC3->Sup.len + 12);
-appendString(LOC1, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_105));
+appendString(LOC1, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_126));
 appendString(LOC1, LOC3);
 appendChar(LOC1, 41);
 	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(LOC1);
@@ -3271,2189 +3089,7 @@ appendChar(LOC1, 41);
 	return result0;
 }
 
-static N_INLINE(NI, yamltag_30Pv9azGkA9czKbto8l9bB36gserialization)(void) {
-	NI result0;
-	NimStringDesc* uri0;
-	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_141;
-	nimfr("yamlTag", "serialization.nim")
-	result0 = (NI)0;
-	nimln(553, "serialization.nim");
-	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_140));
-	nimln(554, "serialization.nim");
-	pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_141);
-	T_sK7FGu9ad5Rgd39a23ZLNfog_141.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_141.context);
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_141.status == 0) {
-		NI* LOC2;
-		LOC2 = (NI*)0;
-		LOC2 = HEX5BHEX5D_0afmPiAwNFJ5RVujKBj30A((&(*serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA).tags), uri0);
-		result0 = (*LOC2);
-		popSafePoint();
-	}
-	else {
-		popSafePoint();
-		setFrame((TFrame*)&FR);
-		if (isObj(getCurrentException()->Sup.m_type, (&NTI_ifYAhUumNzWR9c9cN9amyJLtg))) {
-			T_sK7FGu9ad5Rgd39a23ZLNfog_141.status = 0;
-			nimln(555, "serialization.nim");
-			result0 = registeruri_ORLPq9c4LHeLSp3QxwOJYsA(serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA, uri0);
-			popCurrentException();
-		}
-	}
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_141.status != 0) reraiseException();
-	popFrame();
-	return result0;
-}
-
-static N_INLINE(NI, yamltag_Cy1Hp2gosMphJv62KZHTFgserialization)(void) {
-	NI result0;
-	NimStringDesc* uri0;
-	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_151;
-	nimfr("yamlTag", "serialization.nim")
-	result0 = (NI)0;
-	nimln(553, "serialization.nim");
-	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_150));
-	nimln(554, "serialization.nim");
-	pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_151);
-	T_sK7FGu9ad5Rgd39a23ZLNfog_151.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_151.context);
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_151.status == 0) {
-		NI* LOC2;
-		LOC2 = (NI*)0;
-		LOC2 = HEX5BHEX5D_0afmPiAwNFJ5RVujKBj30A((&(*serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA).tags), uri0);
-		result0 = (*LOC2);
-		popSafePoint();
-	}
-	else {
-		popSafePoint();
-		setFrame((TFrame*)&FR);
-		if (isObj(getCurrentException()->Sup.m_type, (&NTI_ifYAhUumNzWR9c9cN9amyJLtg))) {
-			T_sK7FGu9ad5Rgd39a23ZLNfog_151.status = 0;
-			nimln(555, "serialization.nim");
-			result0 = registeruri_ORLPq9c4LHeLSp3QxwOJYsA(serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA, uri0);
-			popCurrentException();
-		}
-	}
-	if (T_sK7FGu9ad5Rgd39a23ZLNfog_151.status != 0) reraiseException();
-	popFrame();
-	return result0;
-}
-
-static N_INLINE(NI, yamltag_nvuX33cPOZI50JP7tgQ9bLAserialization)(void) {
-	NI result0;
-	NimStringDesc* uri0;
-	NimStringDesc* LOC1;
-	NI LOC2;
-	NimStringDesc* LOC3;
-	nimfr("yamlTag", "serialization.nim")
-	result0 = (NI)0;
-	nimln(392, "serialization.nim");
-	LOC1 = (NimStringDesc*)0;
-	LOC2 = (NI)0;
-	LOC2 = yamltag_Cy1Hp2gosMphJv62KZHTFgserialization();
-	LOC3 = (NimStringDesc*)0;
-	LOC3 = safetaguri_ta9coGhqwetbxrhYU7Fx9clA(LOC2);
-	LOC1 = rawNewString(LOC3->Sup.len + 12);
-appendString(LOC1, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_105));
-appendString(LOC1, LOC3);
-appendChar(LOC1, 41);
-	uri0 = nimtag_lzrGBSDpoabPR2AGWaQpzw(LOC1);
-	nimln(393, "serialization.nim");
-	result0 = lazyloadtag_EtInc9b49cS9bYNgk7B9c3YSngserialization(uri0);
-	popFrame();
-	return result0;
-}
-
-N_NIMCALL(void, constructobject_s1qzXf8gpciF40AxHB3qvQ_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Arguments_fv3MZSs9a2TAl9b3zRUgX22w* result0) {
-	TY_Gl9aAKPegYDOYkxLtedgz8w matched0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ e0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC54;
-	nimfr("constructObject", "serialization.nim")
-	memset((void*)matched0, 0, sizeof(matched0));
-	nimln(816, "serialization.nim");
-	memcpy((void*)matched0, (NIM_CONST void*)T_sK7FGu9ad5Rgd39a23ZLNfog_118, sizeof(TY_Gl9aAKPegYDOYkxLtedgz8w));
-	memset((void*)(&e0), 0, sizeof(e0));
-	nimln(817, "serialization.nim");
-	chckNil((void*)(&e0));
-	memset((void*)(&e0), 0, sizeof(e0));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-	nimln(822, "serialization.nim");
-	{
-		NimStringDesc* LOC5;
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC6;
-		nimln(347, "system.nim");
-		nimln(822, "serialization.nim");
-		if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2)))) goto LA3;
-		nimln(823, "serialization.nim");
-		nimln(824, "serialization.nim");
-		LOC5 = (NimStringDesc*)0;
-		LOC5 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 57);
-appendString(LOC5, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_155));
-appendString(LOC5, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		LOC6 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC6 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC5);
-		nimln(823, "serialization.nim");
-		raiseException((Exception*)LOC6, "YamlConstructionError");
-	}
-	LA3: ;
-	{
-		nimln(827, "serialization.nim");
-		while (1) {
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
-			NimStringDesc* name0;
-			nimln(347, "system.nim");
-			nimln(827, "serialization.nim");
-			memset((void*)(&LOC9), 0, sizeof(LOC9));
-			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC9));
-			if (!!((LOC9.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3)))) goto LA8;
-			nimln(828, "serialization.nim");
-			chckNil((void*)(&e0));
-			memset((void*)(&e0), 0, sizeof(e0));
-			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-			nimln(833, "serialization.nim");
-			{
-				NimStringDesc* LOC14;
-				Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC15;
-				nimln(347, "system.nim");
-				nimln(833, "serialization.nim");
-				if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6)))) goto LA12;
-				nimln(834, "serialization.nim");
-				LOC14 = (NimStringDesc*)0;
-				LOC14 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 25);
-appendString(LOC14, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_120));
-appendString(LOC14, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-				LOC15 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-				LOC15 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC14);
-				raiseException((Exception*)LOC15, "YamlConstructionError");
-			}
-			LA12: ;
-			nimln(835, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(e0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_23));
-			name0 = e0.kindU.S3.scalarcontent;
-			nimln(853, "serialization.nim");
-			{
-				TY_sM4lkSb7zS6F7OVMvW9cffQ* LOC18;
-				NIM_BOOL LOC19;
-				nimln(1130, "system.nim");
-				nimln(853, "serialization.nim");
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*)0;
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*) newSeq((&NTI_sM4lkSb7zS6F7OVMvW9cffQ), 0);
-				LOC19 = (NIM_BOOL)0;
-				LOC19 = contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib(LOC18->data, LOC18->Sup.len, name0);
-				if (!!(LOC19)) goto LA20;
-				nimln(854, "serialization.nim");
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_134))) goto LA22;
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_156))) goto LA23;
-				goto LA24;
-				LA22: ;
-				{
-					nimln(4, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC31;
-						if (!matched0[(((NI) 0))- 0]) goto LA29;
-						nimln(854, "serialization.nim");
-						LOC31 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC31 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_157));
-						nimln(4, "moduleTest.nim");
-						raiseException((Exception*)LOC31, "YamlConstructionError");
-					}
-					LA29: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).name));
-					nimln(4, "moduleTest.nim");
-					matched0[(((NI) 0))- 0] = NIM_TRUE;
-				}
-				goto LA25;
-				LA23: ;
-				{
-					nimln(5, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC37;
-						if (!matched0[(((NI) 1))- 0]) goto LA35;
-						nimln(854, "serialization.nim");
-						LOC37 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC37 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_158));
-						nimln(5, "moduleTest.nim");
-						raiseException((Exception*)LOC37, "YamlConstructionError");
-					}
-					LA35: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).functype));
-					nimln(5, "moduleTest.nim");
-					matched0[(((NI) 1))- 0] = NIM_TRUE;
-				}
-				goto LA25;
-				LA24: ;
-				{
-					NimStringDesc* LOC39;
-					NimStringDesc* LOC40;
-					Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC41;
-					nimln(854, "serialization.nim");
-					nimln(5, "moduleTest.nim");
-					LOC39 = (NimStringDesc*)0;
-					nimln(854, "serialization.nim");
-					LOC40 = (NimStringDesc*)0;
-					LOC40 = nsuEscape(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36));
-					LOC39 = rawNewString(LOC40->Sup.len + 45);
-appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_159));
-appendString(LOC39, LOC40);
-					LOC41 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-					LOC41 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC39);
-					nimln(5, "moduleTest.nim");
-					raiseException((Exception*)LOC41, "YamlConstructionError");
-				}
-				LA25: ;
-			}
-			goto LA16;
-			LA20: ;
-			{
-				NI depth0;
-				nimln(856, "serialization.nim");
-				chckNil((void*)(&e0));
-				memset((void*)(&e0), 0, sizeof(e0));
-				next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-				nimln(857, "serialization.nim");
-				depth0 = ((NI) (((20 &(1U<<((NU)(e0.kind)&7U)))!=0)));
-				{
-					nimln(858, "serialization.nim");
-					while (1) {
-						Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC45;
-						if (!(((NI) 0) < depth0)) goto LA44;
-						nimln(859, "serialization.nim");
-						memset((void*)(&LOC45), 0, sizeof(LOC45));
-						next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC45));
-						switch (LOC45.kind) {
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_160;
-							nimln(860, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_160 = addInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_160);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_161;
-							nimln(861, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_161 = subInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_161);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-						{
-						}
-						break;
-						default:
-						{
-							TY_XOVT24GHXwqiEj5GCsEGCA ii_Yju6uYaWf29atrAKMWd9auDA;
-							NimStringDesc* LOC50;
-							TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_164;
-							memset((void*)(&ii_Yju6uYaWf29atrAKMWd9auDA), 0, sizeof(ii_Yju6uYaWf29atrAKMWd9auDA));
-							nimln(9, "internal.nim");
-							ii_Yju6uYaWf29atrAKMWd9auDA.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field0);
-							ii_Yju6uYaWf29atrAKMWd9auDA.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field1;
-							nimln(10, "internal.nim");
-							LOC50 = (NimStringDesc*)0;
-							LOC50 = copyString(nimIntToStr(ii_Yju6uYaWf29atrAKMWd9auDA.Field1));
-							printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_Yju6uYaWf29atrAKMWd9auDA.Field0? (ii_Yju6uYaWf29atrAKMWd9auDA.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC50? (LOC50)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-							fflush(stdout);
-							nimln(863, "serialization.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163))->data:"nil");
-							fflush(stdout);
-							nimln(13, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-							fflush(stdout);
-							nimln(14, "internal.nim");
-							pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_164);
-							T_sK7FGu9ad5Rgd39a23ZLNfog_164.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_164.context);
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_164.status == 0) {
-								writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-								popSafePoint();
-							}
-							else {
-								popSafePoint();
-								setFrame((TFrame*)&FR);
-								{
-									T_sK7FGu9ad5Rgd39a23ZLNfog_164.status = 0;
-									popCurrentException();
-								}
-							}
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_164.status != 0) reraiseException();
-							nimln(16, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-							fflush(stdout);
-							nimln(17, "internal.nim");
-							exit(((NI) 1));
-						}
-						break;
-						}
-					} LA44: ;
-				}
-			}
-			LA16: ;
-		} LA8: ;
-	}
-	nimln(869, "serialization.nim");
-	memset((void*)(&LOC54), 0, sizeof(LOC54));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC54));
-	nimln(4, "moduleTest.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC59;
-		if (!!(matched0[(((NI) 0))- 0])) goto LA57;
-		nimln(877, "serialization.nim");
-		LOC59 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC59 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_165));
-		nimln(4, "moduleTest.nim");
-		raiseException((Exception*)LOC59, "YamlConstructionError");
-	}
-	LA57: ;
-	nimln(877, "serialization.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC64;
-		nimln(5, "moduleTest.nim");
-		if (!!(matched0[(((NI) 1))- 0])) goto LA62;
-		nimln(877, "serialization.nim");
-		LOC64 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC64 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_166));
-		nimln(5, "moduleTest.nim");
-		raiseException((Exception*)LOC64, "YamlConstructionError");
-	}
-	LA62: ;
-	popFrame();
-}
-
-N_NIMCALL(void, constructchild_s1qzXf8gpciF40AxHB3qvQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Arguments_fv3MZSs9a2TAl9b3zRUgX22w* result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
-	nimfr("constructChild", "serialization.nim")
-	memset((void*)(&item0), 0, sizeof(item0));
-	nimln(1042, "serialization.nim");
-	chckNil((void*)(&item0));
-	memset((void*)(&item0), 0, sizeof(item0));
-	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
-	nimln(1084, "serialization.nim");
-	switch (item0.kind) {
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-	{
-		nimln(1086, "serialization.nim");
-		{
-			TY_Bd4h7Ocx9bGTvrKzPIWNlHw LOC4;
-			NIM_BOOL LOC5;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC8;
-			nimln(1130, "system.nim");
-			nimln(1086, "serialization.nim");
-			LOC4[0] = ((NI) 1);
-			LOC4[1] = ((NI) 0);
-			nimln(1087, "serialization.nim");
-			LOC4[2] = yamltag_Cy1Hp2gosMphJv62KZHTFgserialization();
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
-			LOC5 = (NIM_BOOL)0;
-			LOC5 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC4, 3, item0.kindU.S3.scalartag);
-			if (!!(LOC5)) goto LA6;
-			nimln(1088, "serialization.nim");
-			LOC8 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC8 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_153));
-			raiseException((Exception*)LOC8, "YamlConstructionError");
-		}
-		goto LA2;
-		LA6: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC12;
-			nimln(347, "system.nim");
-			nimln(1089, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_27));
-			if (!!((item0.kindU.S3.scalaranchor == ((NI) -1)))) goto LA10;
-			nimln(1090, "serialization.nim");
-			LOC12 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC12 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC12, "YamlConstructionError");
-		}
-		goto LA2;
-		LA10: ;
-		LA2: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-	{
-		nimln(1092, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC16;
-			NIM_BOOL LOC17;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC20;
-			nimln(1130, "system.nim");
-			nimln(1092, "serialization.nim");
-			LOC16[0] = ((NI) 1);
-			LOC16[1] = yamltag_Cy1Hp2gosMphJv62KZHTFgserialization();
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_113));
-			LOC17 = (NIM_BOOL)0;
-			LOC17 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC16, 2, item0.kindU.S1.maptag);
-			if (!!(LOC17)) goto LA18;
-			nimln(1093, "serialization.nim");
-			LOC20 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC20 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_153));
-			raiseException((Exception*)LOC20, "YamlConstructionError");
-		}
-		goto LA14;
-		LA18: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC24;
-			nimln(347, "system.nim");
-			nimln(1094, "serialization.nim");
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_114));
-			if (!!((item0.kindU.S1.mapanchor == ((NI) -1)))) goto LA22;
-			nimln(1095, "serialization.nim");
-			LOC24 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC24 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC24, "YamlConstructionError");
-		}
-		goto LA14;
-		LA22: ;
-		LA14: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-	{
-		nimln(1097, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC28;
-			NIM_BOOL LOC29;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
-			nimln(1130, "system.nim");
-			nimln(1097, "serialization.nim");
-			LOC28[0] = ((NI) 1);
-			LOC28[1] = yamltag_Cy1Hp2gosMphJv62KZHTFgserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
-			LOC29 = (NIM_BOOL)0;
-			LOC29 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC28, 2, item0.kindU.S2.seqtag);
-			if (!!(LOC29)) goto LA30;
-			nimln(1098, "serialization.nim");
-			LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_153));
-			raiseException((Exception*)LOC32, "YamlConstructionError");
-		}
-		goto LA26;
-		LA30: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC36;
-			nimln(347, "system.nim");
-			nimln(1099, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
-			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA34;
-			nimln(1100, "serialization.nim");
-			LOC36 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC36 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC36, "YamlConstructionError");
-		}
-		goto LA26;
-		LA34: ;
-		LA26: ;
-	}
-	break;
-	default:
-	{
-		TY_XOVT24GHXwqiEj5GCsEGCA ii_yXcVizMBZIgCJXVQF7CMmg_4;
-		NimStringDesc* LOC38;
-		NimStringDesc* LOC39;
-		TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_154;
-		memset((void*)(&ii_yXcVizMBZIgCJXVQF7CMmg_4), 0, sizeof(ii_yXcVizMBZIgCJXVQF7CMmg_4));
-		nimln(9, "internal.nim");
-		ii_yXcVizMBZIgCJXVQF7CMmg_4.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field0);
-		ii_yXcVizMBZIgCJXVQF7CMmg_4.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field1;
-		nimln(10, "internal.nim");
-		LOC38 = (NimStringDesc*)0;
-		LOC38 = copyString(nimIntToStr(ii_yXcVizMBZIgCJXVQF7CMmg_4.Field1));
-		printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_yXcVizMBZIgCJXVQF7CMmg_4.Field0? (ii_yXcVizMBZIgCJXVQF7CMmg_4.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC38? (LOC38)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-		fflush(stdout);
-		nimln(1101, "serialization.nim");
-		LOC39 = (NimStringDesc*)0;
-		LOC39 = rawNewString(reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 22);
-appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_116));
-appendString(LOC39, reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		printf("%s\015\012", LOC39? (LOC39)->data:"nil");
-		fflush(stdout);
-		nimln(13, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-		fflush(stdout);
-		nimln(14, "internal.nim");
-		pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_154);
-		T_sK7FGu9ad5Rgd39a23ZLNfog_154.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_154.context);
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_154.status == 0) {
-			writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-			popSafePoint();
-		}
-		else {
-			popSafePoint();
-			setFrame((TFrame*)&FR);
-			{
-				T_sK7FGu9ad5Rgd39a23ZLNfog_154.status = 0;
-				popCurrentException();
-			}
-		}
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_154.status != 0) reraiseException();
-		nimln(16, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-		fflush(stdout);
-		nimln(17, "internal.nim");
-		exit(((NI) 1));
-	}
-	break;
-	}
-	nimln(1102, "serialization.nim");
-	constructobject_s1qzXf8gpciF40AxHB3qvQ_2(s0, c0, result0);
-	popFrame();
-}
-
-N_NIMCALL(void, constructobject_ywhpX9asWp9bEUnSAWyXRqZg_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_VWiRdvyApTLgh9a9adQfUKzQ** result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ event0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC11;
-	nimfr("constructObject", "serialization.nim")
-	memset((void*)(&event0), 0, sizeof(event0));
-	nimln(403, "serialization.nim");
-	chckNil((void*)(&event0));
-	memset((void*)(&event0), 0, sizeof(event0));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&event0));
-	nimln(404, "serialization.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC5;
-		nimln(347, "system.nim");
-		nimln(404, "serialization.nim");
-		if (!!((event0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4)))) goto LA3;
-		nimln(405, "serialization.nim");
-		LOC5 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC5 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_111));
-		raiseException((Exception*)LOC5, "YamlConstructionError");
-	}
-	LA3: ;
-	nimln(406, "serialization.nim");
-	unsureAsgnRef((void**) (&(*result0)), newseq_ej9acvyLf9b9bZTQw9bLSKt6NA(((NI) 0)));
-	{
-		nimln(407, "serialization.nim");
-		while (1) {
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC8;
-			Arguments_fv3MZSs9a2TAl9b3zRUgX22w item0;
-			NimStringDesc* LOC9;
-			NimStringDesc* LOC10;
-			nimln(347, "system.nim");
-			nimln(407, "serialization.nim");
-			memset((void*)(&LOC8), 0, sizeof(LOC8));
-			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC8));
-			if (!!((LOC8.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5)))) goto LA7;
-			memset((void*)(&item0), 0, sizeof(item0));
-			nimln(409, "serialization.nim");
-			constructchild_s1qzXf8gpciF40AxHB3qvQ(s0, c0, (&item0));
-			nimln(410, "serialization.nim");
-			(*result0) = (TY_VWiRdvyApTLgh9a9adQfUKzQ*) incrSeqV2(&((*result0))->Sup, sizeof(Arguments_fv3MZSs9a2TAl9b3zRUgX22w));
-			LOC9 = (NimStringDesc*)0;
-			LOC9 = (*result0)->data[(*result0)->Sup.len].name; (*result0)->data[(*result0)->Sup.len].name = copyStringRC1(item0.name);
-			if (LOC9) nimGCunrefNoCycle(LOC9);
-			LOC10 = (NimStringDesc*)0;
-			LOC10 = (*result0)->data[(*result0)->Sup.len].functype; (*result0)->data[(*result0)->Sup.len].functype = copyStringRC1(item0.functype);
-			if (LOC10) nimGCunrefNoCycle(LOC10);
-			++(*result0)->Sup.len;
-		} LA7: ;
-	}
-	nimln(411, "serialization.nim");
-	memset((void*)(&LOC11), 0, sizeof(LOC11));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC11));
-	popFrame();
-}
-
-N_NIMCALL(void, constructchild_ywhpX9asWp9bEUnSAWyXRqZg)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_VWiRdvyApTLgh9a9adQfUKzQ** result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
-	nimfr("constructChild", "serialization.nim")
-{	memset((void*)(&item0), 0, sizeof(item0));
-	nimln(1121, "serialization.nim");
-	chckNil((void*)(&item0));
-	memset((void*)(&item0), 0, sizeof(item0));
-	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
-	nimln(1122, "serialization.nim");
-	{
-		if (!(item0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6))) goto LA3;
-		nimln(1123, "serialization.nim");
-		{
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
-			if (!(item0.kindU.S3.scalartag == ((NI) 102))) goto LA7;
-			nimln(1124, "serialization.nim");
-			memset((void*)(&LOC9), 0, sizeof(LOC9));
-			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC9));
-			nimln(1125, "serialization.nim");
-			genericSeqAssign((&(*result0)), NIM_NIL, (&NTI_VWiRdvyApTLgh9a9adQfUKzQ));
-			nimln(1126, "serialization.nim");
-			goto BeforeRet;
-		}
-		LA7: ;
-	}
-	goto LA1;
-	LA3: ;
-	{
-		nimln(1127, "serialization.nim");
-		if (!(item0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4))) goto LA11;
-		nimln(1128, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC15;
-			NIM_BOOL LOC16;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC19;
-			nimln(1130, "system.nim");
-			nimln(1128, "serialization.nim");
-			LOC15[0] = ((NI) 1);
-			LOC15[1] = yamltag_nvuX33cPOZI50JP7tgQ9bLAserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
-			LOC16 = (NIM_BOOL)0;
-			LOC16 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC15, 2, item0.kindU.S2.seqtag);
-			if (!!(LOC16)) goto LA17;
-			nimln(1129, "serialization.nim");
-			LOC19 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC19 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_152));
-			raiseException((Exception*)LOC19, "YamlConstructionError");
-		}
-		goto LA13;
-		LA17: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC23;
-			nimln(347, "system.nim");
-			nimln(1130, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
-			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA21;
-			nimln(1131, "serialization.nim");
-			LOC23 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC23 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC23, "YamlConstructionError");
-		}
-		goto LA13;
-		LA21: ;
-		LA13: ;
-	}
-	goto LA1;
-	LA11: ;
-	LA1: ;
-	nimln(1132, "serialization.nim");
-	constructobject_ywhpX9asWp9bEUnSAWyXRqZg_2(s0, c0, result0);
-	}BeforeRet: ;
-	popFrame();
-}
-
-N_NIMCALL(void, constructobject_IaRsN4lEkNcWWANVhAcfBQ_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Parameters_Atj9be6gJ43J2ObYyxnIMFA* result0) {
-	TY_xSxqoPo7Fj4uIDcWiYyWDg matched0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ e0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC61;
-	nimfr("constructObject", "serialization.nim")
-	memset((void*)matched0, 0, sizeof(matched0));
-	nimln(816, "serialization.nim");
-	memcpy((void*)matched0, (NIM_CONST void*)T_sK7FGu9ad5Rgd39a23ZLNfog_132, sizeof(TY_xSxqoPo7Fj4uIDcWiYyWDg));
-	memset((void*)(&e0), 0, sizeof(e0));
-	nimln(817, "serialization.nim");
-	chckNil((void*)(&e0));
-	memset((void*)(&e0), 0, sizeof(e0));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-	nimln(822, "serialization.nim");
-	{
-		NimStringDesc* LOC5;
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC6;
-		nimln(347, "system.nim");
-		nimln(822, "serialization.nim");
-		if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2)))) goto LA3;
-		nimln(823, "serialization.nim");
-		nimln(824, "serialization.nim");
-		LOC5 = (NimStringDesc*)0;
-		LOC5 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 58);
-appendString(LOC5, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_144));
-appendString(LOC5, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		LOC6 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC6 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC5);
-		nimln(823, "serialization.nim");
-		raiseException((Exception*)LOC6, "YamlConstructionError");
-	}
-	LA3: ;
-	{
-		nimln(827, "serialization.nim");
-		while (1) {
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
-			NimStringDesc* name0;
-			nimln(347, "system.nim");
-			nimln(827, "serialization.nim");
-			memset((void*)(&LOC9), 0, sizeof(LOC9));
-			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC9));
-			if (!!((LOC9.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3)))) goto LA8;
-			nimln(828, "serialization.nim");
-			chckNil((void*)(&e0));
-			memset((void*)(&e0), 0, sizeof(e0));
-			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-			nimln(833, "serialization.nim");
-			{
-				NimStringDesc* LOC14;
-				Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC15;
-				nimln(347, "system.nim");
-				nimln(833, "serialization.nim");
-				if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6)))) goto LA12;
-				nimln(834, "serialization.nim");
-				LOC14 = (NimStringDesc*)0;
-				LOC14 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 25);
-appendString(LOC14, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_120));
-appendString(LOC14, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-				LOC15 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-				LOC15 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC14);
-				raiseException((Exception*)LOC15, "YamlConstructionError");
-			}
-			LA12: ;
-			nimln(835, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(e0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_23));
-			name0 = e0.kindU.S3.scalarcontent;
-			nimln(853, "serialization.nim");
-			{
-				TY_sM4lkSb7zS6F7OVMvW9cffQ* LOC18;
-				NIM_BOOL LOC19;
-				nimln(1130, "system.nim");
-				nimln(853, "serialization.nim");
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*)0;
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*) newSeq((&NTI_sM4lkSb7zS6F7OVMvW9cffQ), 0);
-				LOC19 = (NIM_BOOL)0;
-				LOC19 = contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib(LOC18->data, LOC18->Sup.len, name0);
-				if (!!(LOC19)) goto LA20;
-				nimln(854, "serialization.nim");
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_145))) goto LA22;
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_146))) goto LA23;
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_147))) goto LA24;
-				goto LA25;
-				LA22: ;
-				{
-					nimln(9, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
-						if (!matched0[(((NI) 0))- 0]) goto LA30;
-						nimln(854, "serialization.nim");
-						LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_148));
-						nimln(9, "moduleTest.nim");
-						raiseException((Exception*)LOC32, "YamlConstructionError");
-					}
-					LA30: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).count));
-					nimln(9, "moduleTest.nim");
-					matched0[(((NI) 0))- 0] = NIM_TRUE;
-				}
-				goto LA26;
-				LA23: ;
-				{
-					nimln(10, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC38;
-						if (!matched0[(((NI) 1))- 0]) goto LA36;
-						nimln(854, "serialization.nim");
-						LOC38 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC38 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_149));
-						nimln(10, "moduleTest.nim");
-						raiseException((Exception*)LOC38, "YamlConstructionError");
-					}
-					LA36: ;
-					nimln(854, "serialization.nim");
-					constructchild_ywhpX9asWp9bEUnSAWyXRqZg(s0, c0, (&(*result0).args));
-					nimln(10, "moduleTest.nim");
-					matched0[(((NI) 1))- 0] = NIM_TRUE;
-				}
-				goto LA26;
-				LA24: ;
-				{
-					nimln(11, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC44;
-						if (!matched0[(((NI) 2))- 0]) goto LA42;
-						nimln(854, "serialization.nim");
-						LOC44 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC44 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_167));
-						nimln(11, "moduleTest.nim");
-						raiseException((Exception*)LOC44, "YamlConstructionError");
-					}
-					LA42: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).returntype));
-					nimln(11, "moduleTest.nim");
-					matched0[(((NI) 2))- 0] = NIM_TRUE;
-				}
-				goto LA26;
-				LA25: ;
-				{
-					NimStringDesc* LOC46;
-					NimStringDesc* LOC47;
-					Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC48;
-					nimln(854, "serialization.nim");
-					nimln(11, "moduleTest.nim");
-					LOC46 = (NimStringDesc*)0;
-					nimln(854, "serialization.nim");
-					LOC47 = (NimStringDesc*)0;
-					LOC47 = nsuEscape(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36));
-					LOC46 = rawNewString(LOC47->Sup.len + 46);
-appendString(LOC46, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_168));
-appendString(LOC46, LOC47);
-					LOC48 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-					LOC48 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC46);
-					nimln(11, "moduleTest.nim");
-					raiseException((Exception*)LOC48, "YamlConstructionError");
-				}
-				LA26: ;
-			}
-			goto LA16;
-			LA20: ;
-			{
-				NI depth0;
-				nimln(856, "serialization.nim");
-				chckNil((void*)(&e0));
-				memset((void*)(&e0), 0, sizeof(e0));
-				next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-				nimln(857, "serialization.nim");
-				depth0 = ((NI) (((20 &(1U<<((NU)(e0.kind)&7U)))!=0)));
-				{
-					nimln(858, "serialization.nim");
-					while (1) {
-						Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC52;
-						if (!(((NI) 0) < depth0)) goto LA51;
-						nimln(859, "serialization.nim");
-						memset((void*)(&LOC52), 0, sizeof(LOC52));
-						next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC52));
-						switch (LOC52.kind) {
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_169;
-							nimln(860, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_169 = addInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_169);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_170;
-							nimln(861, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_170 = subInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_170);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-						{
-						}
-						break;
-						default:
-						{
-							TY_XOVT24GHXwqiEj5GCsEGCA ii_Yju6uYaWf29atrAKMWd9auDA_2;
-							NimStringDesc* LOC57;
-							TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_171;
-							memset((void*)(&ii_Yju6uYaWf29atrAKMWd9auDA_2), 0, sizeof(ii_Yju6uYaWf29atrAKMWd9auDA_2));
-							nimln(9, "internal.nim");
-							ii_Yju6uYaWf29atrAKMWd9auDA_2.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field0);
-							ii_Yju6uYaWf29atrAKMWd9auDA_2.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field1;
-							nimln(10, "internal.nim");
-							LOC57 = (NimStringDesc*)0;
-							LOC57 = copyString(nimIntToStr(ii_Yju6uYaWf29atrAKMWd9auDA_2.Field1));
-							printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_Yju6uYaWf29atrAKMWd9auDA_2.Field0? (ii_Yju6uYaWf29atrAKMWd9auDA_2.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC57? (LOC57)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-							fflush(stdout);
-							nimln(863, "serialization.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163))->data:"nil");
-							fflush(stdout);
-							nimln(13, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-							fflush(stdout);
-							nimln(14, "internal.nim");
-							pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_171);
-							T_sK7FGu9ad5Rgd39a23ZLNfog_171.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_171.context);
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_171.status == 0) {
-								writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-								popSafePoint();
-							}
-							else {
-								popSafePoint();
-								setFrame((TFrame*)&FR);
-								{
-									T_sK7FGu9ad5Rgd39a23ZLNfog_171.status = 0;
-									popCurrentException();
-								}
-							}
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_171.status != 0) reraiseException();
-							nimln(16, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-							fflush(stdout);
-							nimln(17, "internal.nim");
-							exit(((NI) 1));
-						}
-						break;
-						}
-					} LA51: ;
-				}
-			}
-			LA16: ;
-		} LA8: ;
-	}
-	nimln(869, "serialization.nim");
-	memset((void*)(&LOC61), 0, sizeof(LOC61));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC61));
-	nimln(9, "moduleTest.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC66;
-		if (!!(matched0[(((NI) 0))- 0])) goto LA64;
-		nimln(877, "serialization.nim");
-		LOC66 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC66 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_172));
-		nimln(9, "moduleTest.nim");
-		raiseException((Exception*)LOC66, "YamlConstructionError");
-	}
-	LA64: ;
-	nimln(10, "moduleTest.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC71;
-		if (!!(matched0[(((NI) 1))- 0])) goto LA69;
-		nimln(877, "serialization.nim");
-		LOC71 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC71 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_173));
-		nimln(10, "moduleTest.nim");
-		raiseException((Exception*)LOC71, "YamlConstructionError");
-	}
-	LA69: ;
-	nimln(877, "serialization.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC76;
-		nimln(11, "moduleTest.nim");
-		if (!!(matched0[(((NI) 2))- 0])) goto LA74;
-		nimln(877, "serialization.nim");
-		LOC76 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC76 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_174));
-		nimln(11, "moduleTest.nim");
-		raiseException((Exception*)LOC76, "YamlConstructionError");
-	}
-	LA74: ;
-	popFrame();
-}
-
-N_NIMCALL(void, constructchild_IaRsN4lEkNcWWANVhAcfBQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Parameters_Atj9be6gJ43J2ObYyxnIMFA* result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
-	nimfr("constructChild", "serialization.nim")
-	memset((void*)(&item0), 0, sizeof(item0));
-	nimln(1042, "serialization.nim");
-	chckNil((void*)(&item0));
-	memset((void*)(&item0), 0, sizeof(item0));
-	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
-	nimln(1084, "serialization.nim");
-	switch (item0.kind) {
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-	{
-		nimln(1086, "serialization.nim");
-		{
-			TY_Bd4h7Ocx9bGTvrKzPIWNlHw LOC4;
-			NIM_BOOL LOC5;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC8;
-			nimln(1130, "system.nim");
-			nimln(1086, "serialization.nim");
-			LOC4[0] = ((NI) 1);
-			LOC4[1] = ((NI) 0);
-			nimln(1087, "serialization.nim");
-			LOC4[2] = yamltag_30Pv9azGkA9czKbto8l9bB36gserialization();
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
-			LOC5 = (NIM_BOOL)0;
-			LOC5 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC4, 3, item0.kindU.S3.scalartag);
-			if (!!(LOC5)) goto LA6;
-			nimln(1088, "serialization.nim");
-			LOC8 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC8 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_142));
-			raiseException((Exception*)LOC8, "YamlConstructionError");
-		}
-		goto LA2;
-		LA6: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC12;
-			nimln(347, "system.nim");
-			nimln(1089, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_27));
-			if (!!((item0.kindU.S3.scalaranchor == ((NI) -1)))) goto LA10;
-			nimln(1090, "serialization.nim");
-			LOC12 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC12 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC12, "YamlConstructionError");
-		}
-		goto LA2;
-		LA10: ;
-		LA2: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-	{
-		nimln(1092, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC16;
-			NIM_BOOL LOC17;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC20;
-			nimln(1130, "system.nim");
-			nimln(1092, "serialization.nim");
-			LOC16[0] = ((NI) 1);
-			LOC16[1] = yamltag_30Pv9azGkA9czKbto8l9bB36gserialization();
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_113));
-			LOC17 = (NIM_BOOL)0;
-			LOC17 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC16, 2, item0.kindU.S1.maptag);
-			if (!!(LOC17)) goto LA18;
-			nimln(1093, "serialization.nim");
-			LOC20 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC20 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_142));
-			raiseException((Exception*)LOC20, "YamlConstructionError");
-		}
-		goto LA14;
-		LA18: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC24;
-			nimln(347, "system.nim");
-			nimln(1094, "serialization.nim");
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_114));
-			if (!!((item0.kindU.S1.mapanchor == ((NI) -1)))) goto LA22;
-			nimln(1095, "serialization.nim");
-			LOC24 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC24 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC24, "YamlConstructionError");
-		}
-		goto LA14;
-		LA22: ;
-		LA14: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-	{
-		nimln(1097, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC28;
-			NIM_BOOL LOC29;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
-			nimln(1130, "system.nim");
-			nimln(1097, "serialization.nim");
-			LOC28[0] = ((NI) 1);
-			LOC28[1] = yamltag_30Pv9azGkA9czKbto8l9bB36gserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
-			LOC29 = (NIM_BOOL)0;
-			LOC29 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC28, 2, item0.kindU.S2.seqtag);
-			if (!!(LOC29)) goto LA30;
-			nimln(1098, "serialization.nim");
-			LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_142));
-			raiseException((Exception*)LOC32, "YamlConstructionError");
-		}
-		goto LA26;
-		LA30: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC36;
-			nimln(347, "system.nim");
-			nimln(1099, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
-			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA34;
-			nimln(1100, "serialization.nim");
-			LOC36 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC36 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC36, "YamlConstructionError");
-		}
-		goto LA26;
-		LA34: ;
-		LA26: ;
-	}
-	break;
-	default:
-	{
-		TY_XOVT24GHXwqiEj5GCsEGCA ii_yXcVizMBZIgCJXVQF7CMmg_3;
-		NimStringDesc* LOC38;
-		NimStringDesc* LOC39;
-		TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_143;
-		memset((void*)(&ii_yXcVizMBZIgCJXVQF7CMmg_3), 0, sizeof(ii_yXcVizMBZIgCJXVQF7CMmg_3));
-		nimln(9, "internal.nim");
-		ii_yXcVizMBZIgCJXVQF7CMmg_3.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field0);
-		ii_yXcVizMBZIgCJXVQF7CMmg_3.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field1;
-		nimln(10, "internal.nim");
-		LOC38 = (NimStringDesc*)0;
-		LOC38 = copyString(nimIntToStr(ii_yXcVizMBZIgCJXVQF7CMmg_3.Field1));
-		printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_yXcVizMBZIgCJXVQF7CMmg_3.Field0? (ii_yXcVizMBZIgCJXVQF7CMmg_3.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC38? (LOC38)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-		fflush(stdout);
-		nimln(1101, "serialization.nim");
-		LOC39 = (NimStringDesc*)0;
-		LOC39 = rawNewString(reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 22);
-appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_116));
-appendString(LOC39, reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		printf("%s\015\012", LOC39? (LOC39)->data:"nil");
-		fflush(stdout);
-		nimln(13, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-		fflush(stdout);
-		nimln(14, "internal.nim");
-		pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_143);
-		T_sK7FGu9ad5Rgd39a23ZLNfog_143.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_143.context);
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_143.status == 0) {
-			writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-			popSafePoint();
-		}
-		else {
-			popSafePoint();
-			setFrame((TFrame*)&FR);
-			{
-				T_sK7FGu9ad5Rgd39a23ZLNfog_143.status = 0;
-				popCurrentException();
-			}
-		}
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_143.status != 0) reraiseException();
-		nimln(16, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-		fflush(stdout);
-		nimln(17, "internal.nim");
-		exit(((NI) 1));
-	}
-	break;
-	}
-	nimln(1102, "serialization.nim");
-	constructobject_IaRsN4lEkNcWWANVhAcfBQ_2(s0, c0, result0);
-	popFrame();
-}
-
-N_NIMCALL(void, constructobject_qKYB3kUnLNDnZE6kuUEdOw_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Functions_KX0IMrQMf9c7tfBWVv2DRAA* result0) {
-	TY_xSxqoPo7Fj4uIDcWiYyWDg matched0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ e0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC61;
-	nimfr("constructObject", "serialization.nim")
-	memset((void*)matched0, 0, sizeof(matched0));
-	nimln(816, "serialization.nim");
-	memcpy((void*)matched0, (NIM_CONST void*)T_sK7FGu9ad5Rgd39a23ZLNfog_132, sizeof(TY_xSxqoPo7Fj4uIDcWiYyWDg));
-	memset((void*)(&e0), 0, sizeof(e0));
-	nimln(817, "serialization.nim");
-	chckNil((void*)(&e0));
-	memset((void*)(&e0), 0, sizeof(e0));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-	nimln(822, "serialization.nim");
-	{
-		NimStringDesc* LOC5;
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC6;
-		nimln(347, "system.nim");
-		nimln(822, "serialization.nim");
-		if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2)))) goto LA3;
-		nimln(823, "serialization.nim");
-		nimln(824, "serialization.nim");
-		LOC5 = (NimStringDesc*)0;
-		LOC5 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 57);
-appendString(LOC5, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_133));
-appendString(LOC5, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		LOC6 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC6 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC5);
-		nimln(823, "serialization.nim");
-		raiseException((Exception*)LOC6, "YamlConstructionError");
-	}
-	LA3: ;
-	{
-		nimln(827, "serialization.nim");
-		while (1) {
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
-			NimStringDesc* name0;
-			nimln(347, "system.nim");
-			nimln(827, "serialization.nim");
-			memset((void*)(&LOC9), 0, sizeof(LOC9));
-			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC9));
-			if (!!((LOC9.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3)))) goto LA8;
-			nimln(828, "serialization.nim");
-			chckNil((void*)(&e0));
-			memset((void*)(&e0), 0, sizeof(e0));
-			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-			nimln(833, "serialization.nim");
-			{
-				NimStringDesc* LOC14;
-				Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC15;
-				nimln(347, "system.nim");
-				nimln(833, "serialization.nim");
-				if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6)))) goto LA12;
-				nimln(834, "serialization.nim");
-				LOC14 = (NimStringDesc*)0;
-				LOC14 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 25);
-appendString(LOC14, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_120));
-appendString(LOC14, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-				LOC15 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-				LOC15 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC14);
-				raiseException((Exception*)LOC15, "YamlConstructionError");
-			}
-			LA12: ;
-			nimln(835, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(e0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_23));
-			name0 = e0.kindU.S3.scalarcontent;
-			nimln(853, "serialization.nim");
-			{
-				TY_sM4lkSb7zS6F7OVMvW9cffQ* LOC18;
-				NIM_BOOL LOC19;
-				nimln(1130, "system.nim");
-				nimln(853, "serialization.nim");
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*)0;
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*) newSeq((&NTI_sM4lkSb7zS6F7OVMvW9cffQ), 0);
-				LOC19 = (NIM_BOOL)0;
-				LOC19 = contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib(LOC18->data, LOC18->Sup.len, name0);
-				if (!!(LOC19)) goto LA20;
-				nimln(854, "serialization.nim");
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_134))) goto LA22;
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_135))) goto LA23;
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_136))) goto LA24;
-				goto LA25;
-				LA22: ;
-				{
-					nimln(14, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
-						if (!matched0[(((NI) 0))- 0]) goto LA30;
-						nimln(854, "serialization.nim");
-						LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_137));
-						nimln(14, "moduleTest.nim");
-						raiseException((Exception*)LOC32, "YamlConstructionError");
-					}
-					LA30: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).name));
-					nimln(14, "moduleTest.nim");
-					matched0[(((NI) 0))- 0] = NIM_TRUE;
-				}
-				goto LA26;
-				LA23: ;
-				{
-					nimln(15, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC38;
-						if (!matched0[(((NI) 1))- 0]) goto LA36;
-						nimln(854, "serialization.nim");
-						LOC38 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC38 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_138));
-						nimln(15, "moduleTest.nim");
-						raiseException((Exception*)LOC38, "YamlConstructionError");
-					}
-					LA36: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).signature));
-					nimln(15, "moduleTest.nim");
-					matched0[(((NI) 1))- 0] = NIM_TRUE;
-				}
-				goto LA26;
-				LA24: ;
-				{
-					nimln(16, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC44;
-						if (!matched0[(((NI) 2))- 0]) goto LA42;
-						nimln(854, "serialization.nim");
-						LOC44 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC44 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_139));
-						nimln(16, "moduleTest.nim");
-						raiseException((Exception*)LOC44, "YamlConstructionError");
-					}
-					LA42: ;
-					nimln(854, "serialization.nim");
-					constructchild_IaRsN4lEkNcWWANVhAcfBQ(s0, c0, (&(*result0).params));
-					nimln(16, "moduleTest.nim");
-					matched0[(((NI) 2))- 0] = NIM_TRUE;
-				}
-				goto LA26;
-				LA25: ;
-				{
-					NimStringDesc* LOC46;
-					NimStringDesc* LOC47;
-					Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC48;
-					nimln(854, "serialization.nim");
-					nimln(16, "moduleTest.nim");
-					LOC46 = (NimStringDesc*)0;
-					nimln(854, "serialization.nim");
-					LOC47 = (NimStringDesc*)0;
-					LOC47 = nsuEscape(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36));
-					LOC46 = rawNewString(LOC47->Sup.len + 45);
-appendString(LOC46, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_175));
-appendString(LOC46, LOC47);
-					LOC48 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-					LOC48 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC46);
-					nimln(16, "moduleTest.nim");
-					raiseException((Exception*)LOC48, "YamlConstructionError");
-				}
-				LA26: ;
-			}
-			goto LA16;
-			LA20: ;
-			{
-				NI depth0;
-				nimln(856, "serialization.nim");
-				chckNil((void*)(&e0));
-				memset((void*)(&e0), 0, sizeof(e0));
-				next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-				nimln(857, "serialization.nim");
-				depth0 = ((NI) (((20 &(1U<<((NU)(e0.kind)&7U)))!=0)));
-				{
-					nimln(858, "serialization.nim");
-					while (1) {
-						Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC52;
-						if (!(((NI) 0) < depth0)) goto LA51;
-						nimln(859, "serialization.nim");
-						memset((void*)(&LOC52), 0, sizeof(LOC52));
-						next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC52));
-						switch (LOC52.kind) {
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_176;
-							nimln(860, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_176 = addInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_176);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_177;
-							nimln(861, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_177 = subInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_177);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-						{
-						}
-						break;
-						default:
-						{
-							TY_XOVT24GHXwqiEj5GCsEGCA ii_Yju6uYaWf29atrAKMWd9auDA_3;
-							NimStringDesc* LOC57;
-							TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_178;
-							memset((void*)(&ii_Yju6uYaWf29atrAKMWd9auDA_3), 0, sizeof(ii_Yju6uYaWf29atrAKMWd9auDA_3));
-							nimln(9, "internal.nim");
-							ii_Yju6uYaWf29atrAKMWd9auDA_3.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field0);
-							ii_Yju6uYaWf29atrAKMWd9auDA_3.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field1;
-							nimln(10, "internal.nim");
-							LOC57 = (NimStringDesc*)0;
-							LOC57 = copyString(nimIntToStr(ii_Yju6uYaWf29atrAKMWd9auDA_3.Field1));
-							printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_Yju6uYaWf29atrAKMWd9auDA_3.Field0? (ii_Yju6uYaWf29atrAKMWd9auDA_3.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC57? (LOC57)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-							fflush(stdout);
-							nimln(863, "serialization.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163))->data:"nil");
-							fflush(stdout);
-							nimln(13, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-							fflush(stdout);
-							nimln(14, "internal.nim");
-							pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_178);
-							T_sK7FGu9ad5Rgd39a23ZLNfog_178.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_178.context);
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_178.status == 0) {
-								writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-								popSafePoint();
-							}
-							else {
-								popSafePoint();
-								setFrame((TFrame*)&FR);
-								{
-									T_sK7FGu9ad5Rgd39a23ZLNfog_178.status = 0;
-									popCurrentException();
-								}
-							}
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_178.status != 0) reraiseException();
-							nimln(16, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-							fflush(stdout);
-							nimln(17, "internal.nim");
-							exit(((NI) 1));
-						}
-						break;
-						}
-					} LA51: ;
-				}
-			}
-			LA16: ;
-		} LA8: ;
-	}
-	nimln(869, "serialization.nim");
-	memset((void*)(&LOC61), 0, sizeof(LOC61));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC61));
-	nimln(14, "moduleTest.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC66;
-		if (!!(matched0[(((NI) 0))- 0])) goto LA64;
-		nimln(877, "serialization.nim");
-		LOC66 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC66 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_179));
-		nimln(14, "moduleTest.nim");
-		raiseException((Exception*)LOC66, "YamlConstructionError");
-	}
-	LA64: ;
-	nimln(15, "moduleTest.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC71;
-		if (!!(matched0[(((NI) 1))- 0])) goto LA69;
-		nimln(877, "serialization.nim");
-		LOC71 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC71 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_180));
-		nimln(15, "moduleTest.nim");
-		raiseException((Exception*)LOC71, "YamlConstructionError");
-	}
-	LA69: ;
-	nimln(877, "serialization.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC76;
-		nimln(16, "moduleTest.nim");
-		if (!!(matched0[(((NI) 2))- 0])) goto LA74;
-		nimln(877, "serialization.nim");
-		LOC76 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC76 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_181));
-		nimln(16, "moduleTest.nim");
-		raiseException((Exception*)LOC76, "YamlConstructionError");
-	}
-	LA74: ;
-	popFrame();
-}
-
-N_NIMCALL(void, constructchild_qKYB3kUnLNDnZE6kuUEdOw)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Functions_KX0IMrQMf9c7tfBWVv2DRAA* result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
-	nimfr("constructChild", "serialization.nim")
-	memset((void*)(&item0), 0, sizeof(item0));
-	nimln(1042, "serialization.nim");
-	chckNil((void*)(&item0));
-	memset((void*)(&item0), 0, sizeof(item0));
-	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
-	nimln(1084, "serialization.nim");
-	switch (item0.kind) {
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-	{
-		nimln(1086, "serialization.nim");
-		{
-			TY_Bd4h7Ocx9bGTvrKzPIWNlHw LOC4;
-			NIM_BOOL LOC5;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC8;
-			nimln(1130, "system.nim");
-			nimln(1086, "serialization.nim");
-			LOC4[0] = ((NI) 1);
-			LOC4[1] = ((NI) 0);
-			nimln(1087, "serialization.nim");
-			LOC4[2] = yamltag_G9bZNr7vf9bxsOYljYA1cTbwserialization();
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
-			LOC5 = (NIM_BOOL)0;
-			LOC5 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC4, 3, item0.kindU.S3.scalartag);
-			if (!!(LOC5)) goto LA6;
-			nimln(1088, "serialization.nim");
-			LOC8 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC8 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_130));
-			raiseException((Exception*)LOC8, "YamlConstructionError");
-		}
-		goto LA2;
-		LA6: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC12;
-			nimln(347, "system.nim");
-			nimln(1089, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_27));
-			if (!!((item0.kindU.S3.scalaranchor == ((NI) -1)))) goto LA10;
-			nimln(1090, "serialization.nim");
-			LOC12 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC12 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC12, "YamlConstructionError");
-		}
-		goto LA2;
-		LA10: ;
-		LA2: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-	{
-		nimln(1092, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC16;
-			NIM_BOOL LOC17;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC20;
-			nimln(1130, "system.nim");
-			nimln(1092, "serialization.nim");
-			LOC16[0] = ((NI) 1);
-			LOC16[1] = yamltag_G9bZNr7vf9bxsOYljYA1cTbwserialization();
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_113));
-			LOC17 = (NIM_BOOL)0;
-			LOC17 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC16, 2, item0.kindU.S1.maptag);
-			if (!!(LOC17)) goto LA18;
-			nimln(1093, "serialization.nim");
-			LOC20 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC20 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_130));
-			raiseException((Exception*)LOC20, "YamlConstructionError");
-		}
-		goto LA14;
-		LA18: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC24;
-			nimln(347, "system.nim");
-			nimln(1094, "serialization.nim");
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_114));
-			if (!!((item0.kindU.S1.mapanchor == ((NI) -1)))) goto LA22;
-			nimln(1095, "serialization.nim");
-			LOC24 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC24 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC24, "YamlConstructionError");
-		}
-		goto LA14;
-		LA22: ;
-		LA14: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-	{
-		nimln(1097, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC28;
-			NIM_BOOL LOC29;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
-			nimln(1130, "system.nim");
-			nimln(1097, "serialization.nim");
-			LOC28[0] = ((NI) 1);
-			LOC28[1] = yamltag_G9bZNr7vf9bxsOYljYA1cTbwserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
-			LOC29 = (NIM_BOOL)0;
-			LOC29 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC28, 2, item0.kindU.S2.seqtag);
-			if (!!(LOC29)) goto LA30;
-			nimln(1098, "serialization.nim");
-			LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_130));
-			raiseException((Exception*)LOC32, "YamlConstructionError");
-		}
-		goto LA26;
-		LA30: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC36;
-			nimln(347, "system.nim");
-			nimln(1099, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
-			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA34;
-			nimln(1100, "serialization.nim");
-			LOC36 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC36 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC36, "YamlConstructionError");
-		}
-		goto LA26;
-		LA34: ;
-		LA26: ;
-	}
-	break;
-	default:
-	{
-		TY_XOVT24GHXwqiEj5GCsEGCA ii_yXcVizMBZIgCJXVQF7CMmg_2;
-		NimStringDesc* LOC38;
-		NimStringDesc* LOC39;
-		TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_131;
-		memset((void*)(&ii_yXcVizMBZIgCJXVQF7CMmg_2), 0, sizeof(ii_yXcVizMBZIgCJXVQF7CMmg_2));
-		nimln(9, "internal.nim");
-		ii_yXcVizMBZIgCJXVQF7CMmg_2.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field0);
-		ii_yXcVizMBZIgCJXVQF7CMmg_2.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field1;
-		nimln(10, "internal.nim");
-		LOC38 = (NimStringDesc*)0;
-		LOC38 = copyString(nimIntToStr(ii_yXcVizMBZIgCJXVQF7CMmg_2.Field1));
-		printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_yXcVizMBZIgCJXVQF7CMmg_2.Field0? (ii_yXcVizMBZIgCJXVQF7CMmg_2.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC38? (LOC38)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-		fflush(stdout);
-		nimln(1101, "serialization.nim");
-		LOC39 = (NimStringDesc*)0;
-		LOC39 = rawNewString(reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 22);
-appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_116));
-appendString(LOC39, reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		printf("%s\015\012", LOC39? (LOC39)->data:"nil");
-		fflush(stdout);
-		nimln(13, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-		fflush(stdout);
-		nimln(14, "internal.nim");
-		pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_131);
-		T_sK7FGu9ad5Rgd39a23ZLNfog_131.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_131.context);
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_131.status == 0) {
-			writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-			popSafePoint();
-		}
-		else {
-			popSafePoint();
-			setFrame((TFrame*)&FR);
-			{
-				T_sK7FGu9ad5Rgd39a23ZLNfog_131.status = 0;
-				popCurrentException();
-			}
-		}
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_131.status != 0) reraiseException();
-		nimln(16, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-		fflush(stdout);
-		nimln(17, "internal.nim");
-		exit(((NI) 1));
-	}
-	break;
-	}
-	nimln(1102, "serialization.nim");
-	constructobject_qKYB3kUnLNDnZE6kuUEdOw_2(s0, c0, result0);
-	popFrame();
-}
-
-N_NIMCALL(void, constructobject_8fGgLhi2nO9apPYZT62KkHQ_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3dusVJa1vh9c3Cln4V7kTqQ** result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ event0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC13;
-	nimfr("constructObject", "serialization.nim")
-	memset((void*)(&event0), 0, sizeof(event0));
-	nimln(403, "serialization.nim");
-	chckNil((void*)(&event0));
-	memset((void*)(&event0), 0, sizeof(event0));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&event0));
-	nimln(404, "serialization.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC5;
-		nimln(347, "system.nim");
-		nimln(404, "serialization.nim");
-		if (!!((event0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4)))) goto LA3;
-		nimln(405, "serialization.nim");
-		LOC5 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC5 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_111));
-		raiseException((Exception*)LOC5, "YamlConstructionError");
-	}
-	LA3: ;
-	nimln(406, "serialization.nim");
-	unsureAsgnRef((void**) (&(*result0)), newseq_QIqsMqUX09a7D9chD79arb4HA(((NI) 0)));
-	{
-		nimln(407, "serialization.nim");
-		while (1) {
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC8;
-			Functions_KX0IMrQMf9c7tfBWVv2DRAA item0;
-			NimStringDesc* LOC9;
-			NimStringDesc* LOC10;
-			NimStringDesc* LOC11;
-			NimStringDesc* LOC12;
-			nimln(347, "system.nim");
-			nimln(407, "serialization.nim");
-			memset((void*)(&LOC8), 0, sizeof(LOC8));
-			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC8));
-			if (!!((LOC8.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5)))) goto LA7;
-			memset((void*)(&item0), 0, sizeof(item0));
-			nimln(409, "serialization.nim");
-			constructchild_qKYB3kUnLNDnZE6kuUEdOw(s0, c0, (&item0));
-			nimln(410, "serialization.nim");
-			(*result0) = (TY_3dusVJa1vh9c3Cln4V7kTqQ*) incrSeqV2(&((*result0))->Sup, sizeof(Functions_KX0IMrQMf9c7tfBWVv2DRAA));
-			LOC9 = (NimStringDesc*)0;
-			LOC9 = (*result0)->data[(*result0)->Sup.len].name; (*result0)->data[(*result0)->Sup.len].name = copyStringRC1(item0.name);
-			if (LOC9) nimGCunrefNoCycle(LOC9);
-			LOC10 = (NimStringDesc*)0;
-			LOC10 = (*result0)->data[(*result0)->Sup.len].signature; (*result0)->data[(*result0)->Sup.len].signature = copyStringRC1(item0.signature);
-			if (LOC10) nimGCunrefNoCycle(LOC10);
-			LOC11 = (NimStringDesc*)0;
-			LOC11 = (*result0)->data[(*result0)->Sup.len].params.count; (*result0)->data[(*result0)->Sup.len].params.count = copyStringRC1(item0.params.count);
-			if (LOC11) nimGCunrefNoCycle(LOC11);
-			genericSeqAssign((&(*result0)->data[(*result0)->Sup.len].params.args), item0.params.args, (&NTI_VWiRdvyApTLgh9a9adQfUKzQ));
-			LOC12 = (NimStringDesc*)0;
-			LOC12 = (*result0)->data[(*result0)->Sup.len].params.returntype; (*result0)->data[(*result0)->Sup.len].params.returntype = copyStringRC1(item0.params.returntype);
-			if (LOC12) nimGCunrefNoCycle(LOC12);
-			++(*result0)->Sup.len;
-		} LA7: ;
-	}
-	nimln(411, "serialization.nim");
-	memset((void*)(&LOC13), 0, sizeof(LOC13));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC13));
-	popFrame();
-}
-
-N_NIMCALL(void, constructchild_8fGgLhi2nO9apPYZT62KkHQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3dusVJa1vh9c3Cln4V7kTqQ** result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
-	nimfr("constructChild", "serialization.nim")
-{	memset((void*)(&item0), 0, sizeof(item0));
-	nimln(1121, "serialization.nim");
-	chckNil((void*)(&item0));
-	memset((void*)(&item0), 0, sizeof(item0));
-	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
-	nimln(1122, "serialization.nim");
-	{
-		if (!(item0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6))) goto LA3;
-		nimln(1123, "serialization.nim");
-		{
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
-			if (!(item0.kindU.S3.scalartag == ((NI) 102))) goto LA7;
-			nimln(1124, "serialization.nim");
-			memset((void*)(&LOC9), 0, sizeof(LOC9));
-			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC9));
-			nimln(1125, "serialization.nim");
-			genericSeqAssign((&(*result0)), NIM_NIL, (&NTI_3dusVJa1vh9c3Cln4V7kTqQ));
-			nimln(1126, "serialization.nim");
-			goto BeforeRet;
-		}
-		LA7: ;
-	}
-	goto LA1;
-	LA3: ;
-	{
-		nimln(1127, "serialization.nim");
-		if (!(item0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4))) goto LA11;
-		nimln(1128, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC15;
-			NIM_BOOL LOC16;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC19;
-			nimln(1130, "system.nim");
-			nimln(1128, "serialization.nim");
-			LOC15[0] = ((NI) 1);
-			LOC15[1] = yamltag_NCFZ5AYN9cfEByOcJEB7QLgserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
-			LOC16 = (NIM_BOOL)0;
-			LOC16 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC15, 2, item0.kindU.S2.seqtag);
-			if (!!(LOC16)) goto LA17;
-			nimln(1129, "serialization.nim");
-			LOC19 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC19 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_129));
-			raiseException((Exception*)LOC19, "YamlConstructionError");
-		}
-		goto LA13;
-		LA17: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC23;
-			nimln(347, "system.nim");
-			nimln(1130, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
-			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA21;
-			nimln(1131, "serialization.nim");
-			LOC23 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC23 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC23, "YamlConstructionError");
-		}
-		goto LA13;
-		LA21: ;
-		LA13: ;
-	}
-	goto LA1;
-	LA11: ;
-	LA1: ;
-	nimln(1132, "serialization.nim");
-	constructobject_8fGgLhi2nO9apPYZT62KkHQ_2(s0, c0, result0);
-	}BeforeRet: ;
-	popFrame();
-}
-
-N_NIMCALL(void, constructobject_48OF8eSMs7hKVSzko2dBLw_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Config_sgX0j0QdwD36v9ax9bDpF3yg* result0) {
-	TY_Gl9aAKPegYDOYkxLtedgz8w matched0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ e0;
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC54;
-	nimfr("constructObject", "serialization.nim")
-	memset((void*)matched0, 0, sizeof(matched0));
-	nimln(816, "serialization.nim");
-	memcpy((void*)matched0, (NIM_CONST void*)T_sK7FGu9ad5Rgd39a23ZLNfog_118, sizeof(TY_Gl9aAKPegYDOYkxLtedgz8w));
-	memset((void*)(&e0), 0, sizeof(e0));
-	nimln(817, "serialization.nim");
-	chckNil((void*)(&e0));
-	memset((void*)(&e0), 0, sizeof(e0));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-	nimln(822, "serialization.nim");
-	{
-		NimStringDesc* LOC5;
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC6;
-		nimln(347, "system.nim");
-		nimln(822, "serialization.nim");
-		if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2)))) goto LA3;
-		nimln(823, "serialization.nim");
-		nimln(824, "serialization.nim");
-		LOC5 = (NimStringDesc*)0;
-		LOC5 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 54);
-appendString(LOC5, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_119));
-appendString(LOC5, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		LOC6 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC6 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC5);
-		nimln(823, "serialization.nim");
-		raiseException((Exception*)LOC6, "YamlConstructionError");
-	}
-	LA3: ;
-	{
-		nimln(827, "serialization.nim");
-		while (1) {
-			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
-			NimStringDesc* name0;
-			nimln(347, "system.nim");
-			nimln(827, "serialization.nim");
-			memset((void*)(&LOC9), 0, sizeof(LOC9));
-			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC9));
-			if (!!((LOC9.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3)))) goto LA8;
-			nimln(828, "serialization.nim");
-			chckNil((void*)(&e0));
-			memset((void*)(&e0), 0, sizeof(e0));
-			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-			nimln(833, "serialization.nim");
-			{
-				NimStringDesc* LOC14;
-				Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC15;
-				nimln(347, "system.nim");
-				nimln(833, "serialization.nim");
-				if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6)))) goto LA12;
-				nimln(834, "serialization.nim");
-				LOC14 = (NimStringDesc*)0;
-				LOC14 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 25);
-appendString(LOC14, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_120));
-appendString(LOC14, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-				LOC15 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-				LOC15 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC14);
-				raiseException((Exception*)LOC15, "YamlConstructionError");
-			}
-			LA12: ;
-			nimln(835, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(e0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_23));
-			name0 = e0.kindU.S3.scalarcontent;
-			nimln(853, "serialization.nim");
-			{
-				TY_sM4lkSb7zS6F7OVMvW9cffQ* LOC18;
-				NIM_BOOL LOC19;
-				nimln(1130, "system.nim");
-				nimln(853, "serialization.nim");
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*)0;
-				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*) newSeq((&NTI_sM4lkSb7zS6F7OVMvW9cffQ), 0);
-				LOC19 = (NIM_BOOL)0;
-				LOC19 = contains_jPdUhZfr9a8sH2V3ZBDljzwtaglib(LOC18->data, LOC18->Sup.len, name0);
-				if (!!(LOC19)) goto LA20;
-				nimln(854, "serialization.nim");
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_123))) goto LA22;
-				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_124))) goto LA23;
-				goto LA24;
-				LA22: ;
-				{
-					nimln(19, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC31;
-						if (!matched0[(((NI) 0))- 0]) goto LA29;
-						nimln(854, "serialization.nim");
-						LOC31 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC31 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_125));
-						nimln(19, "moduleTest.nim");
-						raiseException((Exception*)LOC31, "YamlConstructionError");
-					}
-					LA29: ;
-					nimln(854, "serialization.nim");
-					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).library));
-					nimln(19, "moduleTest.nim");
-					matched0[(((NI) 0))- 0] = NIM_TRUE;
-				}
-				goto LA25;
-				LA23: ;
-				{
-					nimln(20, "moduleTest.nim");
-					{
-						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC37;
-						if (!matched0[(((NI) 1))- 0]) goto LA35;
-						nimln(854, "serialization.nim");
-						LOC37 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-						LOC37 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_126));
-						nimln(20, "moduleTest.nim");
-						raiseException((Exception*)LOC37, "YamlConstructionError");
-					}
-					LA35: ;
-					nimln(854, "serialization.nim");
-					constructchild_8fGgLhi2nO9apPYZT62KkHQ(s0, c0, (&(*result0).functions));
-					nimln(20, "moduleTest.nim");
-					matched0[(((NI) 1))- 0] = NIM_TRUE;
-				}
-				goto LA25;
-				LA24: ;
-				{
-					NimStringDesc* LOC39;
-					NimStringDesc* LOC40;
-					Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC41;
-					nimln(854, "serialization.nim");
-					nimln(20, "moduleTest.nim");
-					LOC39 = (NimStringDesc*)0;
-					nimln(854, "serialization.nim");
-					LOC40 = (NimStringDesc*)0;
-					LOC40 = nsuEscape(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36));
-					LOC39 = rawNewString(LOC40->Sup.len + 42);
-appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_182));
-appendString(LOC39, LOC40);
-					LOC41 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-					LOC41 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC39);
-					nimln(20, "moduleTest.nim");
-					raiseException((Exception*)LOC41, "YamlConstructionError");
-				}
-				LA25: ;
-			}
-			goto LA16;
-			LA20: ;
-			{
-				NI depth0;
-				nimln(856, "serialization.nim");
-				chckNil((void*)(&e0));
-				memset((void*)(&e0), 0, sizeof(e0));
-				next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
-				nimln(857, "serialization.nim");
-				depth0 = ((NI) (((20 &(1U<<((NU)(e0.kind)&7U)))!=0)));
-				{
-					nimln(858, "serialization.nim");
-					while (1) {
-						Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC45;
-						if (!(((NI) 0) < depth0)) goto LA44;
-						nimln(859, "serialization.nim");
-						memset((void*)(&LOC45), 0, sizeof(LOC45));
-						next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC45));
-						switch (LOC45.kind) {
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_183;
-							nimln(860, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_183 = addInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_183);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3):
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5):
-						{
-							NI T_sK7FGu9ad5Rgd39a23ZLNfog_184;
-							nimln(861, "serialization.nim");
-							T_sK7FGu9ad5Rgd39a23ZLNfog_184 = subInt(depth0, ((NI) 1));
-							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_184);
-						}
-						break;
-						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-						{
-						}
-						break;
-						default:
-						{
-							TY_XOVT24GHXwqiEj5GCsEGCA ii_Yju6uYaWf29atrAKMWd9auDA_4;
-							NimStringDesc* LOC50;
-							TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_185;
-							memset((void*)(&ii_Yju6uYaWf29atrAKMWd9auDA_4), 0, sizeof(ii_Yju6uYaWf29atrAKMWd9auDA_4));
-							nimln(9, "internal.nim");
-							ii_Yju6uYaWf29atrAKMWd9auDA_4.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field0);
-							ii_Yju6uYaWf29atrAKMWd9auDA_4.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_162.Field1;
-							nimln(10, "internal.nim");
-							LOC50 = (NimStringDesc*)0;
-							LOC50 = copyString(nimIntToStr(ii_Yju6uYaWf29atrAKMWd9auDA_4.Field1));
-							printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_Yju6uYaWf29atrAKMWd9auDA_4.Field0? (ii_Yju6uYaWf29atrAKMWd9auDA_4.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC50? (LOC50)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-							fflush(stdout);
-							nimln(863, "serialization.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_163))->data:"nil");
-							fflush(stdout);
-							nimln(13, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-							fflush(stdout);
-							nimln(14, "internal.nim");
-							pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_185);
-							T_sK7FGu9ad5Rgd39a23ZLNfog_185.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_185.context);
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_185.status == 0) {
-								writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-								popSafePoint();
-							}
-							else {
-								popSafePoint();
-								setFrame((TFrame*)&FR);
-								{
-									T_sK7FGu9ad5Rgd39a23ZLNfog_185.status = 0;
-									popCurrentException();
-								}
-							}
-							if (T_sK7FGu9ad5Rgd39a23ZLNfog_185.status != 0) reraiseException();
-							nimln(16, "internal.nim");
-							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-							fflush(stdout);
-							nimln(17, "internal.nim");
-							exit(((NI) 1));
-						}
-						break;
-						}
-					} LA44: ;
-				}
-			}
-			LA16: ;
-		} LA8: ;
-	}
-	nimln(869, "serialization.nim");
-	memset((void*)(&LOC54), 0, sizeof(LOC54));
-	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC54));
-	nimln(19, "moduleTest.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC59;
-		if (!!(matched0[(((NI) 0))- 0])) goto LA57;
-		nimln(877, "serialization.nim");
-		LOC59 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC59 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_186));
-		nimln(19, "moduleTest.nim");
-		raiseException((Exception*)LOC59, "YamlConstructionError");
-	}
-	LA57: ;
-	nimln(877, "serialization.nim");
-	{
-		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC64;
-		nimln(20, "moduleTest.nim");
-		if (!!(matched0[(((NI) 1))- 0])) goto LA62;
-		nimln(877, "serialization.nim");
-		LOC64 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC64 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_187));
-		nimln(20, "moduleTest.nim");
-		raiseException((Exception*)LOC64, "YamlConstructionError");
-	}
-	LA62: ;
-	popFrame();
-}
-
-N_NIMCALL(void, constructchild_48OF8eSMs7hKVSzko2dBLw)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Config_sgX0j0QdwD36v9ax9bDpF3yg* result0) {
-	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
-	nimfr("constructChild", "serialization.nim")
-	memset((void*)(&item0), 0, sizeof(item0));
-	nimln(1042, "serialization.nim");
-	chckNil((void*)(&item0));
-	memset((void*)(&item0), 0, sizeof(item0));
-	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
-	nimln(1084, "serialization.nim");
-	switch (item0.kind) {
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
-	{
-		nimln(1086, "serialization.nim");
-		{
-			TY_Bd4h7Ocx9bGTvrKzPIWNlHw LOC4;
-			NIM_BOOL LOC5;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC8;
-			nimln(1130, "system.nim");
-			nimln(1086, "serialization.nim");
-			LOC4[0] = ((NI) 1);
-			LOC4[1] = ((NI) 0);
-			nimln(1087, "serialization.nim");
-			LOC4[2] = yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization();
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
-			LOC5 = (NIM_BOOL)0;
-			LOC5 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC4, 3, item0.kindU.S3.scalartag);
-			if (!!(LOC5)) goto LA6;
-			nimln(1088, "serialization.nim");
-			LOC8 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC8 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_112));
-			raiseException((Exception*)LOC8, "YamlConstructionError");
-		}
-		goto LA2;
-		LA6: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC12;
-			nimln(347, "system.nim");
-			nimln(1089, "serialization.nim");
-			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_27));
-			if (!!((item0.kindU.S3.scalaranchor == ((NI) -1)))) goto LA10;
-			nimln(1090, "serialization.nim");
-			LOC12 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC12 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC12, "YamlConstructionError");
-		}
-		goto LA2;
-		LA10: ;
-		LA2: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
-	{
-		nimln(1092, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC16;
-			NIM_BOOL LOC17;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC20;
-			nimln(1130, "system.nim");
-			nimln(1092, "serialization.nim");
-			LOC16[0] = ((NI) 1);
-			LOC16[1] = yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization();
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_113));
-			LOC17 = (NIM_BOOL)0;
-			LOC17 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC16, 2, item0.kindU.S1.maptag);
-			if (!!(LOC17)) goto LA18;
-			nimln(1093, "serialization.nim");
-			LOC20 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC20 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_112));
-			raiseException((Exception*)LOC20, "YamlConstructionError");
-		}
-		goto LA14;
-		LA18: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC24;
-			nimln(347, "system.nim");
-			nimln(1094, "serialization.nim");
-			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_114));
-			if (!!((item0.kindU.S1.mapanchor == ((NI) -1)))) goto LA22;
-			nimln(1095, "serialization.nim");
-			LOC24 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC24 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC24, "YamlConstructionError");
-		}
-		goto LA14;
-		LA22: ;
-		LA14: ;
-	}
-	break;
-	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
-	{
-		nimln(1097, "serialization.nim");
-		{
-			TY_HU7qaqKu9czJLT84iCBJnsA LOC28;
-			NIM_BOOL LOC29;
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
-			nimln(1130, "system.nim");
-			nimln(1097, "serialization.nim");
-			LOC28[0] = ((NI) 1);
-			LOC28[1] = yamltag_Qi7ue8kAcVU9a54rnkHLZDQserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
-			LOC29 = (NIM_BOOL)0;
-			LOC29 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC28, 2, item0.kindU.S2.seqtag);
-			if (!!(LOC29)) goto LA30;
-			nimln(1098, "serialization.nim");
-			LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_112));
-			raiseException((Exception*)LOC32, "YamlConstructionError");
-		}
-		goto LA26;
-		LA30: ;
-		{
-			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC36;
-			nimln(347, "system.nim");
-			nimln(1099, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
-			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA34;
-			nimln(1100, "serialization.nim");
-			LOC36 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC36 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
-			raiseException((Exception*)LOC36, "YamlConstructionError");
-		}
-		goto LA26;
-		LA34: ;
-		LA26: ;
-	}
-	break;
-	default:
-	{
-		TY_XOVT24GHXwqiEj5GCsEGCA ii_yXcVizMBZIgCJXVQF7CMmg;
-		NimStringDesc* LOC38;
-		NimStringDesc* LOC39;
-		TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_117;
-		memset((void*)(&ii_yXcVizMBZIgCJXVQF7CMmg), 0, sizeof(ii_yXcVizMBZIgCJXVQF7CMmg));
-		nimln(9, "internal.nim");
-		ii_yXcVizMBZIgCJXVQF7CMmg.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field0);
-		ii_yXcVizMBZIgCJXVQF7CMmg.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_115.Field1;
-		nimln(10, "internal.nim");
-		LOC38 = (NimStringDesc*)0;
-		LOC38 = copyString(nimIntToStr(ii_yXcVizMBZIgCJXVQF7CMmg.Field1));
-		printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_yXcVizMBZIgCJXVQF7CMmg.Field0? (ii_yXcVizMBZIgCJXVQF7CMmg.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC38? (LOC38)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
-		fflush(stdout);
-		nimln(1101, "serialization.nim");
-		LOC39 = (NimStringDesc*)0;
-		LOC39 = rawNewString(reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 22);
-appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_116));
-appendString(LOC39, reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
-		printf("%s\015\012", LOC39? (LOC39)->data:"nil");
-		fflush(stdout);
-		nimln(13, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
-		fflush(stdout);
-		nimln(14, "internal.nim");
-		pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_117);
-		T_sK7FGu9ad5Rgd39a23ZLNfog_117.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_117.context);
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_117.status == 0) {
-			writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
-			popSafePoint();
-		}
-		else {
-			popSafePoint();
-			setFrame((TFrame*)&FR);
-			{
-				T_sK7FGu9ad5Rgd39a23ZLNfog_117.status = 0;
-				popCurrentException();
-			}
-		}
-		if (T_sK7FGu9ad5Rgd39a23ZLNfog_117.status != 0) reraiseException();
-		nimln(16, "internal.nim");
-		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
-		fflush(stdout);
-		nimln(17, "internal.nim");
-		exit(((NI) 1));
-	}
-	break;
-	}
-	nimln(1102, "serialization.nim");
-	constructobject_48OF8eSMs7hKVSzko2dBLw_2(s0, c0, result0);
-	popFrame();
-}
-
-N_NIMCALL(void, constructobject_MOjeABAyPOvhMAaAjFGXXA_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3Z9cQIO745FN6hyPg6rEvTQ** result0) {
+N_NIMCALL(void, constructobject_fpNlizEPc581c6GnoE7Rsg_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_sM4lkSb7zS6F7OVMvW9cffQ** result0) {
 	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ event0;
 	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC10;
 	nimfr("constructObject", "serialization.nim")
@@ -5470,32 +3106,31 @@ N_NIMCALL(void, constructobject_MOjeABAyPOvhMAaAjFGXXA_2)(YamlstreamHEX3Aobjectt
 		if (!!((event0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4)))) goto LA3;
 		nimln(405, "serialization.nim");
 		LOC5 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-		LOC5 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_111));
+		LOC5 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_128));
 		raiseException((Exception*)LOC5, "YamlConstructionError");
 	}
 	LA3: ;
 	nimln(406, "serialization.nim");
-	unsureAsgnRef((void**) (&(*result0)), newseq_FpiO41FdUxDz5HPiy89aJeA(((NI) 0)));
+	unsureAsgnRef((void**) (&(*result0)), newseq_9cL6dIz2UWtIh3FeS5x4hxA(((NI) 0)));
 	{
 		nimln(407, "serialization.nim");
 		while (1) {
 			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC8;
-			Config_sgX0j0QdwD36v9ax9bDpF3yg item0;
+			NimStringDesc* item0;
 			NimStringDesc* LOC9;
 			nimln(347, "system.nim");
 			nimln(407, "serialization.nim");
 			memset((void*)(&LOC8), 0, sizeof(LOC8));
 			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC8));
 			if (!!((LOC8.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5)))) goto LA7;
-			memset((void*)(&item0), 0, sizeof(item0));
+			item0 = (NimStringDesc*)0;
 			nimln(409, "serialization.nim");
-			constructchild_48OF8eSMs7hKVSzko2dBLw(s0, c0, (&item0));
+			constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&item0));
 			nimln(410, "serialization.nim");
-			(*result0) = (TY_3Z9cQIO745FN6hyPg6rEvTQ*) incrSeqV2(&((*result0))->Sup, sizeof(Config_sgX0j0QdwD36v9ax9bDpF3yg));
+			(*result0) = (TY_sM4lkSb7zS6F7OVMvW9cffQ*) incrSeqV2(&((*result0))->Sup, sizeof(NimStringDesc*));
 			LOC9 = (NimStringDesc*)0;
-			LOC9 = (*result0)->data[(*result0)->Sup.len].library; (*result0)->data[(*result0)->Sup.len].library = copyStringRC1(item0.library);
+			LOC9 = (*result0)->data[(*result0)->Sup.len]; (*result0)->data[(*result0)->Sup.len] = copyStringRC1(item0);
 			if (LOC9) nimGCunrefNoCycle(LOC9);
-			genericSeqAssign((&(*result0)->data[(*result0)->Sup.len].functions), item0.functions, (&NTI_3dusVJa1vh9c3Cln4V7kTqQ));
 			++(*result0)->Sup.len;
 		} LA7: ;
 	}
@@ -5505,7 +3140,7 @@ N_NIMCALL(void, constructobject_MOjeABAyPOvhMAaAjFGXXA_2)(YamlstreamHEX3Aobjectt
 	popFrame();
 }
 
-N_NIMCALL(void, constructchild_MOjeABAyPOvhMAaAjFGXXA)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_3Z9cQIO745FN6hyPg6rEvTQ** result0) {
+N_NIMCALL(void, constructchild_fpNlizEPc581c6GnoE7Rsg)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, TY_sM4lkSb7zS6F7OVMvW9cffQ** result0) {
 	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
 	nimfr("constructChild", "serialization.nim")
 {	memset((void*)(&item0), 0, sizeof(item0));
@@ -5525,7 +3160,7 @@ N_NIMCALL(void, constructchild_MOjeABAyPOvhMAaAjFGXXA)(YamlstreamHEX3Aobjecttype
 			memset((void*)(&LOC9), 0, sizeof(LOC9));
 			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC9));
 			nimln(1125, "serialization.nim");
-			genericSeqAssign((&(*result0)), NIM_NIL, (&NTI_3Z9cQIO745FN6hyPg6rEvTQ));
+			genericSeqAssign((&(*result0)), NIM_NIL, (&NTI_sM4lkSb7zS6F7OVMvW9cffQ));
 			nimln(1126, "serialization.nim");
 			goto BeforeRet;
 		}
@@ -5544,14 +3179,14 @@ N_NIMCALL(void, constructchild_MOjeABAyPOvhMAaAjFGXXA)(YamlstreamHEX3Aobjecttype
 			nimln(1130, "system.nim");
 			nimln(1128, "serialization.nim");
 			LOC15[0] = ((NI) 1);
-			LOC15[1] = yamltag_bHhGJercQjl0rzjHeoY9ccAserialization();
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
+			LOC15[1] = yamltag_ddjJKTS4kHkAPUXz1ZELhwserialization();
+			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
 			LOC16 = (NIM_BOOL)0;
 			LOC16 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC15, 2, item0.kindU.S2.seqtag);
 			if (!!(LOC16)) goto LA17;
 			nimln(1129, "serialization.nim");
 			LOC19 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
-			LOC19 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_109));
+			LOC19 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_127));
 			raiseException((Exception*)LOC19, "YamlConstructionError");
 		}
 		goto LA13;
@@ -5560,7 +3195,7 @@ N_NIMCALL(void, constructchild_MOjeABAyPOvhMAaAjFGXXA)(YamlstreamHEX3Aobjecttype
 			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC23;
 			nimln(347, "system.nim");
 			nimln(1130, "serialization.nim");
-			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
+			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_111));
 			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA21;
 			nimln(1131, "serialization.nim");
 			LOC23 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
@@ -5575,12 +3210,483 @@ N_NIMCALL(void, constructchild_MOjeABAyPOvhMAaAjFGXXA)(YamlstreamHEX3Aobjecttype
 	LA11: ;
 	LA1: ;
 	nimln(1132, "serialization.nim");
-	constructobject_MOjeABAyPOvhMAaAjFGXXA_2(s0, c0, result0);
+	constructobject_fpNlizEPc581c6GnoE7Rsg_2(s0, c0, result0);
 	}BeforeRet: ;
 	popFrame();
 }
 
-N_NIMCALL(void, construct_xyZDNzhtiWMmmcLlQtWB0A)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, TY_3Z9cQIO745FN6hyPg6rEvTQ** target0) {
+N_NIMCALL(void, constructobject_Rv8E8J2OeB7IZbsCTHZWXw_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Librequest_ngq9bCXY9apXaklREHzSKIGg* result0) {
+	TY_xSxqoPo7Fj4uIDcWiYyWDg matched0;
+	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ e0;
+	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC61;
+	nimfr("constructObject", "serialization.nim")
+	memset((void*)matched0, 0, sizeof(matched0));
+	nimln(816, "serialization.nim");
+	memcpy((void*)matched0, (NIM_CONST void*)T_sK7FGu9ad5Rgd39a23ZLNfog_115, sizeof(TY_xSxqoPo7Fj4uIDcWiYyWDg));
+	memset((void*)(&e0), 0, sizeof(e0));
+	nimln(817, "serialization.nim");
+	chckNil((void*)(&e0));
+	memset((void*)(&e0), 0, sizeof(e0));
+	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
+	nimln(822, "serialization.nim");
+	{
+		NimStringDesc* LOC5;
+		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC6;
+		nimln(347, "system.nim");
+		nimln(822, "serialization.nim");
+		if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2)))) goto LA3;
+		nimln(823, "serialization.nim");
+		nimln(824, "serialization.nim");
+		LOC5 = (NimStringDesc*)0;
+		LOC5 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 58);
+appendString(LOC5, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_116));
+appendString(LOC5, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
+		LOC6 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+		LOC6 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC5);
+		nimln(823, "serialization.nim");
+		raiseException((Exception*)LOC6, "YamlConstructionError");
+	}
+	LA3: ;
+	{
+		nimln(827, "serialization.nim");
+		while (1) {
+			Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC9;
+			NimStringDesc* name0;
+			nimln(347, "system.nim");
+			nimln(827, "serialization.nim");
+			memset((void*)(&LOC9), 0, sizeof(LOC9));
+			peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&LOC9));
+			if (!!((LOC9.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3)))) goto LA8;
+			nimln(828, "serialization.nim");
+			chckNil((void*)(&e0));
+			memset((void*)(&e0), 0, sizeof(e0));
+			next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
+			nimln(833, "serialization.nim");
+			{
+				NimStringDesc* LOC14;
+				Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC15;
+				nimln(347, "system.nim");
+				nimln(833, "serialization.nim");
+				if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6)))) goto LA12;
+				nimln(834, "serialization.nim");
+				LOC14 = (NimStringDesc*)0;
+				LOC14 = rawNewString(reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 25);
+appendString(LOC14, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_117));
+appendString(LOC14, reprEnum((NI)e0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
+				LOC15 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+				LOC15 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC14);
+				raiseException((Exception*)LOC15, "YamlConstructionError");
+			}
+			LA12: ;
+			nimln(835, "serialization.nim");
+			if (!(((64 &(1U<<((NU)(e0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_23));
+			name0 = e0.kindU.S3.scalarcontent;
+			nimln(853, "serialization.nim");
+			{
+				TY_sM4lkSb7zS6F7OVMvW9cffQ* LOC18;
+				NIM_BOOL LOC19;
+				nimln(1130, "system.nim");
+				nimln(853, "serialization.nim");
+				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*)0;
+				LOC18 = (TY_sM4lkSb7zS6F7OVMvW9cffQ*) newSeq((&NTI_sM4lkSb7zS6F7OVMvW9cffQ), 0);
+				LOC19 = (NIM_BOOL)0;
+				LOC19 = contains_jPdUhZfr9a8sH2V3ZBDljzwasyncdispatch(LOC18->data, LOC18->Sup.len, name0);
+				if (!!(LOC19)) goto LA20;
+				nimln(854, "serialization.nim");
+				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_120))) goto LA22;
+				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_121))) goto LA23;
+				if (eqStrings(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_122))) goto LA24;
+				goto LA25;
+				LA22: ;
+				{
+					nimln(4, "nimFile.nim");
+					{
+						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
+						if (!matched0[(((NI) 0))- 0]) goto LA30;
+						nimln(854, "serialization.nim");
+						LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+						LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_123));
+						nimln(4, "nimFile.nim");
+						raiseException((Exception*)LOC32, "YamlConstructionError");
+					}
+					LA30: ;
+					nimln(854, "serialization.nim");
+					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).libraryname));
+					nimln(4, "nimFile.nim");
+					matched0[(((NI) 0))- 0] = NIM_TRUE;
+				}
+				goto LA26;
+				LA23: ;
+				{
+					nimln(5, "nimFile.nim");
+					{
+						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC38;
+						if (!matched0[(((NI) 1))- 0]) goto LA36;
+						nimln(854, "serialization.nim");
+						LOC38 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+						LOC38 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_124));
+						nimln(5, "nimFile.nim");
+						raiseException((Exception*)LOC38, "YamlConstructionError");
+					}
+					LA36: ;
+					nimln(854, "serialization.nim");
+					constructchild_v46iBpm9cjPyk9cn8xUdrnMA_2(s0, c0, (&(*result0).functionname));
+					nimln(5, "nimFile.nim");
+					matched0[(((NI) 1))- 0] = NIM_TRUE;
+				}
+				goto LA26;
+				LA24: ;
+				{
+					nimln(6, "nimFile.nim");
+					{
+						Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC44;
+						if (!matched0[(((NI) 2))- 0]) goto LA42;
+						nimln(854, "serialization.nim");
+						LOC44 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+						LOC44 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_125));
+						nimln(6, "nimFile.nim");
+						raiseException((Exception*)LOC44, "YamlConstructionError");
+					}
+					LA42: ;
+					nimln(854, "serialization.nim");
+					constructchild_fpNlizEPc581c6GnoE7Rsg(s0, c0, (&(*result0).args));
+					nimln(6, "nimFile.nim");
+					matched0[(((NI) 2))- 0] = NIM_TRUE;
+				}
+				goto LA26;
+				LA25: ;
+				{
+					NimStringDesc* LOC46;
+					NimStringDesc* LOC47;
+					Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC48;
+					nimln(854, "serialization.nim");
+					nimln(6, "nimFile.nim");
+					LOC46 = (NimStringDesc*)0;
+					nimln(854, "serialization.nim");
+					LOC47 = (NimStringDesc*)0;
+					LOC47 = nsuEscape(name0, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_36));
+					LOC46 = rawNewString(LOC47->Sup.len + 46);
+appendString(LOC46, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_129));
+appendString(LOC46, LOC47);
+					LOC48 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+					LOC48 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), LOC46);
+					nimln(6, "nimFile.nim");
+					raiseException((Exception*)LOC48, "YamlConstructionError");
+				}
+				LA26: ;
+			}
+			goto LA16;
+			LA20: ;
+			{
+				NI depth0;
+				nimln(856, "serialization.nim");
+				chckNil((void*)(&e0));
+				memset((void*)(&e0), 0, sizeof(e0));
+				next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&e0));
+				nimln(857, "serialization.nim");
+				depth0 = ((NI) (((20 &(1U<<((NU)(e0.kind)&7U)))!=0)));
+				{
+					nimln(858, "serialization.nim");
+					while (1) {
+						Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ LOC52;
+						if (!(((NI) 0) < depth0)) goto LA51;
+						nimln(859, "serialization.nim");
+						memset((void*)(&LOC52), 0, sizeof(LOC52));
+						next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC52));
+						switch (LOC52.kind) {
+						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
+						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
+						{
+							NI T_sK7FGu9ad5Rgd39a23ZLNfog_130;
+							nimln(860, "serialization.nim");
+							T_sK7FGu9ad5Rgd39a23ZLNfog_130 = addInt(depth0, ((NI) 1));
+							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_130);
+						}
+						break;
+						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 3):
+						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 5):
+						{
+							NI T_sK7FGu9ad5Rgd39a23ZLNfog_131;
+							nimln(861, "serialization.nim");
+							T_sK7FGu9ad5Rgd39a23ZLNfog_131 = subInt(depth0, ((NI) 1));
+							depth0 = (NI)(T_sK7FGu9ad5Rgd39a23ZLNfog_131);
+						}
+						break;
+						case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
+						{
+						}
+						break;
+						default:
+						{
+							TY_XOVT24GHXwqiEj5GCsEGCA ii_Yju6uYaWf29atrAKMWd9auDA;
+							NimStringDesc* LOC57;
+							TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_134;
+							memset((void*)(&ii_Yju6uYaWf29atrAKMWd9auDA), 0, sizeof(ii_Yju6uYaWf29atrAKMWd9auDA));
+							nimln(9, "internal.nim");
+							ii_Yju6uYaWf29atrAKMWd9auDA.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_132.Field0);
+							ii_Yju6uYaWf29atrAKMWd9auDA.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_132.Field1;
+							nimln(10, "internal.nim");
+							LOC57 = (NimStringDesc*)0;
+							LOC57 = copyString(nimIntToStr(ii_Yju6uYaWf29atrAKMWd9auDA.Field1));
+							printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_Yju6uYaWf29atrAKMWd9auDA.Field0? (ii_Yju6uYaWf29atrAKMWd9auDA.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC57? (LOC57)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
+							fflush(stdout);
+							nimln(863, "serialization.nim");
+							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_133)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_133))->data:"nil");
+							fflush(stdout);
+							nimln(13, "internal.nim");
+							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
+							fflush(stdout);
+							nimln(14, "internal.nim");
+							pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_134);
+							T_sK7FGu9ad5Rgd39a23ZLNfog_134.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_134.context);
+							if (T_sK7FGu9ad5Rgd39a23ZLNfog_134.status == 0) {
+								writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
+								popSafePoint();
+							}
+							else {
+								popSafePoint();
+								setFrame((TFrame*)&FR);
+								{
+									T_sK7FGu9ad5Rgd39a23ZLNfog_134.status = 0;
+									popCurrentException();
+								}
+							}
+							if (T_sK7FGu9ad5Rgd39a23ZLNfog_134.status != 0) reraiseException();
+							nimln(16, "internal.nim");
+							printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
+							fflush(stdout);
+							nimln(17, "internal.nim");
+							exit(((NI) 1));
+						}
+						break;
+						}
+					} LA51: ;
+				}
+			}
+			LA16: ;
+		} LA8: ;
+	}
+	nimln(869, "serialization.nim");
+	memset((void*)(&LOC61), 0, sizeof(LOC61));
+	next_gdCMPkCfsytYoA9aBpHup9bw((*s0), (&LOC61));
+	nimln(4, "nimFile.nim");
+	{
+		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC66;
+		if (!!(matched0[(((NI) 0))- 0])) goto LA64;
+		nimln(877, "serialization.nim");
+		LOC66 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+		LOC66 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_135));
+		nimln(4, "nimFile.nim");
+		raiseException((Exception*)LOC66, "YamlConstructionError");
+	}
+	LA64: ;
+	nimln(5, "nimFile.nim");
+	{
+		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC71;
+		if (!!(matched0[(((NI) 1))- 0])) goto LA69;
+		nimln(877, "serialization.nim");
+		LOC71 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+		LOC71 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_136));
+		nimln(5, "nimFile.nim");
+		raiseException((Exception*)LOC71, "YamlConstructionError");
+	}
+	LA69: ;
+	nimln(877, "serialization.nim");
+	{
+		Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC76;
+		nimln(6, "nimFile.nim");
+		if (!!(matched0[(((NI) 2))- 0])) goto LA74;
+		nimln(877, "serialization.nim");
+		LOC76 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+		LOC76 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_137));
+		nimln(6, "nimFile.nim");
+		raiseException((Exception*)LOC76, "YamlConstructionError");
+	}
+	LA74: ;
+	popFrame();
+}
+
+N_NIMCALL(void, constructchild_Rv8E8J2OeB7IZbsCTHZWXw)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* c0, Librequest_ngq9bCXY9apXaklREHzSKIGg* result0) {
+	Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ item0;
+	nimfr("constructChild", "serialization.nim")
+	memset((void*)(&item0), 0, sizeof(item0));
+	nimln(1042, "serialization.nim");
+	chckNil((void*)(&item0));
+	memset((void*)(&item0), 0, sizeof(item0));
+	peek_gdCMPkCfsytYoA9aBpHup9bw_2((*s0), (&item0));
+	nimln(1084, "serialization.nim");
+	switch (item0.kind) {
+	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 6):
+	{
+		nimln(1086, "serialization.nim");
+		{
+			TY_Bd4h7Ocx9bGTvrKzPIWNlHw LOC4;
+			NIM_BOOL LOC5;
+			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC8;
+			nimln(1130, "system.nim");
+			nimln(1086, "serialization.nim");
+			LOC4[0] = ((NI) 1);
+			LOC4[1] = ((NI) 0);
+			nimln(1087, "serialization.nim");
+			LOC4[2] = yamltag_l3H7FAqaXsOKWOuKJBQ8yAserialization();
+			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_26));
+			LOC5 = (NIM_BOOL)0;
+			LOC5 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC4, 3, item0.kindU.S3.scalartag);
+			if (!!(LOC5)) goto LA6;
+			nimln(1088, "serialization.nim");
+			LOC8 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+			LOC8 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_107));
+			raiseException((Exception*)LOC8, "YamlConstructionError");
+		}
+		goto LA2;
+		LA6: ;
+		{
+			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC12;
+			nimln(347, "system.nim");
+			nimln(1089, "serialization.nim");
+			if (!(((64 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_27));
+			if (!!((item0.kindU.S3.scalaranchor == ((NI) -1)))) goto LA10;
+			nimln(1090, "serialization.nim");
+			LOC12 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+			LOC12 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
+			raiseException((Exception*)LOC12, "YamlConstructionError");
+		}
+		goto LA2;
+		LA10: ;
+		LA2: ;
+	}
+	break;
+	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 2):
+	{
+		nimln(1092, "serialization.nim");
+		{
+			TY_HU7qaqKu9czJLT84iCBJnsA LOC16;
+			NIM_BOOL LOC17;
+			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC20;
+			nimln(1130, "system.nim");
+			nimln(1092, "serialization.nim");
+			LOC16[0] = ((NI) 1);
+			LOC16[1] = yamltag_l3H7FAqaXsOKWOuKJBQ8yAserialization();
+			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_108));
+			LOC17 = (NIM_BOOL)0;
+			LOC17 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC16, 2, item0.kindU.S1.maptag);
+			if (!!(LOC17)) goto LA18;
+			nimln(1093, "serialization.nim");
+			LOC20 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+			LOC20 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_107));
+			raiseException((Exception*)LOC20, "YamlConstructionError");
+		}
+		goto LA14;
+		LA18: ;
+		{
+			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC24;
+			nimln(347, "system.nim");
+			nimln(1094, "serialization.nim");
+			if (!(((4 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_109));
+			if (!!((item0.kindU.S1.mapanchor == ((NI) -1)))) goto LA22;
+			nimln(1095, "serialization.nim");
+			LOC24 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+			LOC24 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
+			raiseException((Exception*)LOC24, "YamlConstructionError");
+		}
+		goto LA14;
+		LA22: ;
+		LA14: ;
+	}
+	break;
+	case ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 4):
+	{
+		nimln(1097, "serialization.nim");
+		{
+			TY_HU7qaqKu9czJLT84iCBJnsA LOC28;
+			NIM_BOOL LOC29;
+			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC32;
+			nimln(1130, "system.nim");
+			nimln(1097, "serialization.nim");
+			LOC28[0] = ((NI) 1);
+			LOC28[1] = yamltag_l3H7FAqaXsOKWOuKJBQ8yAserialization();
+			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_110));
+			LOC29 = (NIM_BOOL)0;
+			LOC29 = contains_cBtCPpESslJAegDG0YQUgApresenter(LOC28, 2, item0.kindU.S2.seqtag);
+			if (!!(LOC29)) goto LA30;
+			nimln(1098, "serialization.nim");
+			LOC32 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+			LOC32 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_107));
+			raiseException((Exception*)LOC32, "YamlConstructionError");
+		}
+		goto LA26;
+		LA30: ;
+		{
+			Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw* LOC36;
+			nimln(347, "system.nim");
+			nimln(1099, "serialization.nim");
+			if (!(((16 &(1U<<((NU)(item0.kind)&7U)))!=0))) raiseFieldError(((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_111));
+			if (!!((item0.kindU.S2.seqanchor == ((NI) -1)))) goto LA34;
+			nimln(1100, "serialization.nim");
+			LOC36 = (Yamlconstructionerror_bof9a5s8eWDQreF4Fbrbsdw*)0;
+			LOC36 = constructionerror_VsoWAk2doNH3DrDXlliz5w((*s0), ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_95));
+			raiseException((Exception*)LOC36, "YamlConstructionError");
+		}
+		goto LA26;
+		LA34: ;
+		LA26: ;
+	}
+	break;
+	default:
+	{
+		TY_XOVT24GHXwqiEj5GCsEGCA ii_yXcVizMBZIgCJXVQF7CMmg;
+		NimStringDesc* LOC38;
+		NimStringDesc* LOC39;
+		TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_114;
+		memset((void*)(&ii_yXcVizMBZIgCJXVQF7CMmg), 0, sizeof(ii_yXcVizMBZIgCJXVQF7CMmg));
+		nimln(9, "internal.nim");
+		ii_yXcVizMBZIgCJXVQF7CMmg.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_112.Field0);
+		ii_yXcVizMBZIgCJXVQF7CMmg.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_112.Field1;
+		nimln(10, "internal.nim");
+		LOC38 = (NimStringDesc*)0;
+		LOC38 = copyString(nimIntToStr(ii_yXcVizMBZIgCJXVQF7CMmg.Field1));
+		printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_yXcVizMBZIgCJXVQF7CMmg.Field0? (ii_yXcVizMBZIgCJXVQF7CMmg.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC38? (LOC38)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
+		fflush(stdout);
+		nimln(1101, "serialization.nim");
+		LOC39 = (NimStringDesc*)0;
+		LOC39 = rawNewString(reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw))->Sup.len + 22);
+appendString(LOC39, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_113));
+appendString(LOC39, reprEnum((NI)item0.kind, (&NTI_l09bhIwCUjZ700CJ6D31eZw)));
+		printf("%s\015\012", LOC39? (LOC39)->data:"nil");
+		fflush(stdout);
+		nimln(13, "internal.nim");
+		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
+		fflush(stdout);
+		nimln(14, "internal.nim");
+		pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_114);
+		T_sK7FGu9ad5Rgd39a23ZLNfog_114.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_114.context);
+		if (T_sK7FGu9ad5Rgd39a23ZLNfog_114.status == 0) {
+			writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
+			popSafePoint();
+		}
+		else {
+			popSafePoint();
+			setFrame((TFrame*)&FR);
+			{
+				T_sK7FGu9ad5Rgd39a23ZLNfog_114.status = 0;
+				popCurrentException();
+			}
+		}
+		if (T_sK7FGu9ad5Rgd39a23ZLNfog_114.status != 0) reraiseException();
+		nimln(16, "internal.nim");
+		printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
+		fflush(stdout);
+		nimln(17, "internal.nim");
+		exit(((NI) 1));
+	}
+	break;
+	}
+	nimln(1102, "serialization.nim");
+	constructobject_Rv8E8J2OeB7IZbsCTHZWXw_2(s0, c0, result0);
+	popFrame();
+}
+
+N_NIMCALL(void, construct_4A79bo6V8o1JzCFz0OiGm9cQ)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g** s0, Librequest_ngq9bCXY9apXaklREHzSKIGg* target0) {
 	ConstructioncontextHEX3Aobjecttype_QzXJAodssZp9a6CfVbdA9a0A* context0;
 	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_101;
 	nimfr("construct", "serialization.nim")
@@ -5642,7 +3748,7 @@ N_NIMCALL(void, construct_xyZDNzhtiWMmmcLlQtWB0A)(YamlstreamHEX3Aobjecttype_dTYR
 		}
 		LA4: ;
 		nimln(1234, "serialization.nim");
-		constructchild_MOjeABAyPOvhMAaAjFGXXA(s0, context0, target0);
+		constructchild_Rv8E8J2OeB7IZbsCTHZWXw(s0, context0, target0);
 		nimln(1235, "serialization.nim");
 		chckNil((void*)(&e0));
 		memset((void*)(&e0), 0, sizeof(e0));
@@ -5651,13 +3757,13 @@ N_NIMCALL(void, construct_xyZDNzhtiWMmmcLlQtWB0A)(YamlstreamHEX3Aobjecttype_dTYR
 		{
 			TY_XOVT24GHXwqiEj5GCsEGCA ii_BDyjy7iwOnF1FbNxYtJCxA_2;
 			NimStringDesc* LOC14;
-			TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_189;
+			TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_139;
 			nimln(1236, "serialization.nim");
 			if (!!((e0.kind == ((Yamlstreameventkind_l09bhIwCUjZ700CJ6D31eZw) 1)))) goto LA12;
 			memset((void*)(&ii_BDyjy7iwOnF1FbNxYtJCxA_2), 0, sizeof(ii_BDyjy7iwOnF1FbNxYtJCxA_2));
 			nimln(21, "internal.nim");
-			ii_BDyjy7iwOnF1FbNxYtJCxA_2.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_188.Field0);
-			ii_BDyjy7iwOnF1FbNxYtJCxA_2.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_188.Field1;
+			ii_BDyjy7iwOnF1FbNxYtJCxA_2.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_138.Field0);
+			ii_BDyjy7iwOnF1FbNxYtJCxA_2.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_138.Field1;
 			nimln(22, "internal.nim");
 			LOC14 = (NimStringDesc*)0;
 			LOC14 = copyString(nimIntToStr(ii_BDyjy7iwOnF1FbNxYtJCxA_2.Field1));
@@ -5670,9 +3776,9 @@ N_NIMCALL(void, construct_xyZDNzhtiWMmmcLlQtWB0A)(YamlstreamHEX3Aobjecttype_dTYR
 			printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
 			fflush(stdout);
 			nimln(26, "internal.nim");
-			pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_189);
-			T_sK7FGu9ad5Rgd39a23ZLNfog_189.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_189.context);
-			if (T_sK7FGu9ad5Rgd39a23ZLNfog_189.status == 0) {
+			pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_139);
+			T_sK7FGu9ad5Rgd39a23ZLNfog_139.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_139.context);
+			if (T_sK7FGu9ad5Rgd39a23ZLNfog_139.status == 0) {
 				writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
 				popSafePoint();
 			}
@@ -5680,11 +3786,11 @@ N_NIMCALL(void, construct_xyZDNzhtiWMmmcLlQtWB0A)(YamlstreamHEX3Aobjecttype_dTYR
 				popSafePoint();
 				setFrame((TFrame*)&FR);
 				{
-					T_sK7FGu9ad5Rgd39a23ZLNfog_189.status = 0;
+					T_sK7FGu9ad5Rgd39a23ZLNfog_139.status = 0;
 					popCurrentException();
 				}
 			}
-			if (T_sK7FGu9ad5Rgd39a23ZLNfog_189.status != 0) reraiseException();
+			if (T_sK7FGu9ad5Rgd39a23ZLNfog_139.status != 0) reraiseException();
 			nimln(28, "internal.nim");
 			printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
 			fflush(stdout);
@@ -5790,23 +3896,20 @@ static N_INLINE(NIM_BOOL, isObjWithCache)(TNimType* obj0, TNimType* subclass0, T
 	return result0;
 }
 
-N_NIMCALL(void, load_HiR1GlFUjLpZvvIx9aQhdFA)(Filestreamobj_qoDM8xYRV40zbhS9acPNT9bw* input0, TY_3Z9cQIO745FN6hyPg6rEvTQ** target0) {
+N_NIMCALL(void, load_wLphT7UicHrtwh5VTo9bznw)(NimStringDesc* input0, Librequest_ngq9bCXY9apXaklREHzSKIGg* target0) {
 	YamlparserHEX3Aobjecttype_46L7o7Q5kqAQR1DJ2BZBbQ* parser0;
 	YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g* events0;
-	Streamobj_RShkcoDOPnoCVhtpN1hDPQ* LOC1;
 	TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_100;
 	nimfr("load", "serialization.nim")
 	nimln(1254, "serialization.nim");
 	parser0 = newyamlparser_x8649b48FqVBo7eKDfxKKZg(serializationtaglibrary_CBkkGqV8TVXkphjHJStBuA, T_sK7FGu9ad5Rgd39a23ZLNfog_99);
 	nimln(1255, "serialization.nim");
-	LOC1 = (Streamobj_RShkcoDOPnoCVhtpN1hDPQ*)0;
-	LOC1 = &input0->Sup;
-	events0 = parse_NHymGMKe2Os11EeucTQ79aw(parser0, LOC1);
+	events0 = parse_FPJ9cSa0jzkueL9abf0E9apFQ(parser0, input0);
 	nimln(1256, "serialization.nim");
 	pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_100);
 	T_sK7FGu9ad5Rgd39a23ZLNfog_100.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_100.context);
 	if (T_sK7FGu9ad5Rgd39a23ZLNfog_100.status == 0) {
-		construct_xyZDNzhtiWMmmcLlQtWB0A(&events0, target0);
+		construct_4A79bo6V8o1JzCFz0OiGm9cQ(&events0, target0);
 		popSafePoint();
 	}
 	else {
@@ -5814,57 +3917,57 @@ N_NIMCALL(void, load_HiR1GlFUjLpZvvIx9aQhdFA)(Filestreamobj_qoDM8xYRV40zbhS9acPN
 		setFrame((TFrame*)&FR);
 		if (isObj(getCurrentException()->Sup.m_type, (&NTI_9cyHooKjP79ciqCcDHfQLreQ))) {
 			Yamlstreamerror_9cyHooKjP79ciqCcDHfQLreQ* e0;
-			Exception* LOC5;
+			Exception* LOC4;
 			T_sK7FGu9ad5Rgd39a23ZLNfog_100.status = 0;
 			nimln(1258, "serialization.nim");
-			LOC5 = (Exception*)0;
-			LOC5 = getCurrentException();
-			if (LOC5) chckObj((*LOC5).Sup.m_type, (&NTI_9cyHooKjP79ciqCcDHfQLreQ));
-			e0 = ((Yamlstreamerror_9cyHooKjP79ciqCcDHfQLreQ*) (LOC5));
+			LOC4 = (Exception*)0;
+			LOC4 = getCurrentException();
+			if (LOC4) chckObj((*LOC4).Sup.m_type, (&NTI_9cyHooKjP79ciqCcDHfQLreQ));
+			e0 = ((Yamlstreamerror_9cyHooKjP79ciqCcDHfQLreQ*) (LOC4));
 			nimln(1259, "serialization.nim");
 			{
-				if (!(((*e0).Sup.parent) && (isObjWithCache((*(*e0).Sup.parent).Sup.m_type, (&NTI_9czoZw3pzPyrBmb5zTHY1OQ), Nim_OfCheck_CACHE191)))) goto LA8;
+				if (!(((*e0).Sup.parent) && (isObjWithCache((*(*e0).Sup.parent).Sup.m_type, (&NTI_9czoZw3pzPyrBmb5zTHY1OQ), Nim_OfCheck_CACHE141)))) goto LA7;
 				if ((*e0).Sup.parent) chckObj((*(*e0).Sup.parent).Sup.m_type, (&NTI_9czoZw3pzPyrBmb5zTHY1OQ));
 				raiseException((Exception*)((Ioerror_9czoZw3pzPyrBmb5zTHY1OQ*) ((*e0).Sup.parent)), "IOError");
 			}
-			goto LA6;
-			LA8: ;
+			goto LA5;
+			LA7: ;
 			{
 				nimln(1260, "serialization.nim");
-				if (!(((*e0).Sup.parent) && (isObjWithCache((*(*e0).Sup.parent).Sup.m_type, (&NTI_cXptUz9cSccpU3JXGhiZ3Rg), Nim_OfCheck_CACHE192)))) goto LA11;
+				if (!(((*e0).Sup.parent) && (isObjWithCache((*(*e0).Sup.parent).Sup.m_type, (&NTI_cXptUz9cSccpU3JXGhiZ3Rg), Nim_OfCheck_CACHE142)))) goto LA10;
 				if ((*e0).Sup.parent) chckObj((*(*e0).Sup.parent).Sup.m_type, (&NTI_cXptUz9cSccpU3JXGhiZ3Rg));
 				raiseException((Exception*)((Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg*) ((*e0).Sup.parent)), "YamlParserError");
 			}
-			goto LA6;
-			LA11: ;
+			goto LA5;
+			LA10: ;
 			{
 				TY_XOVT24GHXwqiEj5GCsEGCA ii_8w9cAgwrxdCSoyCfQuIGQyg;
+				NimStringDesc* LOC13;
 				NimStringDesc* LOC14;
-				NimStringDesc* LOC15;
-				TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_194;
+				TSafePoint T_sK7FGu9ad5Rgd39a23ZLNfog_144;
 				memset((void*)(&ii_8w9cAgwrxdCSoyCfQuIGQyg), 0, sizeof(ii_8w9cAgwrxdCSoyCfQuIGQyg));
 				nimln(9, "internal.nim");
-				ii_8w9cAgwrxdCSoyCfQuIGQyg.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_192.Field0);
-				ii_8w9cAgwrxdCSoyCfQuIGQyg.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_192.Field1;
+				ii_8w9cAgwrxdCSoyCfQuIGQyg.Field0 = copyString(T_sK7FGu9ad5Rgd39a23ZLNfog_142.Field0);
+				ii_8w9cAgwrxdCSoyCfQuIGQyg.Field1 = T_sK7FGu9ad5Rgd39a23ZLNfog_142.Field1;
 				nimln(10, "internal.nim");
-				LOC14 = (NimStringDesc*)0;
-				LOC14 = copyString(nimIntToStr(ii_8w9cAgwrxdCSoyCfQuIGQyg.Field1));
-				printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_8w9cAgwrxdCSoyCfQuIGQyg.Field0? (ii_8w9cAgwrxdCSoyCfQuIGQyg.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC14? (LOC14)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
+				LOC13 = (NimStringDesc*)0;
+				LOC13 = copyString(nimIntToStr(ii_8w9cAgwrxdCSoyCfQuIGQyg.Field1));
+				printf("%s%s%s%s%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_12))->data:"nil", ii_8w9cAgwrxdCSoyCfQuIGQyg.Field0? (ii_8w9cAgwrxdCSoyCfQuIGQyg.Field0)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_13))->data:"nil", LOC13? (LOC13)->data:"nil", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_14))->data:"nil");
 				fflush(stdout);
 				nimln(1261, "serialization.nim");
-				LOC15 = (NimStringDesc*)0;
-				LOC15 = rawNewString(reprAny((*e0).Sup.parent, (&NTI_oUKtBcKRdK6usj8RWrlp6A))->Sup.len + 22);
-appendString(LOC15, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_193));
-appendString(LOC15, reprAny((*e0).Sup.parent, (&NTI_oUKtBcKRdK6usj8RWrlp6A)));
-				printf("%s\015\012", LOC15? (LOC15)->data:"nil");
+				LOC14 = (NimStringDesc*)0;
+				LOC14 = rawNewString(reprAny((*e0).Sup.parent, (&NTI_oUKtBcKRdK6usj8RWrlp6A))->Sup.len + 22);
+appendString(LOC14, ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_143));
+appendString(LOC14, reprAny((*e0).Sup.parent, (&NTI_oUKtBcKRdK6usj8RWrlp6A)));
+				printf("%s\015\012", LOC14? (LOC14)->data:"nil");
 				fflush(stdout);
 				nimln(13, "internal.nim");
 				printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_16))->data:"nil");
 				fflush(stdout);
 				nimln(14, "internal.nim");
-				pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_194);
-				T_sK7FGu9ad5Rgd39a23ZLNfog_194.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_194.context);
-				if (T_sK7FGu9ad5Rgd39a23ZLNfog_194.status == 0) {
+				pushSafePoint(&T_sK7FGu9ad5Rgd39a23ZLNfog_144);
+				T_sK7FGu9ad5Rgd39a23ZLNfog_144.status = setjmp(T_sK7FGu9ad5Rgd39a23ZLNfog_144.context);
+				if (T_sK7FGu9ad5Rgd39a23ZLNfog_144.status == 0) {
 					writestacktrace_njssp69aa7hvxte9bJ8uuDcg();
 					popSafePoint();
 				}
@@ -5872,18 +3975,18 @@ appendString(LOC15, reprAny((*e0).Sup.parent, (&NTI_oUKtBcKRdK6usj8RWrlp6A)));
 					popSafePoint();
 					setFrame((TFrame*)&FR);
 					{
-						T_sK7FGu9ad5Rgd39a23ZLNfog_194.status = 0;
+						T_sK7FGu9ad5Rgd39a23ZLNfog_144.status = 0;
 						popCurrentException();
 					}
 				}
-				if (T_sK7FGu9ad5Rgd39a23ZLNfog_194.status != 0) reraiseException();
+				if (T_sK7FGu9ad5Rgd39a23ZLNfog_144.status != 0) reraiseException();
 				nimln(16, "internal.nim");
 				printf("%s\015\012", ((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18)? (((NimStringDesc*) &T_sK7FGu9ad5Rgd39a23ZLNfog_18))->data:"nil");
 				fflush(stdout);
 				nimln(17, "internal.nim");
 				exit(((NI) 1));
 			}
-			LA6: ;
+			LA5: ;
 			popCurrentException();
 		}
 	}
@@ -5973,10 +4076,5 @@ NTI_AZ9cC1Qv2K2WO4h2rE5xydg.base = (&NTI_kDPg4wXyR8DDyA0MeEjIsw);
 NTI_AZ9cC1Qv2K2WO4h2rE5xydg.flags = 3;
 T_sK7FGu9ad5Rgd39a23ZLNfog_0[10].len = -32768; T_sK7FGu9ad5Rgd39a23ZLNfog_0[10].kind = 0;
 NTI_AZ9cC1Qv2K2WO4h2rE5xydg.node = &T_sK7FGu9ad5Rgd39a23ZLNfog_0[10];
-NTI_3Z9cQIO745FN6hyPg6rEvTQ.size = sizeof(TY_3Z9cQIO745FN6hyPg6rEvTQ*);
-NTI_3Z9cQIO745FN6hyPg6rEvTQ.kind = 24;
-NTI_3Z9cQIO745FN6hyPg6rEvTQ.base = (&NTI_sgX0j0QdwD36v9ax9bDpF3yg);
-NTI_3Z9cQIO745FN6hyPg6rEvTQ.flags = 2;
-NTI_3Z9cQIO745FN6hyPg6rEvTQ.marker = Marker_TY_3Z9cQIO745FN6hyPg6rEvTQ;
 }
 

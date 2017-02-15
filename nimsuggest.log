@@ -96,3 +96,7 @@ illformed AST: case functionName of "libfoo1"
 illformed AST: case functionName
 illformed AST: case functionName
 illformed AST: case functionName
+illformed AST: case "string"
+illformed AST: case "string"
+illformed AST: 
+illformed AST: 

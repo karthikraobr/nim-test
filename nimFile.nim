@@ -1,6 +1,11 @@
-import dynlib,os 
+import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization
 
-proc loadLib[T](libraryName:string, functionName:string,args:string):T=
+type LibRequest=object
+ libraryName:string
+ functionName:string
+ args:seq[string]
+
+proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
  case libraryName:
   of "libfoo":
     var liblibfoo = loadLib("libfoo.dll")
@@ -10,15 +15,14 @@ proc loadLib[T](libraryName:string, functionName:string,args:string):T=
                 type sayHelloWorld = (proc ():cstring{.nimcall.})
                 var ptrsayHelloWorld = symAddr(liblibfoo,"sayHelloWorld")
                 var execsayHelloWorld = cast[sayHelloWorld](ptrsayHelloWorld)
-                let argsCount = 0
                 result = execsayHelloWorld()
         of "greet":
         # Library name =libfoo	Function name =greet
                 type greet = (proc (name: cstring):cstring{.nimcall.})
                 var ptrgreet = symAddr(liblibfoo,"greet")
                 var execgreet = cast[greet](ptrgreet)
-                let argsCount = 1
-                result = execgreet(args)
+                var args_1 = cast[string](args[0])
+                result = execgreet(args_1)
         else:result=nil
 
   of "libfoo1":
@@ -29,19 +33,29 @@ proc loadLib[T](libraryName:string, functionName:string,args:string):T=
                 type sayHelloWorld1 = (proc ():cstring{.nimcall.})
                 var ptrsayHelloWorld1 = symAddr(liblibfoo1,"sayHelloWorld1")
                 var execsayHelloWorld1 = cast[sayHelloWorld1](ptrsayHelloWorld1)
-                let argsCount = 0
                 result = execsayHelloWorld1()
         of "greet1":
         # Library name =libfoo1	Function name =greet1
                 type greet1 = (proc (name: cstring):cstring{.nimcall.})
                 var ptrgreet1 = symAddr(liblibfoo1,"greet1")
                 var execgreet1 = cast[greet1](ptrgreet1)
-                let argsCount = 1
-                result = execgreet1(args)
+                var args_1 = cast[string](args[0])
+                result = execgreet1(args_1)
         else:result=nil
 
   else:result=nil
 
-when isMainModule:
-  let programName = paramStr(1)
-  echo(loadLib[cstring]("libfoo","greet",programName))
+var server = newAsyncHttpServer()
+proc handler(req: Request) {.async.} =
+  if req.url.path == "/callLibFunction":
+    let requestBody = req.body
+    var finalRes :LibRequest
+    load(requestBody, finalRes)
+    var res = loadLib[cstring](finalRes.libraryName,finalRes.functionName,finalRes.args)
+    var j = %* {"result" : $res}
+    let headers = newHttpHeaders([("Content-Type","application/json")])
+    await req.respond(Http200,$j , headers)
+  else:
+    await req.respond(Http404, "Not Found")
+
+waitFor server.serve(Port(8080), handler)

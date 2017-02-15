@@ -957,7 +957,7 @@ N_NIMCALL(Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg*, generateerror_ImW03o3CxIVI4o
 	Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg* result0;
 	Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg* e_zJe1p7XlqHmQWLU4w1UaHA;
 	NimStringDesc* LOC1;
-	TY_1v9bKyksXWMsm0vNwmZ4EuQ HEX3Atmp2381710;
+	TY_1v9bKyksXWMsm0vNwmZ4EuQ HEX3Atmp2991710;
 	nimfr("generateError", "parser.nim")
 	result0 = (Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg*)0;
 	nimln(120, "parser.nim");
@@ -971,9 +971,9 @@ N_NIMCALL(Yamlparsererror_cXptUz9cSccpU3JXGhiZ3Rg*, generateerror_ImW03o3CxIVI4o
 	if (LOC1) nimGCunrefNoCycle(LOC1);
 	result0 = e_zJe1p7XlqHmQWLU4w1UaHA;
 	nimln(121, "parser.nim");
-	HEX3Atmp2381710 = (*(*c0).lex).curstartpos;
-	(*result0).Sup.line = HEX3Atmp2381710.Field0;
-	(*result0).Sup.column = HEX3Atmp2381710.Field1;
+	HEX3Atmp2991710 = (*(*c0).lex).curstartpos;
+	(*result0).Sup.line = HEX3Atmp2991710.Field0;
+	(*result0).Sup.column = HEX3Atmp2991710.Field1;
 	nimln(122, "parser.nim");
 	asgnRefNoCycle((void**) (&(*result0).Sup.linecontent), gettokenline_jxFDU4x3AO9bnw9cuGsXWnUQ((*c0).lex, NIM_TRUE));
 	popFrame();
@@ -2720,9 +2720,9 @@ static N_INLINE(void, startdocevent_11LfNJfHoUMQmWuMqRb3vwstream)(Yamlstreameven
 N_NIMCALL(NIM_BOOL, stateinitial_v9acBmqEIbTeNSaFtiad75g_6)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g* s0, Yamlstreamevent_ef79b0ZnbdHiZD1myCq3pOQ* e0) {
 	NIM_BOOL result0;
 	ParsercontextHEX3Aobjecttype_zO8XkJvZ44wk0311UycZvA* c0;
-	nimfr("stateInitial", "parser.nim")
+	nimfr("stateInitial", "asynchttpserver.nim")
 	result0 = (NIM_BOOL)0;
-	nimln(508, "parser.nim");
+	nimln(239, "asynchttpserver.nim");
 	if (s0) chckObj((*s0).Sup.m_type, (&NTI_zO8XkJvZ44wk0311UycZvA));
 	c0 = ((ParsercontextHEX3Aobjecttype_zO8XkJvZ44wk0311UycZvA*) (s0));
 	result0 = NIM_FALSE;
@@ -3324,16 +3324,16 @@ N_NIMCALL(NIM_BOOL, statescalarend_v9acBmqEIbTeNSaFtiad75g_10)(YamlstreamHEX3Aob
 N_NIMCALL(NIM_BOOL, HEX3Aanonymous_9aW3AWfk29aWpQ39c2SfoC2AA_2)(YamlstreamHEX3Aobjecttype_dTYRnTMa6xg9bX9aQIeceW0g* s0, NI* line0, NI* column0, NimStringDesc** linecontent0) {
 	NIM_BOOL result0;
 	ParsercontextHEX3Aobjecttype_zO8XkJvZ44wk0311UycZvA* c0;
-	TY_1v9bKyksXWMsm0vNwmZ4EuQ HEX3Atmp2460120;
+	TY_1v9bKyksXWMsm0vNwmZ4EuQ HEX3Atmp3070120;
 	nimfr(":anonymous", "parser.nim")
 	result0 = (NIM_BOOL)0;
 	nimln(645, "parser.nim");
 	if (s0) chckObj((*s0).Sup.m_type, (&NTI_zO8XkJvZ44wk0311UycZvA));
 	c0 = ((ParsercontextHEX3Aobjecttype_zO8XkJvZ44wk0311UycZvA*) (s0));
 	nimln(646, "parser.nim");
-	HEX3Atmp2460120 = (*c0).plainscalarstart;
-	(*line0) = HEX3Atmp2460120.Field0;
-	(*column0) = HEX3Atmp2460120.Field1;
+	HEX3Atmp3070120 = (*c0).plainscalarstart;
+	(*line0) = HEX3Atmp3070120.Field0;
+	(*column0) = HEX3Atmp3070120.Field1;
 	nimln(647, "parser.nim");
 	unsureAsgnRef((void**) (&(*linecontent0)), gettokenline_Rtl9cSvR0ChxjeYnncPLJAw((*c0).lex, (*c0).plainscalarstart, NIM_TRUE));
 	nimln(648, "parser.nim");

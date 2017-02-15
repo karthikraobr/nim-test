@@ -19,7 +19,7 @@
                     "args":[
                         {
                             "name":"name",
-                            "functype":"cstring"
+                            "functype":"string"
                         }
                     ],
                     "returntype":"cstring"
@@ -46,7 +46,7 @@
                     "args":[
                         {
                             "name":"name",
-                            "functype":"cstring"
+                            "functype":"string"
                         }
                     ],
                     "returntype":"cstring"

@@ -1,5 +1,8 @@
 {"compile":[
-["c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.c"]
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.o c:\\Projects\\nim\\HelloWorld\\nimcache\\moduleTest.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.c"]
 ],
 "extcompile":[
 ],
