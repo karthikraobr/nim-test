@@ -1471,7 +1471,7 @@ NIM_EXTERNC N_NOINLINE(void, NimMainModule)(void) {
 nimRegisterGlobalMarker(T_rE66HNSlIbRBxIg4CWWYqA_2);
 	nimln(48, "nimFile.nim");
 	asgnRefNoCycle((void**) (&server_UAtWZGeq7KvMctMj9chWG2g), newasynchttpserver_xU1jZhwCwLJ30u7y7SIoMg(NIM_TRUE, NIM_FALSE));
-	nimln(61, "nimFile.nim");
+	nimln(60, "nimFile.nim");
 	memset((void*)(&LOC1), 0, sizeof(LOC1));
 	LOC1.ClPrc = ((T_rE66HNSlIbRBxIg4CWWYqA_29) (handler_Hcn8aGSatnXMDbs8McGsXg)); LOC1.ClEnv = NIM_NIL;
 	LOC2 = (FutureHEX3Aobjecttype_bl7bh8u9cSFPi08mZFnBBvg*)0;

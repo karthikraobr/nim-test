@@ -47,7 +47,6 @@ when isMainModule:
     source &= "type LibRequest=object\n"
     source &= getIndentation(1) & "libraryName:string\n"
     source &= getIndentation(1) & "functionName:string\n"
-    source &= getIndentation(1) & "returnType:string\n"
     source &= getIndentation(1) & "args:seq[string]\n\n"
 
     source &= "proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=\n"
@@ -81,6 +80,16 @@ when isMainModule:
     
     
     
-    source &= "when isMainModule:\n" 
-    source &= getIndentation(2)& "echo(" & '"' & "Hello" & '"' & ")"
+    source &= "var server = newAsyncHttpServer()\nproc handler(req: Request) {.async.} =\n" 
+    source &= getIndentation(1)& "if req.url.path == "  & '"' & "/callLibFunction" & '"' & ":\n"
+    source &= getIndentation(2)& "let requestBody = req.body\n"
+    source &= getIndentation(2)& "var finalRes :LibRequest\n"
+    source &= getIndentation(2)& "load(requestBody, finalRes)\n"
+    source &= getIndentation(2)& "var res = loadLib[cstring](finalRes.libraryName,finalRes.functionName,finalRes.args)\n"
+    source &= getIndentation(2)& "var j = %* {"& '"' & "result" & '"' & " : $res}\n"
+    source &= getIndentation(2)& "let headers = newHttpHeaders([("&'"'& "Content-Type"&'"'&","&'"' & "application/json"&'"'&")])\n"
+    source &= getIndentation(2)& "await req.respond(Http200,$j , headers)\n"
+    source &= getIndentation(1)& "else:\n"
+    source &= getIndentation(2)& "await req.respond(Http404, " & '"' & "Not Found" & '"'&")\n"
+    source &= "waitFor server.serve(Port(8080), handler)"
     write(file,source)

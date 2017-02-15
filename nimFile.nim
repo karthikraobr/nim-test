@@ -47,15 +47,14 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
 
 var server = newAsyncHttpServer()
 proc handler(req: Request) {.async.} =
-  if req.url.path == "/callLibFunction":
-    let requestBody = req.body
-    var finalRes :LibRequest
-    load(requestBody, finalRes)
-    var res = loadLib[cstring](finalRes.libraryName,finalRes.functionName,finalRes.args)
-    var j = %* {"result" : $res}
-    let headers = newHttpHeaders([("Content-Type","application/json")])
-    await req.respond(Http200,$j , headers)
-  else:
-    await req.respond(Http404, "Not Found")
-
+ if req.url.path == "/callLibFunction":
+  let requestBody = req.body
+  var finalRes :LibRequest
+  load(requestBody, finalRes)
+  var res = loadLib[cstring](finalRes.libraryName,finalRes.functionName,finalRes.args)
+  var j = %* {"result" : $res}
+  let headers = newHttpHeaders([("Content-Type","application/json")])
+  await req.respond(Http200,$j , headers)
+ else:
+  await req.respond(Http404, "Not Found")
 waitFor server.serve(Port(8080), handler)

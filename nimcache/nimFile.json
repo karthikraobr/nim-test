@@ -1,5 +1,18 @@
 {"compile":[
-["c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.c"]
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.o c:\\Projects\\nim\\HelloWorld\\nimcache\\nimFile.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_system.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_strutils.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_serialization.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_serialization.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_serialization.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_parseutils.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_tables.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_tables.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_tables.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_hashes.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_hashes.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_hashes.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_os.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_times.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_times.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_times.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_winlean.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_winlean.o c:\\Projects\\nim\\HelloWorld\\nimcache\\stdlib_winlean.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_parser.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_parser.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_parser.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_taglib.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_taglib.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_taglib.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_stream.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_stream.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_stream.c"],
+["c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_lex.c", "C:\\MinGW\\bin\\gcc.exe -c  -w  -IC:\\nim-0.16.0\\lib -o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_lex.o c:\\Projects\\nim\\HelloWorld\\nimcache\\yaml_lex.c"]
 ],
 "extcompile":[
 ],
