@@ -18,7 +18,6 @@ type Config = object
     library:string
     functions:seq[Functions]
 
-
 proc getLibName(libraryName:string):string = 
     result = ""
     when defined(Windows):
@@ -48,9 +47,9 @@ when isMainModule:
     source &= getIndentation(1) & "functionName:string\n"
     source &= getIndentation(1) & "args:seq[string]\n\n"
 
-    source &= "proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=\n"
-    source &= getIndentation(1)&"case libraryName:\n"
 
+    source &= "proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=\n\n"
+    source &= getIndentation(1)&"case libraryName:\n"
     for library in finalRes:
         source &= getIndentation(2) & "of " & '"' & library.library & '"' & ":\n"
         source &= getIndentation(3) & "var lib" & library.library & " = loadLib(" & '"' & getLibName(library.library) & '"' & ")\n"
@@ -72,11 +71,12 @@ when isMainModule:
                 source &= getIndentation(5) & "return exec"& fun.name & "(" & argumentString & ")\n"
             else :
                 source &= getIndentation(5) & "return exec"& fun.name & "()\n"
-        source &= getIndentation(4) & "else:discard\n"
-    source &= getIndentation(2) & "else:discard\n"     
+        source &= getIndentation(4) & "else:discard\n\n"
+    source &= getIndentation(2) & "else:discard\n\n"     
     
-    source &= "\n\nproc getResult(request:LibRequest):JsonNode =\n"
-    source &= getIndentation(1) & "var j:JsonNode\n"
+
+    source &= "proc getResult(request:LibRequest):JsonNode =\n"
+    source &= getIndentation(1) & "var j:JsonNode\n\n"
     source &= getIndentation(1) & "case request.libraryName:\n"
     for library in finalRes:
       source &= getIndentation(2) & "of " & '"'& library.library & '"' & ":\n"
@@ -85,18 +85,16 @@ when isMainModule:
           source &= getIndentation(4) & "of " & '"' & fun.name & '"' & ":\n"
           source &= getIndentation(5) & "var res = loadLib[" & fun.returntype & "](request.libraryName,request.functionName,request.args)\n"
           source &= getIndentation(5) &  "j = %* {"&'"'& "result"&'"' & ": $res}\n"
-      source &= getIndentation(4) & "else : discard\n"
-    source &= getIndentation(2) & "else : discard\n"
+      source &= getIndentation(4) & "else : discard\n\n"
+    source &= getIndentation(2) & "else : discard\n\n"
     source &=  getIndentation(1) & "result = j\n\n"
     
-  
 
     source &= "var server = newAsyncHttpServer()\nproc handler(req: Request) {.async.} =\n" 
     source &= getIndentation(1)& "if req.url.path == "  & '"' & "/callLibFunction" & '"' & ":\n"
     source &= getIndentation(2)& "let requestBody = req.body\n"
     source &= getIndentation(2)& "var finalRes :LibRequest\n"
     source &= getIndentation(2)& "load(requestBody, finalRes)\n"
-    #source &= getIndentation(2)& "var res = loadLib[cstring](finalRes.libraryName,finalRes.functionName,finalRes.args)\n"
     source &= getIndentation(2)& "var j = %* getResult(finalRes)\n"
     source &= getIndentation(2)& "let headers = newHttpHeaders([("&'"'& "Content-Type"&'"'&","&'"' & "application/json"&'"'&")])\n"
     source &= getIndentation(2)& "await req.respond(Http200,$j , headers)\n"

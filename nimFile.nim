@@ -6,6 +6,7 @@ type LibRequest=object
  args:seq[string]
 
 proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
+
  case libraryName:
   of "libfoo":
     var liblibfoo = loadLib("libfoo.dll")
@@ -24,6 +25,7 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
                 var args_1 = cast[string](args[0])
                 return execgreet(args_1)
         else:discard
+
   of "libfoo1":
     var liblibfoo1 = loadLib("libfoo1.dll")
     case functionName:
@@ -41,11 +43,12 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
                 var args_1 = cast[string](args[0])
                 return execgreet1(args_1)
         else:discard
-  else:discard
 
+  else:discard
 
 proc getResult(request:LibRequest):JsonNode =
  var j:JsonNode
+
  case request.libraryName:
   of "libfoo":
     case request.functionName:
@@ -56,6 +59,7 @@ proc getResult(request:LibRequest):JsonNode =
                 var res = loadLib[cstring](request.libraryName,request.functionName,request.args)
                 j = %* {"result": $res}
         else : discard
+
   of "libfoo1":
     case request.functionName:
         of "sayHelloWorld1":
@@ -65,7 +69,9 @@ proc getResult(request:LibRequest):JsonNode =
                 var res = loadLib[cint](request.libraryName,request.functionName,request.args)
                 j = %* {"result": $res}
         else : discard
+
   else : discard
+
  result = j
 
 var server = newAsyncHttpServer()
