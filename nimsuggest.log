@@ -1,0 +1,4 @@
+illformed AST: fun.params.args[i - 1].functype == "cstring" | fun.params.args[i - 1].functype ==
+    "string": source &=
+    getIndentation(5) & "var args_" & intToStr(i) & " =" &
+    fun.params.args[i - 1].functype & "(args[" & intToStr(i - 1) & "])\x0D\x0A"

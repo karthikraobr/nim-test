@@ -73,7 +73,10 @@ when isMainModule:
             if fun.params.count > 0:
                 var argumentString:string
                 for i in countup(1,fun.params.count):
-                    source &= getIndentation(5) & "var args_" & intToStr(i) & " = cast[" & fun.params.args[i-1].functype & "](args[" & intToStr(i-1) & "])\n"
+                    if (fun.params.args[i-1].functype == "cstring" or fun.params.args[i-1].functype == "string"):
+                        source &= getIndentation(5) & "var args_" & intToStr(i) & " =" & fun.params.args[i-1].functype & "(args[" & intToStr(i-1) & "])\n"
+                    else:
+                        source &= getIndentation(5) & "var args_" & intToStr(i) & " = cast[" & fun.params.args[i-1].functype & "](args[" & intToStr(i-1) & "])\n"
                     if i == 1:
                       argumentString = "args_" & intToStr(i)
                     elif i > 1:

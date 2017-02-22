@@ -43,7 +43,7 @@
                     "args":[
                         {
                             "name":"name",
-                            "functype":"string"
+                            "functype":"cint"
                         }
                     ]
                 }
