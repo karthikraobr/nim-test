@@ -4,7 +4,6 @@ type Arguments = object
     name:string
     functype:string
 
-
 type Parameters = object
     count:int
     args:seq[Arguments]
