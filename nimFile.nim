@@ -6,7 +6,6 @@ type LibRequest=object
  args:seq[string]
 
 proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
-
  case libraryName:
   of "libfoo":
     var liblibfoo = loadLib("libfoo.dll")
@@ -25,7 +24,6 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
                 var args_1 =cstring(args[0])
                 return execgreet(args_1)
         else:discard
-
   of "libfoo1":
     var liblibfoo1 = loadLib("libfoo1.dll")
     case functionName:
@@ -40,15 +38,13 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
                 type greet1 = (proc (name:cint):T{.nimcall.})
                 var ptrgreet1 = symAddr(liblibfoo1,"greet1")
                 var execgreet1 = cast[greet1](ptrgreet1)
-                var args_1 = cast[cint](args[0])
+                var args_1 =cint(parseInt(args[0]))
                 return execgreet1(args_1)
         else:discard
-
   else:discard
 
 proc getResult(request:LibRequest):JsonNode =
  var j:JsonNode
-
  case request.libraryName:
   of "libfoo":
     case request.functionName:
@@ -59,7 +55,6 @@ proc getResult(request:LibRequest):JsonNode =
                 var res = loadLib[cstring](request.libraryName,request.functionName,request.args)
                 j = %* {"result": $res}
         else : discard
-
   of "libfoo1":
     case request.functionName:
         of "sayHelloWorld1":
@@ -69,20 +64,23 @@ proc getResult(request:LibRequest):JsonNode =
                 var res = loadLib[cint](request.libraryName,request.functionName,request.args)
                 j = %* {"result": $res}
         else : discard
-
   else : discard
-
  result = j
 
 var server = newAsyncHttpServer()
 proc handler(req: Request) {.async.} =
+
  if req.url.path == "/callLibFunction":
   let requestBody = req.body
   var finalRes :LibRequest
   load(requestBody, finalRes)
-  var j = %* getResult(finalRes)
-  let headers = newHttpHeaders([("Content-Type","application/json")])
-  await req.respond(Http200,$j , headers)
+  var j = getResult(finalRes)
+  if j!=nil:
+    j = %* j
+    let headers = newHttpHeaders([("Content-Type","application/json")])
+    await req.respond(Http200,$j , headers)
+  else:
+    await req.respond(Http404, "Not Found")
  else:
   await req.respond(Http404, "Not Found")
 waitFor server.serve(Port(8080), handler)

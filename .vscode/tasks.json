@@ -1,0 +1,1 @@
+{ "version": "0.1.0", "command": "nim", "args": ["c", "-r", "module.nim"], "options": { "cwd": "${workspaceRoot}" }, "isShellCommand": true }
