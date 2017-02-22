@@ -41,12 +41,12 @@ when isMainModule:
     s.close()
     echo(finalRes)
     var file = open("nimFile.nim",fmwrite)
+
     var source = "import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization\n\n"
     source &= "type LibRequest=object\n"
     source &= getIndentation(1) & "libraryName:string\n"
     source &= getIndentation(1) & "functionName:string\n"
     source &= getIndentation(1) & "args:seq[string]\n\n"
-
 
     source &= "proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=\n\n"
     source &= getIndentation(1)&"case libraryName:\n"
