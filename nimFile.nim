@@ -19,7 +19,7 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
                 return execsayHelloWorld()
         of "greet":
         # Library name =libfoo	Function name =greet
-                type greet = (proc (name: cstring):T{.nimcall.})
+                type greet = (proc (name:cstring):T{.nimcall.})
                 var ptrgreet = symAddr(liblibfoo,"greet")
                 var execgreet = cast[greet](ptrgreet)
                 var args_1 = cast[string](args[0])
@@ -37,7 +37,7 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
                 return execsayHelloWorld1()
         of "greet1":
         # Library name =libfoo1	Function name =greet1
-                type greet1 = (proc (name: cstring):T{.nimcall.})
+                type greet1 = (proc (name:string):T{.nimcall.})
                 var ptrgreet1 = symAddr(liblibfoo1,"greet1")
                 var execgreet1 = cast[greet1](ptrgreet1)
                 var args_1 = cast[string](args[0])

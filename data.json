@@ -4,8 +4,7 @@
         "functions": [
             {
                 "name": "sayHelloWorld",
-                "signature": "(proc ():T{.nimcall.})",
-                    "returntype":"cstring",
+                "returntype":"cstring",
                 "params":{
                     "count":0,
                     "args":[]
@@ -13,14 +12,13 @@
             },
             {
                 "name": "greet",
-                "signature": "(proc (name: cstring):T{.nimcall.})",
                 "returntype":"cstring",
                 "params":{
                     "count":1,
                     "args":[
                         {
                             "name":"name",
-                            "functype":"string"
+                            "functype":"cstring"
                         }
                     ]
                 }
@@ -32,7 +30,6 @@
             {
                 "name": "sayHelloWorld1",
                 "returntype":"cint",
-                "signature": "(proc ():T{.nimcall.})",
                 "params":{
                     "count":0,
                     "args":[]
@@ -40,7 +37,6 @@
             },
             {
                 "name": "greet1",
-                "signature": "(proc (name: cstring):T{.nimcall.})",
                 "returntype":"cint",
                 "params":{
                     "count":1,

@@ -10,7 +10,6 @@ type Parameters = object
 
 type Functions = object
     name:string
-    signature:string
     returntype:string
     params:Parameters
 
@@ -33,6 +32,17 @@ proc getIndentation(count:int):string=
         res &= res
         i=i+1
     result=res
+
+proc getFunctionPointer(args:seq[Arguments]):string=
+    var res = "(proc ("
+    var i = 0
+    for arg in args:
+        res &= arg.name & ":" & arg.functype
+        i+=1
+        if i>1:
+            res &= ","
+    res &= "):T{.nimcall.})"
+    result = res
 
 when isMainModule:
     var finalRes :seq[Config]
@@ -57,7 +67,7 @@ when isMainModule:
         for fun in library.functions:
             source &= getIndentation(4) & "of "&'"'& fun.name & '"' & ":\n"
             source &= getIndentation(4) & "# Library name =" & library.library & "\t" & "Function name =" & fun.name&"\n"
-            source &= getIndentation(5) & "type " & fun.name & " = " & fun.signature & "\n"
+            source &= getIndentation(5) & "type " & fun.name & " = " & getFunctionPointer(fun.params.args) & "\n"
             source &= getIndentation(5) & "var ptr" & fun.name & " = symAddr(lib" & library.library & "," & '"' & fun.name & '"' & ")\n"
             source &= getIndentation(5) & "var exec" & fun.name & " = cast[" & fun.name & "](" & "ptr" & fun.name & ")\n"       
             if fun.params.count > 0:
