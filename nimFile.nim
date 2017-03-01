@@ -4,18 +4,21 @@ type LibRequest=object
  libraryName:string
  functionName:string
  args:seq[string]
-
+template `@@`(x: expr): expr = cast[ptr type(x[0])](addr x)
 proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
  case libraryName:
   of "libfoo":
-    var liblibfoo = loadLib("libfoo.dll")
+    var liblibfoo = loadLib("hello_nim.dll")
     case functionName:
         of "sayHelloWorld":
         # Library name =libfoo	Function name =sayHelloWorld
-                type sayHelloWorld = (proc ():T{.nimcall.})
-                var ptrsayHelloWorld = symAddr(liblibfoo,"sayHelloWorld")
+                type sayHelloWorld = (proc (out1:ptr cchar,outlen:cint,in1:ptr cchar,inlen:cint):T{.nimcall.})
+                var ptrsayHelloWorld = symAddr(liblibfoo,"hello_1")
                 var execsayHelloWorld = cast[sayHelloWorld](ptrsayHelloWorld)
-                return execsayHelloWorld()
+                type ccharArray = array[4,cchar]
+                var x,y:ccharArray
+                x=['H','E','L','L']
+                return execsayHelloWorld(@@y,cint(y.len),@@x,cint(x.len))
         of "greet":
         # Library name =libfoo	Function name =greet
                 type greet = (proc (name:cstring):T{.nimcall.})
@@ -43,13 +46,15 @@ proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
         else:discard
   else:discard
 
+
+
 proc getResult(request:LibRequest):JsonNode =
  var j:JsonNode
  case request.libraryName:
   of "libfoo":
     case request.functionName:
         of "sayHelloWorld":
-                var res = loadLib[cstring](request.libraryName,request.functionName,request.args)
+                var res = loadLib[cint](request.libraryName,request.functionName,request.args)
                 j = %* {"result": $res}
         of "greet":
                 var res = loadLib[cstring](request.libraryName,request.functionName,request.args)
@@ -68,8 +73,8 @@ proc getResult(request:LibRequest):JsonNode =
  result = j
 
 var server = newAsyncHttpServer()
-proc handler(req: Request) {.async.} =
 
+proc handler(req: Request) {.async.} =
  if req.url.path == "/callLibFunction":
   let requestBody = req.body
   var finalRes :LibRequest

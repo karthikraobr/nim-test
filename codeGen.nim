@@ -113,7 +113,7 @@ when isMainModule:
     source &=  getIndentation(1) & "result = j\n\n"
     
 
-    source &= "var server = newAsyncHttpServer()\nproc handler(req: Request) {.async.} =\n\n" 
+    source &= "var server = newAsyncHttpServer()\n\nproc handler(req: Request) {.async.} =\n" 
     source &= getIndentation(1)& "if req.url.path == "  & '"' & "/callLibFunction" & '"' & ":\n"
     source &= getIndentation(2)& "let requestBody = req.body\n"
     source &= getIndentation(2)& "var finalRes :LibRequest\n"
