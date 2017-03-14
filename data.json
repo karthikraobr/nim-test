@@ -1,6 +1,12 @@
 [
     {
-        "library": "libfoo",
+        "library": "hello_nim",
+        "types":[
+                    {
+                        "name":"BufferObj",
+                        "signature":"data:cstring,size:cint,fill:cint"
+                    }
+                ],
         "functions": [
             {
                 "name": "sayHelloWorld",
@@ -11,39 +17,24 @@
                 }
             },
             {
-                "name": "greet",
-                "returntype":"cstring",
-                "params":{
-                    "count":1,
-                    "args":[
-                        {
-                            "name":"name",
-                            "functype":"cstring"
-                        }
-                    ]
-                }
-            }
-        ]
-    },{
-        "library": "libfoo1",
-        "functions": [
-            {
-                "name": "sayHelloWorld1",
+                "name": "hello_2",
                 "returntype":"cint",
                 "params":{
-                    "count":0,
-                    "args":[]
-                }
-            },
-            {
-                "name": "greet1",
-                "returntype":"cint",
-                "params":{
-                    "count":1,
+                    "count":2,
                     "args":[
                         {
-                            "name":"name",
-                            "functype":"cint"
+                            "name":"bufOut",
+                            "functype":"BufferObj",
+                            "isCustom":"true",
+                            "isPointer":"true",
+                            "isOut":"true"
+                        },
+                        {
+                            "name":"bufIn",
+                            "functype":"BufferObj",
+                            "isCustom":"true",
+                            "isPointer":"true",
+                            "isOut":"false"
                         }
                     ]
                 }

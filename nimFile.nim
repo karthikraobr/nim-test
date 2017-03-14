@@ -1,85 +1,64 @@
 import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization
 
-type LibRequest=object
- libraryName:string
- functionName:string
- args:seq[string]
-template `@@`(x: expr): expr = cast[ptr type(x[0])](addr x)
-proc loadLib[T](libraryName:string, functionName:string,args:seq[string]):T=
+type BufferObj = object
+ data:cstring
+ size:cint
+ fill:cint
+proc loadLib[T](libraryName:string, functionName:string,args:string):JsonNode=
  case libraryName:
-  of "libfoo":
-    var liblibfoo = loadLib("hello_nim.dll")
+  of "hello_nim":
+    var libhello_nim = loadLib("hello_nim.dll")
     case functionName:
         of "sayHelloWorld":
-        # Library name =libfoo	Function name =sayHelloWorld
-                type sayHelloWorld = (proc (out1:ptr cchar,outlen:cint,in1:ptr cchar,inlen:cint):T{.nimcall.})
-                var ptrsayHelloWorld = symAddr(liblibfoo,"hello_1")
+        # Library name =hello_nim	Function name =sayHelloWorld
+                type sayHelloWorld = (proc ():T{.nimcall.})
+                var ptrsayHelloWorld = symAddr(libhello_nim,"sayHelloWorld")
                 var execsayHelloWorld = cast[sayHelloWorld](ptrsayHelloWorld)
-                type ccharArray = array[4,cchar]
-                var x,y:ccharArray
-                x=['H','E','L','L']
-                return execsayHelloWorld(@@y,cint(y.len),@@x,cint(x.len))
-        of "greet":
-        # Library name =libfoo	Function name =greet
-                type greet = (proc (name:cstring):T{.nimcall.})
-                var ptrgreet = symAddr(liblibfoo,"greet")
-                var execgreet = cast[greet](ptrgreet)
-                var args_1 =cstring(args[0])
-                return execgreet(args_1)
-        else:discard
-  of "libfoo1":
-    var liblibfoo1 = loadLib("libfoo1.dll")
-    case functionName:
-        of "sayHelloWorld1":
-        # Library name =libfoo1	Function name =sayHelloWorld1
-                type sayHelloWorld1 = (proc ():T{.nimcall.})
-                var ptrsayHelloWorld1 = symAddr(liblibfoo1,"sayHelloWorld1")
-                var execsayHelloWorld1 = cast[sayHelloWorld1](ptrsayHelloWorld1)
-                return execsayHelloWorld1()
-        of "greet1":
-        # Library name =libfoo1	Function name =greet1
-                type greet1 = (proc (name:cint):T{.nimcall.})
-                var ptrgreet1 = symAddr(liblibfoo1,"greet1")
-                var execgreet1 = cast[greet1](ptrgreet1)
-                var args_1 =cint(parseInt(args[0]))
-                return execgreet1(args_1)
+                var res = execsayHelloWorld()
+                var j = %* {"result": $res}
+                return j 
+        of "hello_2":
+        # Library name =hello_nim	Function name =hello_2
+                type hello_2 = (proc (bufOut:ptr BufferObj,bufIn:ptr BufferObj,):T{.nimcall.})
+                var ptrhello_2 = symAddr(libhello_nim,"hello_2")
+                var exechello_2 = cast[hello_2](ptrhello_2)
+                var jobj = parseJson(args)
+                var obj_0 = jobj[0]
+                var arg_0:BufferObj
+                arg_0.data = cstring(obj_0["data"].getStr)
+                arg_0.size = cint(obj_0["size"].getNum)
+                arg_0.fill = cint(obj_0["fill"].getNum)
+                var obj_1 = jobj[1]
+                var arg_1:BufferObj
+                arg_1.data = cstring(obj_1["data"].getStr)
+                arg_1.size = cint(obj_1["size"].getNum)
+                arg_1.fill = cint(obj_1["fill"].getNum)
+                var res = exechello_2(arg_0.addr,arg_1.addr)
+                var final = %*{"data" : $arg_0.data,"size" : $arg_0.size,"fill" : $arg_0.fill,}
+                var j = %* {"result": $res ,"out": final}
+                return j 
         else:discard
   else:discard
 
-
-
-proc getResult(request:LibRequest):JsonNode =
- var j:JsonNode
- case request.libraryName:
-  of "libfoo":
-    case request.functionName:
+proc getResult(libraryName:string,functionName:string,args:string):JsonNode =
+ case libraryName:
+  of "hello_nim":
+    case functionName:
         of "sayHelloWorld":
-                var res = loadLib[cint](request.libraryName,request.functionName,request.args)
-                j = %* {"result": $res}
-        of "greet":
-                var res = loadLib[cstring](request.libraryName,request.functionName,request.args)
-                j = %* {"result": $res}
-        else : discard
-  of "libfoo1":
-    case request.functionName:
-        of "sayHelloWorld1":
-                var res = loadLib[cint](request.libraryName,request.functionName,request.args)
-                j = %* {"result": $res}
-        of "greet1":
-                var res = loadLib[cint](request.libraryName,request.functionName,request.args)
-                j = %* {"result": $res}
+                var res = loadLib[cstring](libraryName,functionName,args)
+                return res
+        of "hello_2":
+                var res = loadLib[cint](libraryName,functionName,args)
+                return res
         else : discard
   else : discard
- result = j
-
 var server = newAsyncHttpServer()
 
 proc handler(req: Request) {.async.} =
  if req.url.path == "/callLibFunction":
   let requestBody = req.body
-  var finalRes :LibRequest
-  load(requestBody, finalRes)
-  var j = getResult(finalRes)
+  var jobj = parseJson(req.body)
+  var j = getResult(jobj["libraryName"].getStr,jobj["functionName"].getStr,$jobj["args"])
   if j!=nil:
     j = %* j
     let headers = newHttpHeaders([("Content-Type","application/json")])
