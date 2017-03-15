@@ -65,6 +65,18 @@ proc getTypeConverterName(typeName:string ):string=
             return "getNum"
         else: discard
 
+proc toString(str: seq[char]): string =
+  result = newStringOfCap(len(str))
+  for ch in str:
+    add(result, ch)
+
+proc getPadding(length:int):string=
+    var str = newSeq[char]()
+    for i in countup(0,length):
+        str.add('0')
+    return toString(str)
+
+
 when isMainModule:
     var finalRes :seq[Config]
     var s = newFileStream("data.json")
@@ -79,6 +91,17 @@ when isMainModule:
             source &= "type " & customType.name & " = object\n"
             for member in split(customType.signature,','):
                 source &= getIndentation(1) & member & "\n"
+    
+    source &= "proc toString(str: seq[char]): string =\n"
+    source &= getIndentation(1) & "result = newStringOfCap(len(str))\n"
+    source &= getIndentation(1)  & "for ch in str:\n"
+    source &= getIndentation(2) & "add(result, ch)\n\n"
+
+    source &= "proc getPadding(length:BiggestInt):string=\n"
+    source &= getIndentation(1) & "var str = newSeq[char]()\n"
+    source &= getIndentation(1) & "for i in countup(0,length-1):\n"
+    source &= getIndentation(2) & "str.add('0')\n"
+    source &= getIndentation(1) & "return toString(str)\n\n"
 
     source &= "proc loadLib[T](libraryName:string, functionName:string,args:string):JsonNode=\n"
     source &= getIndentation(1)&"case libraryName:\n"
@@ -97,17 +120,31 @@ when isMainModule:
                 source &= getIndentation(5) & "var jobj = parseJson(args)\n"
                 var argumentString:string
                 for i in countup(0,fun.params.count-1):
-                    source &= getIndentation(5) & "var obj_" & intToStr(i) & " = jobj[" & intToStr(i) & "]\n"
-                    source &= getIndentation(5) & "var arg_" & intToStr(i) & ":"& fun.params.args[i].functype & "\n"
-                    
-                    for customType in library.types:
-                        if customType.name == fun.params.args[i].functype:
-                            for member in split(customType.signature,','):
-                                var mem = split(member,':')
-                                source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(obj_" & intToStr(i) & "[" & '"' & mem[0] & '"'& "]." & getTypeConverterName(mem[1]) & ")\n"
-                                if fun.params.args[i].isOut:
-                                  temp &= '"' & mem[0] & '"' & " : " & "$" & "arg_" & intToStr(i) & "." & mem[0] & ","
-                
+                    if fun.params.args[i].isCustom :
+                        source &= getIndentation(5) & "var obj_" & intToStr(i) & " = jobj[" & intToStr(i) & "]\n"
+                        source &= getIndentation(5) & "var arg_" & intToStr(i) & ":"& fun.params.args[i].functype & "\n"
+                        for customType in library.types:
+                            if customType.name == fun.params.args[i].functype:
+                                for member in split(customType.signature,','):
+                                    var mem = split(member,':')
+                                    if mem[1] == "cstring" and fun.params.args[i].isOut:
+                                        
+                                        source &= getIndentation(5) & "var str_"& intToStr(i) & "= " & "getPadding("& "obj_" & intToStr(i) & "[" & '"' & "size" & '"' & "].getNum"&")" & "\n"
+                                        source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(" & "str_"& intToStr(i) & ")\n"
+                                    else :
+                                        source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(obj_" & intToStr(i) & "[" & '"' & mem[0] & '"'& "]." & getTypeConverterName(mem[1]) & ")\n"
+                                    if fun.params.args[i].isOut:
+                                        temp &= '"' & mem[0] & '"' & " : " & "$" & "arg_" & intToStr(i) & "." & mem[0] & ","
+                    else : 
+                        source &= getIndentation(5) & "var arg_" & intToStr(i) & ":"& fun.params.args[i].functype & "\n"
+                        if fun.params.args[i].functype == "cstring" and fun.params.args[i].isOut:
+                            source &= getIndentation(5) & "var str_"& intToStr(i) & "= " & "getPadding(size)" & "\n"
+                            source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & "cstring" & "(" & "str_"& intToStr(i) & ")\n"
+                        else:
+                            source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & fun.params.args[i].functype & "(jobj" & "[" & '"' & fun.params.args[i].name & '"'& "]." & getTypeConverterName(fun.params.args[i].functype) &  ")\n"
+                        if fun.params.args[i].isOut:
+                             temp &= '"' & fun.params.args[i].name & '"' & " : " & "$" & "arg_" & intToStr(i) & ","
+
                     if i == 0:
                       if fun.params.args[i].isPointer:
                         argumentString = "arg_" & intToStr(i) & ".addr"
@@ -131,7 +168,6 @@ when isMainModule:
                 source &= getIndentation(5) & "var res = "& "exec" & fun.name & "()\n"
                 source &= getIndentation(5) & "var j = %* {"& '"'& "result" & '"' & ": $res}\n"
             source &= getIndentation(5) & "return j \n"
-            
         source &= getIndentation(4) & "else:discard\n"
     source &= getIndentation(2) & "else:discard\n\n"     
 

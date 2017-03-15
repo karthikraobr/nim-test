@@ -9,11 +9,35 @@
                 ],
         "functions": [
             {
-                "name": "sayHelloWorld",
-                "returntype":"cstring",
+                "name": "hello_1",
+                "returntype":"cint",
                 "params":{
-                    "count":0,
-                    "args":[]
+                    "count":4,
+                    "args":[{
+                        "name":"out1",
+                        "functype":"cstring",
+                            "isCustom":"false",
+                            "isPointer":"false",
+                            "isOut":"true"
+                    },{
+                        "name":"outlen",
+                        "functype":"cint",
+                            "isCustom":"false",
+                            "isPointer":"false",
+                            "isOut":"false"
+                    },{
+                        "name":"in1",
+                        "functype":"cstring",
+                            "isCustom":"false",
+                            "isPointer":"false",
+                            "isOut":"false"
+                    },{
+                        "name":"inlen",
+                        "functype":"cint",
+                            "isCustom":"false",
+                            "isPointer":"false",
+                            "isOut":"false"
+                    }]
                 }
             },
             {
