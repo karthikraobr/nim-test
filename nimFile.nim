@@ -1,4 +1,4 @@
-import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization
+import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization,base64
 
 type BufferObj = object
  data:cstring
@@ -27,7 +27,7 @@ proc loadLib[T](libraryName:string, functionName:string,args:string):JsonNode=
                 var exechello_1 = cast[hello_1](ptrhello_1)
                 var jobj = parseJson(args)
                 var arg_0:cstring
-                var str_0= getPadding(jobj["outlen"].getNum)
+                var str_0= getPadding(jobj["size"].getNum)
                 arg_0 = cstring(str_0)
                 var arg_1:cint
                 arg_1 = cint(jobj["outlen"].getNum)
@@ -48,12 +48,12 @@ proc loadLib[T](libraryName:string, functionName:string,args:string):JsonNode=
                 var obj_0 = jobj[0]
                 var arg_0:BufferObj
                 var str_0= getPadding(obj_0["size"].getNum)
-                arg_0.data = cstring(str_0)
+                arg_0.data = cstring(decode(str_0))
                 arg_0.size = cint(obj_0["size"].getNum)
                 arg_0.fill = cint(obj_0["fill"].getNum)
                 var obj_1 = jobj[1]
                 var arg_1:BufferObj
-                arg_1.data = cstring(obj_1["data"].getStr)
+                arg_1.data = cstring(decode(obj_1["data"].getStr))
                 arg_1.size = cint(obj_1["size"].getNum)
                 arg_1.fill = cint(obj_1["fill"].getNum)
                 var res = exechello_2(arg_0.addr,arg_1.addr)
@@ -79,7 +79,6 @@ var server = newAsyncHttpServer()
 
 proc handler(req: Request) {.async.} =
  if req.url.path == "/callLibFunction":
-  let requestBody = req.body
   var jobj = parseJson(req.body)
   var j = getResult(jobj["libraryName"].getStr,jobj["functionName"].getStr,$jobj["args"])
   if j!=nil:

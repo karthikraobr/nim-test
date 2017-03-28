@@ -6,6 +6,7 @@ type Arguments = object
     isPointer:bool
     isCustom:bool
     isOut:bool
+    decode:bool
 
 type Parameters = object
     count:int
@@ -65,32 +66,22 @@ proc getTypeConverterName(typeName:string ):string=
             return "getNum"
         else: discard
 
-proc toString(str: seq[char]): string =
-  result = newStringOfCap(len(str))
-  for ch in str:
-    add(result, ch)
-
-proc getPadding(length:int):string=
-    var str = newSeq[char]()
-    for i in countup(0,length):
-        str.add('0')
-    return toString(str)
-
-
 when isMainModule:
     var finalRes :seq[Config]
     var s = newFileStream("data.json")
     load(s, finalRes)
     s.close()
-    echo(finalRes)
     var file = open("nimFile.nim",fmwrite)
 
-    var source = "import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization\n\n"
+    var source = "import dynlib,strutils,asynchttpserver,asyncdispatch,json,yaml.serialization,base64\n\n"
     for library in finalRes:
         for customType in library.types:
             source &= "type " & customType.name & " = object\n"
             for member in split(customType.signature,','):
-                source &= getIndentation(1) & member & "\n"
+                if member.contains('['):
+                    source &= getIndentation(1) & member.split('[')[0] & "\n"
+                else:
+                    source &= getIndentation(1) & member & "\n"
     
     source &= "proc toString(str: seq[char]): string =\n"
     source &= getIndentation(1) & "result = newStringOfCap(len(str))\n"
@@ -127,21 +118,40 @@ when isMainModule:
                             if customType.name == fun.params.args[i].functype:
                                 for member in split(customType.signature,','):
                                     var mem = split(member,':')
+                                    var decode = false
+                                    if mem[1].contains('['):
+                                        mem[1] = mem[1].split('[')[0]
+                                        decode = true
                                     if mem[1] == "cstring" and fun.params.args[i].isOut:
-                                        
                                         source &= getIndentation(5) & "var str_"& intToStr(i) & "= " & "getPadding("& "obj_" & intToStr(i) & "[" & '"' & "size" & '"' & "].getNum"&")" & "\n"
-                                        source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(" & "str_"& intToStr(i) & ")\n"
+                                        if decode:
+                                            source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(decode(" & "str_"& intToStr(i) & "))\n"
+                                        else:
+                                            source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(" & "str_"& intToStr(i) & ")\n"
                                     else :
-                                        source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(obj_" & intToStr(i) & "[" & '"' & mem[0] & '"'& "]." & getTypeConverterName(mem[1]) & ")\n"
+                                        if decode:
+                                            source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(decode(obj_" & intToStr(i) & "[" & '"' & mem[0] & '"'& "]." & getTypeConverterName(mem[1]) & "))\n"
+                                        else:
+                                            source &= getIndentation(5) & "arg_" & intToStr(i) & "." & mem[0] & " = " & mem[1] & "(obj_" & intToStr(i) & "[" & '"' & mem[0] & '"'& "]." & getTypeConverterName(mem[1]) & ")\n"
+                                        
                                     if fun.params.args[i].isOut:
                                         temp &= '"' & mem[0] & '"' & " : " & "$" & "arg_" & intToStr(i) & "." & mem[0] & ","
                     else : 
                         source &= getIndentation(5) & "var arg_" & intToStr(i) & ":"& fun.params.args[i].functype & "\n"
                         if fun.params.args[i].functype == "cstring" and fun.params.args[i].isOut:
-                            source &= getIndentation(5) & "var str_"& intToStr(i) & "= " & "getPadding(size)" & "\n"
-                            source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & "cstring" & "(" & "str_"& intToStr(i) & ")\n"
+                            source &= getIndentation(5) & "var str_"& intToStr(i) & "= " & "getPadding(jobj[" & '"' & "size" & '"' & "].getNum)" & "\n"
+                            echo fun.params.args[i].name
+                            echo fun.params.args[i].decode
+                            if fun.params.args[i].decode:
+                                source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & "cstring" & "(decode(" & "str_"& intToStr(i) & "))\n"
+                            else:
+                                source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & "cstring" & "(" & "str_"& intToStr(i) & ")\n"
                         else:
-                            source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & fun.params.args[i].functype & "(jobj" & "[" & '"' & fun.params.args[i].name & '"'& "]." & getTypeConverterName(fun.params.args[i].functype) &  ")\n"
+                            if fun.params.args[i].decode:
+                                     source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & fun.params.args[i].functype & "(decode(jobj" & "[" & '"' & fun.params.args[i].name & '"'& "]." & getTypeConverterName(fun.params.args[i].functype) &  "))\n"
+                            else:
+                                source &= getIndentation(5) & "arg_" & intToStr(i) & " = " & fun.params.args[i].functype & "(jobj" & "[" & '"' & fun.params.args[i].name & '"'& "]." & getTypeConverterName(fun.params.args[i].functype) &  ")\n"
+                           
                         if fun.params.args[i].isOut:
                              temp &= '"' & fun.params.args[i].name & '"' & " : " & "$" & "arg_" & intToStr(i) & ","
 
@@ -186,7 +196,6 @@ when isMainModule:
 
     source &= "var server = newAsyncHttpServer()\n\nproc handler(req: Request) {.async.} =\n" 
     source &= getIndentation(1)& "if req.url.path == "  & '"' & "/callLibFunction" & '"' & ":\n"
-    source &= getIndentation(2)& "let requestBody = req.body\n"
     source &= getIndentation(2)& "var jobj = parseJson(req.body)\n"
     source &= getIndentation(2)& "var j = getResult(jobj[" & '"'& "libraryName" & '"'  & "].getStr,jobj["& '"'& "functionName" & '"'&"].getStr,$jobj["& '"'& "args" & '"'&"])\n"
     source &= getIndentation(2)& "if j!=nil:\n"

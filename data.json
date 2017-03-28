@@ -4,7 +4,7 @@
         "types":[
                     {
                         "name":"BufferObj",
-                        "signature":"data:cstring,size:cint,fill:cint"
+                        "signature":"data:cstring[decode],size:cint,fill:cint"
                     }
                 ],
         "functions": [
@@ -18,25 +18,29 @@
                         "functype":"cstring",
                             "isCustom":"false",
                             "isPointer":"false",
-                            "isOut":"true"
+                            "isOut":"true",
+                            "decode":"false"
                     },{
                         "name":"outlen",
                         "functype":"cint",
                             "isCustom":"false",
                             "isPointer":"false",
-                            "isOut":"false"
+                            "isOut":"false",
+                            "decode":"false"
                     },{
                         "name":"in1",
                         "functype":"cstring",
                             "isCustom":"false",
                             "isPointer":"false",
-                            "isOut":"false"
+                            "isOut":"false",
+                            "decode":"false"
                     },{
                         "name":"inlen",
                         "functype":"cint",
                             "isCustom":"false",
                             "isPointer":"false",
-                            "isOut":"false"
+                            "isOut":"false",
+                            "decode":"false"
                     }]
                 }
             },
@@ -51,14 +55,16 @@
                             "functype":"BufferObj",
                             "isCustom":"true",
                             "isPointer":"true",
-                            "isOut":"true"
+                            "isOut":"true",
+                            "decode":"false"
                         },
                         {
                             "name":"bufIn",
                             "functype":"BufferObj",
                             "isCustom":"true",
                             "isPointer":"true",
-                            "isOut":"false"
+                            "isOut":"false",
+                            "decode":"false"
                         }
                     ]
                 }
