@@ -59,7 +59,18 @@ Let's decode the json now:
 * Modify data.json to suit your needs.
 * Execute codeGen.nim.
 * Execute the generated nimFile.
+* Access /callLibFunction
 * Profit :)
-* 
+
 # Dependencies
 https://github.com/flyx/NimYAML
+
+# Interacting with the Generted REST service.
+The below JSON is an example of how the request looks like and all the fields are self explanatory.
+```json
+{
+  "libraryName": "hello_nim",
+  "functionName":"hello_2",
+  "args":[{"data":"","size":16,"fill":16},{"data":"SGVsbG8gV29ybGQ=","size":16,"fill":16}]
+}
+```
