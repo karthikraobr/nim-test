@@ -1,4 +1,4 @@
-# nim2c
+# nim2Rest
 
 This program creates a rest wrapper around shared libraries using the data.json file. It's bascially a code generator which iterates over the configuration specified in the data file. Let us look at a small example of how the json looke like.
 ```json
