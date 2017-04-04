@@ -48,12 +48,12 @@ proc loadLib[T](libraryName:string, functionName:string,args:string):JsonNode=
                 var obj_0 = jobj[0]
                 var arg_0:BufferObj
                 var str_0= getPadding(obj_0["size"].getNum)
-                arg_0.data = cstring(decode(str_0))
+                arg_0.data = cstring(str_0)
                 arg_0.size = cint(obj_0["size"].getNum)
                 arg_0.fill = cint(obj_0["fill"].getNum)
                 var obj_1 = jobj[1]
                 var arg_1:BufferObj
-                arg_1.data = cstring(decode(obj_1["data"].getStr))
+                arg_1.data = cstring(obj_1["data"].getStr)
                 arg_1.size = cint(obj_1["size"].getNum)
                 arg_1.fill = cint(obj_1["fill"].getNum)
                 var res = exechello_2(arg_0.addr,arg_1.addr)

@@ -4,7 +4,7 @@
         "types":[
                     {
                         "name":"BufferObj",
-                        "signature":"data:cstring[decode],size:cint,fill:cint"
+                        "signature":"data:cstring,size:cint,fill:cint"
                     }
                 ],
         "functions": [
